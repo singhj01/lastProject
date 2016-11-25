@@ -1,0 +1,5 @@
+D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\Accelerometer Testing.cyprj|9994f31f-bf31-4b90-b305-a371a07c9abf
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e8e37dcc-2134-4ae9-b16e-e6dd451b8f64
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1a9ff315-de9d-4a22-8110-96199928d19f
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e51d75da-b33e-47d9-ab7c-cca5ae8f9fc9
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|515e1ac0-a95d-491b-8f23-9760195ad3c5

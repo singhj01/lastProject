@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<fileSet version="1" anchorPath="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyfitter_cfg.h" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyfitter_cfg.c" value="ARM_C_FILE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\protect.hex" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cymetadata.c" value="ARM_C_FILE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cydevice_trm.h" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cydevicegnu_trm.inc" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cydevicerv_trm.inc" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cydeviceiar_trm.inc" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyfittergnu.inc" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyfitterrv.inc" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyfitteriar.inc" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyfitter.h" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cydisabledsheets.h" value="NONE;" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_X.c" value="ARM_C_FILE;Accel_X" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_X.h" value="NONE;Accel_X" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_X_aliases.h" value="NONE;Accel_X" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_y.c" value="ARM_C_FILE;Accel_y" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_y.h" value="NONE;Accel_y" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_y_aliases.h" value="NONE;Accel_y" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_z.c" value="ARM_C_FILE;Accel_z" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_z.h" value="NONE;Accel_z" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Accel_z_aliases.h" value="NONE;Accel_z" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Red.c" value="ARM_C_FILE;Red" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Red.h" value="NONE;Red" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Red_aliases.h" value="NONE;Red" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Green.c" value="ARM_C_FILE;Green" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Green.h" value="NONE;Green" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Green_aliases.h" value="NONE;Green" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Blue.c" value="ARM_C_FILE;Blue" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Blue.h" value="NONE;Blue" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Blue_aliases.h" value="NONE;Blue" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cm0gcc.ld" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Cm0RealView.scat" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Cm0Start.c" value="ARM_C_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\core_cm0_psoc4.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\core_cm0.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyBootAsmGnu.s" value="GNU_ARM_ASM_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyBootAsmRv.s" value="REALVIEW_ARM_ASM_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyFlash.c" value="ARM_C_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyFlash.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyLib.c" value="ARM_C_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyLib.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyPm.c" value="ARM_C_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyPm.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cytypes.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cyutils.c" value="ARM_C_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\cypins.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\core_cmFunc.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\core_cmInstr.h" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Cm0Iar.icf" value="NONE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\CyBootAsmIar.s" value="IAR_ASM_FILE;cy_boot" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\project.h" value="NONE;" />
+</fileSet>

@@ -1,0 +1,549 @@
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.changeColor,"ax",%progbits
+  18              		.align	2
+  19              		.global	changeColor
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	changeColor, %function
+  23              	changeColor:
+  24              	.LFB35:
+  25              		.file 1 ".\\main.c"
+   1:.\main.c      **** /* ========================================
+   2:.\main.c      ****  *
+   3:.\main.c      ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\main.c      ****  * All Rights Reserved
+   5:.\main.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\main.c      ****  *
+   7:.\main.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\main.c      ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\main.c      ****  *
+  10:.\main.c      ****  * ========================================
+  11:.\main.c      **** */
+  12:.\main.c      **** #include <project.h>
+  13:.\main.c      **** 
+  14:.\main.c      **** void changeColor(int state);
+  15:.\main.c      **** void upIntensity(int state);
+  16:.\main.c      **** void downIntensity(int state);
+  17:.\main.c      **** void toggleOnOFF(int state);
+  18:.\main.c      **** 
+  19:.\main.c      **** void changeColor(state){
+  26              		.loc 1 19 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 7, -8
+  31              		.cfi_offset 14, -4
+  32 0002 82B0     		sub	sp, sp, #8
+  33              		.cfi_def_cfa_offset 16
+  34 0004 00AF     		add	r7, sp, #0
+  35              		.cfi_def_cfa_register 7
+  36 0006 7860     		str	r0, [r7, #4]
+  20:.\main.c      ****   switch (state){
+  37              		.loc 1 20 0
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 2
+
+
+  38 0008 7B68     		ldr	r3, [r7, #4]
+  39 000a 022B     		cmp	r3, #2
+  40 000c 08D0     		beq	.L9
+  41 000e 02DC     		bgt	.L4
+  42 0010 012B     		cmp	r3, #1
+  43 0012 07D0     		beq	.L10
+  21:.\main.c      ****     case 1:
+  22:.\main.c      ****         /*Red*/
+  23:.\main.c      ****         break;
+  24:.\main.c      ****     case 2:
+  25:.\main.c      ****         /*Blue*/
+  26:.\main.c      ****         break;
+  27:.\main.c      ****     case 3:
+  28:.\main.c      ****         /*Green*/
+  29:.\main.c      ****         break;
+  30:.\main.c      ****     case 4:
+  31:.\main.c      ****         /*more colors*/
+  32:.\main.c      ****         break;
+  33:.\main.c      ****     default:
+  34:.\main.c      ****         /*back to white*/
+  35:.\main.c      ****         break;
+  44              		.loc 1 35 0
+  45 0014 0BE0     		b	.L1
+  46              	.L4:
+  20:.\main.c      ****   switch (state){
+  47              		.loc 1 20 0
+  48 0016 032B     		cmp	r3, #3
+  49 0018 06D0     		beq	.L11
+  50 001a 042B     		cmp	r3, #4
+  51 001c 06D0     		beq	.L12
+  52              		.loc 1 35 0
+  53 001e 06E0     		b	.L1
+  54              	.L9:
+  26:.\main.c      ****         break;
+  55              		.loc 1 26 0
+  56 0020 C046     		mov	r8, r8
+  57 0022 04E0     		b	.L1
+  58              	.L10:
+  23:.\main.c      ****         break;
+  59              		.loc 1 23 0
+  60 0024 C046     		mov	r8, r8
+  61 0026 02E0     		b	.L1
+  62              	.L11:
+  29:.\main.c      ****         break;
+  63              		.loc 1 29 0
+  64 0028 C046     		mov	r8, r8
+  65 002a 00E0     		b	.L1
+  66              	.L12:
+  32:.\main.c      ****         break;
+  67              		.loc 1 32 0
+  68 002c C046     		mov	r8, r8
+  69              	.L1:
+  36:.\main.c      ****     }
+  37:.\main.c      **** }
+  70              		.loc 1 37 0
+  71 002e BD46     		mov	sp, r7
+  72 0030 02B0     		add	sp, sp, #8
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 3
+
+
+  73              		@ sp needed
+  74 0032 80BD     		pop	{r7, pc}
+  75              		.cfi_endproc
+  76              	.LFE35:
+  77              		.size	changeColor, .-changeColor
+  78              		.section	.text.main,"ax",%progbits
+  79              		.align	2
+  80              		.global	main
+  81              		.code	16
+  82              		.thumb_func
+  83              		.type	main, %function
+  84              	main:
+  85              	.LFB36:
+  38:.\main.c      **** 
+  39:.\main.c      **** int main()
+  40:.\main.c      **** {
+  86              		.loc 1 40 0
+  87              		.cfi_startproc
+  88 0000 80B5     		push	{r7, lr}
+  89              		.cfi_def_cfa_offset 8
+  90              		.cfi_offset 7, -8
+  91              		.cfi_offset 14, -4
+  92 0002 00AF     		add	r7, sp, #0
+  93              		.cfi_def_cfa_register 7
+  41:.\main.c      ****     /* intialize state variables
+  42:.\main.c      ****     int toggleState = 0; 
+  43:.\main.c      ****     int colorState = 0;
+  44:.\main.c      ****     int upState = 0;
+  45:.\main.c      ****     int downState = 0;*/
+  46:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  47:.\main.c      **** 
+  48:.\main.c      ****     CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
+  94              		.loc 1 48 0
+  95              	@ 48 ".\main.c" 1
+  96 0004 62B6     		CPSIE   i
+  97              	@ 0 "" 2
+  98              		.code	16
+  99              	.L14:
+  49:.\main.c      ****     for(;;)
+  50:.\main.c      ****     {
+  51:.\main.c      ****     /* generic outline for code
+  52:.\main.c      ****       
+  53:.\main.c      ****         
+  54:.\main.c      ****         if("LeftGesture"){
+  55:.\main.c      ****         toggleState++;
+  56:.\main.c      ****         toggleOnOFF(toggleState);
+  57:.\main.c      ****         }
+  58:.\main.c      ****         if("RightGesture"){
+  59:.\main.c      ****         colorState++;
+  60:.\main.c      ****         changeColor(colorState);
+  61:.\main.c      ****         }
+  62:.\main.c      ****         if("FrontGesture"){
+  63:.\main.c      ****         upState++;
+  64:.\main.c      ****         upIntensity(upState);
+  65:.\main.c      ****         }
+  66:.\main.c      ****         if("DownGesture"){
+  67:.\main.c      ****         downState++;
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 4
+
+
+  68:.\main.c      ****         downIntensity(downState);
+  69:.\main.c      ****         }
+  70:.\main.c      ****         
+  71:.\main.c      ****         
+  72:.\main.c      ****         
+  73:.\main.c      ****     */    
+  74:.\main.c      ****     }
+ 100              		.loc 1 74 0 discriminator 1
+ 101 0006 FEE7     		b	.L14
+ 102              		.cfi_endproc
+ 103              	.LFE36:
+ 104              		.size	main, .-main
+ 105              		.text
+ 106              	.Letext0:
+ 107              		.section	.debug_info,"",%progbits
+ 108              	.Ldebug_info0:
+ 109 0000 BD000000 		.4byte	0xbd
+ 110 0004 0400     		.2byte	0x4
+ 111 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 112 000a 04       		.byte	0x4
+ 113 000b 01       		.uleb128 0x1
+ 114 000c A1000000 		.4byte	.LASF13
+ 115 0010 01       		.byte	0x1
+ 116 0011 81010000 		.4byte	.LASF14
+ 117 0015 49000000 		.4byte	.LASF15
+ 118 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 119 001d 00000000 		.4byte	0
+ 120 0021 00000000 		.4byte	.Ldebug_line0
+ 121 0025 02       		.uleb128 0x2
+ 122 0026 01       		.byte	0x1
+ 123 0027 06       		.byte	0x6
+ 124 0028 5D010000 		.4byte	.LASF0
+ 125 002c 02       		.uleb128 0x2
+ 126 002d 01       		.byte	0x1
+ 127 002e 08       		.byte	0x8
+ 128 002f 1D010000 		.4byte	.LASF1
+ 129 0033 02       		.uleb128 0x2
+ 130 0034 02       		.byte	0x2
+ 131 0035 05       		.byte	0x5
+ 132 0036 39010000 		.4byte	.LASF2
+ 133 003a 02       		.uleb128 0x2
+ 134 003b 02       		.byte	0x2
+ 135 003c 07       		.byte	0x7
+ 136 003d 4A010000 		.4byte	.LASF3
+ 137 0041 02       		.uleb128 0x2
+ 138 0042 04       		.byte	0x4
+ 139 0043 05       		.byte	0x5
+ 140 0044 30010000 		.4byte	.LASF4
+ 141 0048 02       		.uleb128 0x2
+ 142 0049 04       		.byte	0x4
+ 143 004a 07       		.byte	0x7
+ 144 004b 20000000 		.4byte	.LASF5
+ 145 004f 02       		.uleb128 0x2
+ 146 0050 08       		.byte	0x8
+ 147 0051 05       		.byte	0x5
+ 148 0052 00000000 		.4byte	.LASF6
+ 149 0056 02       		.uleb128 0x2
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 5
+
+
+ 150 0057 08       		.byte	0x8
+ 151 0058 07       		.byte	0x7
+ 152 0059 32000000 		.4byte	.LASF7
+ 153 005d 03       		.uleb128 0x3
+ 154 005e 04       		.byte	0x4
+ 155 005f 05       		.byte	0x5
+ 156 0060 696E7400 		.ascii	"int\000"
+ 157 0064 02       		.uleb128 0x2
+ 158 0065 04       		.byte	0x4
+ 159 0066 07       		.byte	0x7
+ 160 0067 0E000000 		.4byte	.LASF8
+ 161 006b 02       		.uleb128 0x2
+ 162 006c 04       		.byte	0x4
+ 163 006d 04       		.byte	0x4
+ 164 006e 7B010000 		.4byte	.LASF9
+ 165 0072 02       		.uleb128 0x2
+ 166 0073 08       		.byte	0x8
+ 167 0074 04       		.byte	0x4
+ 168 0075 43010000 		.4byte	.LASF10
+ 169 0079 02       		.uleb128 0x2
+ 170 007a 01       		.byte	0x1
+ 171 007b 08       		.byte	0x8
+ 172 007c 2B010000 		.4byte	.LASF11
+ 173 0080 02       		.uleb128 0x2
+ 174 0081 04       		.byte	0x4
+ 175 0082 07       		.byte	0x7
+ 176 0083 8A010000 		.4byte	.LASF12
+ 177 0087 04       		.uleb128 0x4
+ 178 0088 6F010000 		.4byte	.LASF16
+ 179 008c 01       		.byte	0x1
+ 180 008d 13       		.byte	0x13
+ 181 008e 00000000 		.4byte	.LFB35
+ 182 0092 34000000 		.4byte	.LFE35-.LFB35
+ 183 0096 01       		.uleb128 0x1
+ 184 0097 9C       		.byte	0x9c
+ 185 0098 AB000000 		.4byte	0xab
+ 186 009c 05       		.uleb128 0x5
+ 187 009d 69010000 		.4byte	.LASF17
+ 188 00a1 01       		.byte	0x1
+ 189 00a2 13       		.byte	0x13
+ 190 00a3 5D000000 		.4byte	0x5d
+ 191 00a7 02       		.uleb128 0x2
+ 192 00a8 91       		.byte	0x91
+ 193 00a9 74       		.sleb128 -12
+ 194 00aa 00       		.byte	0
+ 195 00ab 06       		.uleb128 0x6
+ 196 00ac 1B000000 		.4byte	.LASF18
+ 197 00b0 01       		.byte	0x1
+ 198 00b1 27       		.byte	0x27
+ 199 00b2 5D000000 		.4byte	0x5d
+ 200 00b6 00000000 		.4byte	.LFB36
+ 201 00ba 08000000 		.4byte	.LFE36-.LFB36
+ 202 00be 01       		.uleb128 0x1
+ 203 00bf 9C       		.byte	0x9c
+ 204 00c0 00       		.byte	0
+ 205              		.section	.debug_abbrev,"",%progbits
+ 206              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 6
+
+
+ 207 0000 01       		.uleb128 0x1
+ 208 0001 11       		.uleb128 0x11
+ 209 0002 01       		.byte	0x1
+ 210 0003 25       		.uleb128 0x25
+ 211 0004 0E       		.uleb128 0xe
+ 212 0005 13       		.uleb128 0x13
+ 213 0006 0B       		.uleb128 0xb
+ 214 0007 03       		.uleb128 0x3
+ 215 0008 0E       		.uleb128 0xe
+ 216 0009 1B       		.uleb128 0x1b
+ 217 000a 0E       		.uleb128 0xe
+ 218 000b 55       		.uleb128 0x55
+ 219 000c 17       		.uleb128 0x17
+ 220 000d 11       		.uleb128 0x11
+ 221 000e 01       		.uleb128 0x1
+ 222 000f 10       		.uleb128 0x10
+ 223 0010 17       		.uleb128 0x17
+ 224 0011 00       		.byte	0
+ 225 0012 00       		.byte	0
+ 226 0013 02       		.uleb128 0x2
+ 227 0014 24       		.uleb128 0x24
+ 228 0015 00       		.byte	0
+ 229 0016 0B       		.uleb128 0xb
+ 230 0017 0B       		.uleb128 0xb
+ 231 0018 3E       		.uleb128 0x3e
+ 232 0019 0B       		.uleb128 0xb
+ 233 001a 03       		.uleb128 0x3
+ 234 001b 0E       		.uleb128 0xe
+ 235 001c 00       		.byte	0
+ 236 001d 00       		.byte	0
+ 237 001e 03       		.uleb128 0x3
+ 238 001f 24       		.uleb128 0x24
+ 239 0020 00       		.byte	0
+ 240 0021 0B       		.uleb128 0xb
+ 241 0022 0B       		.uleb128 0xb
+ 242 0023 3E       		.uleb128 0x3e
+ 243 0024 0B       		.uleb128 0xb
+ 244 0025 03       		.uleb128 0x3
+ 245 0026 08       		.uleb128 0x8
+ 246 0027 00       		.byte	0
+ 247 0028 00       		.byte	0
+ 248 0029 04       		.uleb128 0x4
+ 249 002a 2E       		.uleb128 0x2e
+ 250 002b 01       		.byte	0x1
+ 251 002c 3F       		.uleb128 0x3f
+ 252 002d 19       		.uleb128 0x19
+ 253 002e 03       		.uleb128 0x3
+ 254 002f 0E       		.uleb128 0xe
+ 255 0030 3A       		.uleb128 0x3a
+ 256 0031 0B       		.uleb128 0xb
+ 257 0032 3B       		.uleb128 0x3b
+ 258 0033 0B       		.uleb128 0xb
+ 259 0034 27       		.uleb128 0x27
+ 260 0035 19       		.uleb128 0x19
+ 261 0036 11       		.uleb128 0x11
+ 262 0037 01       		.uleb128 0x1
+ 263 0038 12       		.uleb128 0x12
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 7
+
+
+ 264 0039 06       		.uleb128 0x6
+ 265 003a 40       		.uleb128 0x40
+ 266 003b 18       		.uleb128 0x18
+ 267 003c 9742     		.uleb128 0x2117
+ 268 003e 19       		.uleb128 0x19
+ 269 003f 01       		.uleb128 0x1
+ 270 0040 13       		.uleb128 0x13
+ 271 0041 00       		.byte	0
+ 272 0042 00       		.byte	0
+ 273 0043 05       		.uleb128 0x5
+ 274 0044 05       		.uleb128 0x5
+ 275 0045 00       		.byte	0
+ 276 0046 03       		.uleb128 0x3
+ 277 0047 0E       		.uleb128 0xe
+ 278 0048 3A       		.uleb128 0x3a
+ 279 0049 0B       		.uleb128 0xb
+ 280 004a 3B       		.uleb128 0x3b
+ 281 004b 0B       		.uleb128 0xb
+ 282 004c 49       		.uleb128 0x49
+ 283 004d 13       		.uleb128 0x13
+ 284 004e 02       		.uleb128 0x2
+ 285 004f 18       		.uleb128 0x18
+ 286 0050 00       		.byte	0
+ 287 0051 00       		.byte	0
+ 288 0052 06       		.uleb128 0x6
+ 289 0053 2E       		.uleb128 0x2e
+ 290 0054 00       		.byte	0
+ 291 0055 3F       		.uleb128 0x3f
+ 292 0056 19       		.uleb128 0x19
+ 293 0057 03       		.uleb128 0x3
+ 294 0058 0E       		.uleb128 0xe
+ 295 0059 3A       		.uleb128 0x3a
+ 296 005a 0B       		.uleb128 0xb
+ 297 005b 3B       		.uleb128 0x3b
+ 298 005c 0B       		.uleb128 0xb
+ 299 005d 49       		.uleb128 0x49
+ 300 005e 13       		.uleb128 0x13
+ 301 005f 11       		.uleb128 0x11
+ 302 0060 01       		.uleb128 0x1
+ 303 0061 12       		.uleb128 0x12
+ 304 0062 06       		.uleb128 0x6
+ 305 0063 40       		.uleb128 0x40
+ 306 0064 18       		.uleb128 0x18
+ 307 0065 9742     		.uleb128 0x2117
+ 308 0067 19       		.uleb128 0x19
+ 309 0068 00       		.byte	0
+ 310 0069 00       		.byte	0
+ 311 006a 00       		.byte	0
+ 312              		.section	.debug_aranges,"",%progbits
+ 313 0000 24000000 		.4byte	0x24
+ 314 0004 0200     		.2byte	0x2
+ 315 0006 00000000 		.4byte	.Ldebug_info0
+ 316 000a 04       		.byte	0x4
+ 317 000b 00       		.byte	0
+ 318 000c 0000     		.2byte	0
+ 319 000e 0000     		.2byte	0
+ 320 0010 00000000 		.4byte	.LFB35
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 8
+
+
+ 321 0014 34000000 		.4byte	.LFE35-.LFB35
+ 322 0018 00000000 		.4byte	.LFB36
+ 323 001c 08000000 		.4byte	.LFE36-.LFB36
+ 324 0020 00000000 		.4byte	0
+ 325 0024 00000000 		.4byte	0
+ 326              		.section	.debug_ranges,"",%progbits
+ 327              	.Ldebug_ranges0:
+ 328 0000 00000000 		.4byte	.LFB35
+ 329 0004 34000000 		.4byte	.LFE35
+ 330 0008 00000000 		.4byte	.LFB36
+ 331 000c 08000000 		.4byte	.LFE36
+ 332 0010 00000000 		.4byte	0
+ 333 0014 00000000 		.4byte	0
+ 334              		.section	.debug_line,"",%progbits
+ 335              	.Ldebug_line0:
+ 336 0000 5C000000 		.section	.debug_str,"MS",%progbits,1
+ 336      02001F00 
+ 336      00000201 
+ 336      FB0E0D00 
+ 336      01010101 
+ 337              	.LASF6:
+ 338 0000 6C6F6E67 		.ascii	"long long int\000"
+ 338      206C6F6E 
+ 338      6720696E 
+ 338      7400
+ 339              	.LASF8:
+ 340 000e 756E7369 		.ascii	"unsigned int\000"
+ 340      676E6564 
+ 340      20696E74 
+ 340      00
+ 341              	.LASF18:
+ 342 001b 6D61696E 		.ascii	"main\000"
+ 342      00
+ 343              	.LASF5:
+ 344 0020 6C6F6E67 		.ascii	"long unsigned int\000"
+ 344      20756E73 
+ 344      69676E65 
+ 344      6420696E 
+ 344      7400
+ 345              	.LASF7:
+ 346 0032 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 346      206C6F6E 
+ 346      6720756E 
+ 346      7369676E 
+ 346      65642069 
+ 347              	.LASF15:
+ 348 0049 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\Accelero"
+ 348      73657273 
+ 348      5C6A7369 
+ 348      6E675C44 
+ 348      6F63756D 
+ 349 0077 6D657465 		.ascii	"meter Testing\\Accelerometer Testing.cydsn\000"
+ 349      72205465 
+ 349      7374696E 
+ 349      675C4163 
+ 349      63656C65 
+ 350              	.LASF13:
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 9
+
+
+ 351 00a1 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 351      4320342E 
+ 351      382E3420 
+ 351      32303134 
+ 351      30353236 
+ 352 00d4 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 352      20726576 
+ 352      6973696F 
+ 352      6E203231 
+ 352      31333538 
+ 353 0107 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 353      66756E63 
+ 353      74696F6E 
+ 353      2D736563 
+ 353      74696F6E 
+ 354              	.LASF1:
+ 355 011d 756E7369 		.ascii	"unsigned char\000"
+ 355      676E6564 
+ 355      20636861 
+ 355      7200
+ 356              	.LASF11:
+ 357 012b 63686172 		.ascii	"char\000"
+ 357      00
+ 358              	.LASF4:
+ 359 0130 6C6F6E67 		.ascii	"long int\000"
+ 359      20696E74 
+ 359      00
+ 360              	.LASF2:
+ 361 0139 73686F72 		.ascii	"short int\000"
+ 361      7420696E 
+ 361      7400
+ 362              	.LASF10:
+ 363 0143 646F7562 		.ascii	"double\000"
+ 363      6C6500
+ 364              	.LASF3:
+ 365 014a 73686F72 		.ascii	"short unsigned int\000"
+ 365      7420756E 
+ 365      7369676E 
+ 365      65642069 
+ 365      6E7400
+ 366              	.LASF0:
+ 367 015d 7369676E 		.ascii	"signed char\000"
+ 367      65642063 
+ 367      68617200 
+ 368              	.LASF17:
+ 369 0169 73746174 		.ascii	"state\000"
+ 369      6500
+ 370              	.LASF16:
+ 371 016f 6368616E 		.ascii	"changeColor\000"
+ 371      6765436F 
+ 371      6C6F7200 
+ 372              	.LASF9:
+ 373 017b 666C6F61 		.ascii	"float\000"
+ 373      7400
+ 374              	.LASF14:
+ 375 0181 2E5C6D61 		.ascii	".\\main.c\000"
+ 375      696E2E63 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccwYfCE1.s 			page 10
+
+
+ 375      00
+ 376              	.LASF12:
+ 377 018a 73697A65 		.ascii	"sizetype\000"
+ 377      74797065 
+ 377      00
+ 378              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
