@@ -2,6 +2,12 @@ Archive member included because of file (symbol)
 
 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
                               .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o (cyfitter_cfg)
+.\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Red_Write)
+.\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Green_Write)
+.\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Blue_Write)
 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
                               .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o) (CyDelayUs)
 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
@@ -39,7 +45,9 @@ Discarded input sections
  .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\main.o
  .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\main.o
  .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\main.o
- .text.changeColor
+ .text.colorChange
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .text.Intensity
                 0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\main.o
  .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
  .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
@@ -55,6 +63,45 @@ Discarded input sections
                 0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
  .text.CYCONFIGCPYCODE
                 0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .text.Red_Write
+                0x00000000       0x4c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .text.Red_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .text.Red_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .text.Red_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .text.Red_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .text.Green_Write
+                0x00000000       0x4c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .text.Green_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .text.Green_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .text.Green_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .text.Green_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .text.Blue_Write
+                0x00000000       0x48 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .text.Blue_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .text.Blue_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .text.Blue_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .text.Blue_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
  .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
  .bss           0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
  .rodata        0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
@@ -552,76 +599,100 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x398
+.debug_aranges  0x00000000      0x460
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x28 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\main.o
  .debug_aranges
-                0x00000028       0x18 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+                0x00000030       0x18 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
  .debug_aranges
-                0x00000040       0x48 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x00000048       0x48 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
  .debug_aranges
-                0x00000088       0x58 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+                0x00000090       0x58 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
  .debug_aranges
-                0x000000e0      0x298 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+                0x000000e8       0x40 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
  .debug_aranges
-                0x00000378       0x20 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
+                0x00000128       0x40 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .debug_aranges
+                0x00000168       0x40 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .debug_aranges
+                0x000001a8      0x298 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_aranges
+                0x00000440       0x20 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x17d2
+.debug_info     0x00000000     0x1bda
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000       0xc1 .\CortexM0\ARM_GCC_484\Debug\main.o
- .debug_info    0x000000c1       0xfd .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
- .debug_info    0x000001be      0x2ff .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
- .debug_info    0x000004bd      0x442 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
- .debug_info    0x000008ff      0xe2b .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
- .debug_info    0x0000172a       0xa8 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
+ .debug_info    0x00000000       0xe5 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_info    0x000000e5       0xfd .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_info    0x000001e2      0x2ff .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_info    0x000004e1      0x442 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .debug_info    0x00000923      0x14c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .debug_info    0x00000a6f      0x14c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .debug_info    0x00000bbb      0x14c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .debug_info    0x00000d07      0xe2b .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_info    0x00001b32       0xa8 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
 
-.debug_abbrev   0x00000000      0x651
+.debug_abbrev   0x00000000      0x890
  *(.debug_abbrev)
- .debug_abbrev  0x00000000       0x6b .\CortexM0\ARM_GCC_484\Debug\main.o
- .debug_abbrev  0x0000006b       0x5d .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
- .debug_abbrev  0x000000c8      0x1b4 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
- .debug_abbrev  0x0000027c      0x18a .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
- .debug_abbrev  0x00000406      0x237 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
- .debug_abbrev  0x0000063d       0x14 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000000       0x85 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_abbrev  0x00000085       0x5d .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_abbrev  0x000000e2      0x1b4 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_abbrev  0x00000296      0x18a .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .debug_abbrev  0x00000420       0xb7 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .debug_abbrev  0x000004d7       0xb7 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .debug_abbrev  0x0000058e       0xb7 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .debug_abbrev  0x00000645      0x237 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_abbrev  0x0000087c       0x14 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
 
-.debug_line     0x00000000      0xd9e
+.debug_line     0x00000000      0xfbf
  *(.debug_line)
- .debug_line    0x00000000       0x60 .\CortexM0\ARM_GCC_484\Debug\main.o
- .debug_line    0x00000060       0x53 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
- .debug_line    0x000000b3      0x1bc .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
- .debug_line    0x0000026f      0x1b6 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
- .debug_line    0x00000425      0x911 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
- .debug_line    0x00000d36       0x68 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
+ .debug_line    0x00000000       0x83 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_line    0x00000083       0x53 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_line    0x000000d6      0x1bc .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_line    0x00000292      0x1b6 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .debug_line    0x00000448       0xa9 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .debug_line    0x000004f1       0xab .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .debug_line    0x0000059c       0xaa .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .debug_line    0x00000646      0x911 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_line    0x00000f57       0x68 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
 
-.debug_frame    0x00000000      0xce8
+.debug_frame    0x00000000      0xf00
  *(.debug_frame)
- .debug_frame   0x00000000       0x4c .\CortexM0\ARM_GCC_484\Debug\main.o
- .debug_frame   0x0000004c       0xc8 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
- .debug_frame   0x00000114      0x108 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
- .debug_frame   0x0000021c      0x9d0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
- .debug_frame   0x00000bec       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x00000c0c       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
- .debug_frame   0x00000c2c       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
- .debug_frame   0x00000c4c       0x28 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
- .debug_frame   0x00000c74       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
- .debug_frame   0x00000ca0       0x28 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000cc8       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x6c .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_frame   0x0000006c       0xc8 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_frame   0x00000134      0x108 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .debug_frame   0x0000023c       0xa8 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .debug_frame   0x000002e4       0xa8 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .debug_frame   0x0000038c       0xa8 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .debug_frame   0x00000434      0x9d0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_frame   0x00000e04       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000e24       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00000e44       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+ .debug_frame   0x00000e64       0x28 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .debug_frame   0x00000e8c       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+ .debug_frame   0x00000eb8       0x28 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000ee0       0x20 d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
 
-.debug_str      0x00000000      0xcf8
+.debug_str      0x00000000      0xebd
  *(.debug_str)
- .debug_str     0x00000000      0x15a .\CortexM0\ARM_GCC_484\Debug\main.o
-                                0x193 (size before relaxing)
- .debug_str     0x0000015a       0x61 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_str     0x00000000      0x170 .\CortexM0\ARM_GCC_484\Debug\main.o
+                                0x1a9 (size before relaxing)
+ .debug_str     0x00000170       0xb9 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
                                 0x1d4 (size before relaxing)
- .debug_str     0x000001bb      0x135 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_str     0x00000229      0x135 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
                                 0x2c2 (size before relaxing)
- .debug_str     0x000002f0      0x1a0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .debug_str     0x0000035e      0x1a0 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
                                 0x35c (size before relaxing)
- .debug_str     0x00000490      0x868 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_str     0x000004fe       0x7e .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+                                0x201 (size before relaxing)
+ .debug_str     0x0000057c       0x72 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+                                0x20d (size before relaxing)
+ .debug_str     0x000005ee       0x6c .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+                                0x207 (size before relaxing)
+ .debug_str     0x0000065a      0x863 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
                                 0xa21 (size before relaxing)
 
 .debug_loc
@@ -630,12 +701,15 @@ END GROUP
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0x320
+.debug_ranges   0x00000000      0x3b8
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\main.o
- .debug_ranges  0x00000018       0x38 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
- .debug_ranges  0x00000050       0x48 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
- .debug_ranges  0x00000098      0x288 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+ .debug_ranges  0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_ranges  0x00000020       0x38 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_ranges  0x00000058       0x48 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .debug_ranges  0x000000a0       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .debug_ranges  0x000000d0       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .debug_ranges  0x00000100       0x30 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
+ .debug_ranges  0x00000130      0x288 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 .\CortexM0\ARM_GCC_484\Debug\main.o
@@ -643,6 +717,9 @@ END GROUP
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
  .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
 
 .debug_weaknames
@@ -678,31 +755,37 @@ END GROUP
  .ARM.attributes
                 0x000000f8       0x31 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(cyfitter_cfg.o)
  .ARM.attributes
-                0x00000129       0x31 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
+                0x00000129       0x31 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Red.o)
  .ARM.attributes
-                0x0000015a       0x21 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
+                0x0000015a       0x31 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Green.o)
  .ARM.attributes
-                0x0000017b       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(Blue.o)
  .ARM.attributes
-                0x00000199       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+                0x000001bc       0x31 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyLib.o)
  .ARM.attributes
-                0x000001b7       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x000001ed       0x21 .\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a(CyBootAsmGnu.o)
  .ARM.attributes
-                0x000001d5       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+                0x0000020e       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x00000201       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+                0x0000022c       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
  .ARM.attributes
-                0x0000022d       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                0x0000024a       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000259       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+                0x00000268       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
  .ARM.attributes
-                0x00000285       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+                0x00000294       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
  .ARM.attributes
-                0x000002b1       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+                0x000002c0       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
  .ARM.attributes
-                0x000002dd       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+                0x000002ec       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
  .ARM.attributes
-                0x00000309       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+                0x00000318       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000344       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000370       0x2c d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+ .ARM.attributes
+                0x0000039c       0x1e d:/program files (x86)/cypress/psoc creator/3.1/psoc creator/import/gnu_cs/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
 
 /DISCARD/
  *(.note.GNU-stack)

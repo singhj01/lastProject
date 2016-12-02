@@ -1,5 +1,5 @@
-D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\Accelerometer Testing.cyprj|9994f31f-bf31-4b90-b305-a371a07c9abf
-D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e8e37dcc-2134-4ae9-b16e-e6dd451b8f64
-D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1a9ff315-de9d-4a22-8110-96199928d19f
-D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e51d75da-b33e-47d9-ab7c-cca5ae8f9fc9
-D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|515e1ac0-a95d-491b-8f23-9760195ad3c5
+D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\Accelerometer Testing.cyprj|c9347bbb-4fb8-4a06-b687-fda43eb2d540
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|09ff8a12-448c-47d3-894d-4cbe9728dd08
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|6530fa29-27ef-4f9d-a48a-12c118aac0c6
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|46373356-f39c-4267-9133-1800d73a3521
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6c2522b0-bc9e-4924-982b-80ac7e39bb00

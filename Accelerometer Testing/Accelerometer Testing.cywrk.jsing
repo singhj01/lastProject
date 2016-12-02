@@ -119,6 +119,7 @@
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -167,28 +168,6 @@
 <VisibleNodeIds>
 <v>Accelerometer Testing</v>
 <v>Accelerometer Testing\Accelerometer Testing</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Accel_X.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Accel_y.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Accel_z.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Blue.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Green.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Red.lst</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.elf</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.hex</v>
-<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.map</v>
 <v>Accelerometer Testing\Accelerometer Testing\Accelerometer Testing.rpt</v>
 <v>Accelerometer Testing\Accelerometer Testing\Accelerometer Testing_timing.html</v>
 </VisibleNodeIds>
@@ -226,7 +205,6 @@
 <name v=".\Accelerometer Testing.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Accelerometer Testing.cydsn\Accelerometer Testing.cydwr" />
 <name v=".\Accelerometer Testing.cydsn\main.c" />
-<name v=".\Accelerometer Testing.cydsn\Generated_Source\PSoC4\Accel_X.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

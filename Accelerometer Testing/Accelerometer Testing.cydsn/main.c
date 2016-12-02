@@ -11,15 +11,16 @@
 */
 #include <project.h>
 
-void changeColor(int state);
-void upIntensity(int state);
-void downIntensity(int state);
-void toggleOnOFF(int state);
+void colorChange(int state);
+void Intensity(int state);
 
-void changeColor(state){
+void colorChange(state){
   switch (state){
     case 1:
         /*Red*/
+        Red_Write(0xFF);
+        Blue_Write(0x00);
+        Green_Write(0x00);
         break;
     case 2:
         /*Blue*/
@@ -35,14 +36,32 @@ void changeColor(state){
         break;
     }
 }
+void Intensity(state){
+    switch(state){
+        case 1:
+            /*max level*/
+        break;
+        case 2:
+            /*medium*/
+        break;
+        case 3:
+            /*min*/
+        break;
+        case 4:
+            /*off*/
+        break;
+        default:
+            /*make sure things are not breaking*/
+        break;        
+    }
+}
 
 int main()
 {
     /* intialize state variables
-    int toggleState = 0; 
     int colorState = 0;
-    int upState = 0;
-    int downState = 0;*/
+    int intensityState = 0;
+    */
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
@@ -52,22 +71,35 @@ int main()
       
         
         if("LeftGesture"){
-        toggleState++;
-        toggleOnOFF(toggleState);
+            if (colorState>=1){
+                colorState--;
+                colorChange(colorState);
+            }
+            if (colorState<1){
+                colorState = 1;
+            }
+            delay(sometime);
         }
         if("RightGesture"){
-        colorState++;
-        changeColor(colorState);
+            if (colorState <= maxState){
+                colorState++;
+                colorChange(colorState);
+            }
+            if (colorState>maxState){
+                colorState = maxState;
+            }
+            delay(sometime);
         }
         if("FrontGesture"){
-        upState++;
-        upIntensity(upState);
+        intensityState++;
+        Intensity(upState);
+        delay(sometime);
         }
         if("DownGesture"){
-        downState++;
-        downIntensity(downState);
+        intensityState--;
+        Intensity(downState);
+        delay(sometime);
         }
-        
         
         
     */    

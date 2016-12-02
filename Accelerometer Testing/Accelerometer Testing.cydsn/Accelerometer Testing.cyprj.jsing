@@ -247,9 +247,10 @@
 <name_val_pair name=".\Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -O0" />
 <name_val_pair name=".\Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -O0" />
 <name_val_pair name="D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.hex" v="-mthumb -march=armv6-m -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T .\Generated_Source\PSoC4\cm0gcc.ld -g -specs=nano.specs &quot;-u _printf_float&quot; &quot;&quot; -Wl,--gc-sections" />
+<name_val_pair name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.hex" v="-mthumb -march=armv6-m -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T .\Generated_Source\PSoC4\cm0gcc.ld -g -specs=nano.specs &quot;-u _printf_float&quot; &quot;&quot; -Wl,--gc-sections" />
 </name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\jsing\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p &quot;D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\Accelerometer Testing.cyprj&quot; -d CY8C4247LQI-BL483 -s &quot;D:\Users\jsing\Documents\PSoC Creator\Accelerometer Testing\Accelerometer Testing.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\jsing\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p &quot;D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\Accelerometer Testing.cyprj&quot; -d CY8C4247LQI-BL483 -s &quot;D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
 </dataGuid>
 <dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
@@ -586,14 +587,14 @@
 <v>D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131245687122945439" />
+<deps_time v="131249019009142577" />
 <top_block v="TopDesign" />
 <last_generation v="1" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131245713465373680" />
+<deps_time v="131249072954753909" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="bf610382-39c6-441f-80b8-b04622ea7845">
