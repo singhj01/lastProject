@@ -47,12 +47,32 @@ void colorChange(int state, uint8 intensity){
         BLUE_Write(intensity);
         GREEN_Write(0xFF);
         break;
+    case 5:
+        /*yellow*/
+        RED_Write(intensity);
+        BLUE_Write(0xFF);
+        GREEN_Write(intensity);
+        break;
+    case 6:
+        /*Blue Green*/
+        RED_Write(0xFF);
+        BLUE_Write(intensity);
+        GREEN_Write(intensity);
+        break;
+    case 7:
+        /*White*/
+        RED_Write(intensity);
+        BLUE_Write(intensity);
+        GREEN_Write(intensity);
+        break;   
     default:
         RED_Write(0x00);
         BLUE_Write(0x00);
         GREEN_Write(0x00);
         break;
     }
+    //wait
+    CyDelay(400);
 }
 uint8 Intensity(state){
     uint8 intensity;
@@ -125,8 +145,6 @@ int main()
     int intensityState = 1;
     int curr_Intensity;
     uint8 gesture;
-    /*delay counter*/
-    int i=0;
     
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
@@ -143,16 +161,17 @@ int main()
                 colorState--;
             }
             if (colorState<=1){
-                colorState = 1;
+                colorState = 7;
             }
+            
         }
         //RIGHT
         if(gesture==4){
-            if (colorState < 4){
+            if (colorState < 7){
                 colorState++;
             }
-            if (colorState >= 4){
-                colorState = 4;
+            if (colorState >= 7){
+                colorState = 1;
             }
         }
         //UP
@@ -167,7 +186,7 @@ int main()
         //DOWN
         if(gesture==2){
         if(intensityState >= 1){
-                intensityState++;
+                intensityState--;
             }
             if(intensityState < 1){
                 intensityState = 1;
@@ -177,8 +196,7 @@ int main()
         colorChange(colorState , curr_Intensity);
         
         
-            //wait
-        
+           
        
         
         
