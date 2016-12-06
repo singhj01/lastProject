@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -13,65 +13,65 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
   10              		.eabi_attribute 34, 0
   11              		.eabi_attribute 18, 4
   12              		.code	16
-  13              		.file	"Accel_y.c"
+  13              		.file	"Accel_Y.c"
   14              		.text
   15              	.Ltext0:
   16              		.cfi_sections	.debug_frame
-  17              		.section	.text.Accel_y_Write,"ax",%progbits
+  17              		.section	.text.Accel_Y_Write,"ax",%progbits
   18              		.align	2
-  19              		.global	Accel_y_Write
+  19              		.global	Accel_Y_Write
   20              		.code	16
   21              		.thumb_func
-  22              		.type	Accel_y_Write, %function
-  23              	Accel_y_Write:
+  22              		.type	Accel_Y_Write, %function
+  23              	Accel_Y_Write:
   24              	.LFB0:
-  25              		.file 1 ".\\Generated_Source\\PSoC4\\Accel_y.c"
-   1:.\Generated_Source\PSoC4/Accel_y.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/Accel_y.c **** * File Name: Accel_y.c  
-   3:.\Generated_Source\PSoC4/Accel_y.c **** * Version 2.10
-   4:.\Generated_Source\PSoC4/Accel_y.c **** *
-   5:.\Generated_Source\PSoC4/Accel_y.c **** * Description:
-   6:.\Generated_Source\PSoC4/Accel_y.c **** *  This file contains API to enable firmware control of a Pins component.
-   7:.\Generated_Source\PSoC4/Accel_y.c **** *
-   8:.\Generated_Source\PSoC4/Accel_y.c **** * Note:
-   9:.\Generated_Source\PSoC4/Accel_y.c **** *
-  10:.\Generated_Source\PSoC4/Accel_y.c **** ********************************************************************************
-  11:.\Generated_Source\PSoC4/Accel_y.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
-  12:.\Generated_Source\PSoC4/Accel_y.c **** * You may use this file only in accordance with the license, terms, conditions, 
-  13:.\Generated_Source\PSoC4/Accel_y.c **** * disclaimers, and limitations in the end user license agreement accompanying 
-  14:.\Generated_Source\PSoC4/Accel_y.c **** * the software package with which this file was provided.
-  15:.\Generated_Source\PSoC4/Accel_y.c **** *******************************************************************************/
-  16:.\Generated_Source\PSoC4/Accel_y.c **** 
-  17:.\Generated_Source\PSoC4/Accel_y.c **** #include "cytypes.h"
-  18:.\Generated_Source\PSoC4/Accel_y.c **** #include "Accel_y.h"
-  19:.\Generated_Source\PSoC4/Accel_y.c **** 
-  20:.\Generated_Source\PSoC4/Accel_y.c **** #define SetP4PinDriveMode(shift, mode)  \
-  21:.\Generated_Source\PSoC4/Accel_y.c ****     do { \
-  22:.\Generated_Source\PSoC4/Accel_y.c ****         Accel_y_PC =   (Accel_y_PC & \
-  23:.\Generated_Source\PSoC4/Accel_y.c ****                                 (uint32)(~(uint32)(Accel_y_DRIVE_MODE_IND_MASK << (Accel_y_DRIVE_MO
-  24:.\Generated_Source\PSoC4/Accel_y.c ****                                 (uint32)((uint32)(mode) << (Accel_y_DRIVE_MODE_BITS * (shift))); \
-  25:.\Generated_Source\PSoC4/Accel_y.c ****     } while (0)
-  26:.\Generated_Source\PSoC4/Accel_y.c **** 
-  27:.\Generated_Source\PSoC4/Accel_y.c **** 
-  28:.\Generated_Source\PSoC4/Accel_y.c **** /*******************************************************************************
-  29:.\Generated_Source\PSoC4/Accel_y.c **** * Function Name: Accel_y_Write
-  30:.\Generated_Source\PSoC4/Accel_y.c **** ********************************************************************************
-  31:.\Generated_Source\PSoC4/Accel_y.c **** *
-  32:.\Generated_Source\PSoC4/Accel_y.c **** * Summary:
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 2
+  25              		.file 1 ".\\Generated_Source\\PSoC4\\Accel_Y.c"
+   1:.\Generated_Source\PSoC4/Accel_Y.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/Accel_Y.c **** * File Name: Accel_Y.c  
+   3:.\Generated_Source\PSoC4/Accel_Y.c **** * Version 2.10
+   4:.\Generated_Source\PSoC4/Accel_Y.c **** *
+   5:.\Generated_Source\PSoC4/Accel_Y.c **** * Description:
+   6:.\Generated_Source\PSoC4/Accel_Y.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:.\Generated_Source\PSoC4/Accel_Y.c **** *
+   8:.\Generated_Source\PSoC4/Accel_Y.c **** * Note:
+   9:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  10:.\Generated_Source\PSoC4/Accel_Y.c **** ********************************************************************************
+  11:.\Generated_Source\PSoC4/Accel_Y.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC4/Accel_Y.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:.\Generated_Source\PSoC4/Accel_Y.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:.\Generated_Source\PSoC4/Accel_Y.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC4/Accel_Y.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  17:.\Generated_Source\PSoC4/Accel_Y.c **** #include "cytypes.h"
+  18:.\Generated_Source\PSoC4/Accel_Y.c **** #include "Accel_Y.h"
+  19:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  20:.\Generated_Source\PSoC4/Accel_Y.c **** #define SetP4PinDriveMode(shift, mode)  \
+  21:.\Generated_Source\PSoC4/Accel_Y.c ****     do { \
+  22:.\Generated_Source\PSoC4/Accel_Y.c ****         Accel_Y_PC =   (Accel_Y_PC & \
+  23:.\Generated_Source\PSoC4/Accel_Y.c ****                                 (uint32)(~(uint32)(Accel_Y_DRIVE_MODE_IND_MASK << (Accel_Y_DRIVE_MO
+  24:.\Generated_Source\PSoC4/Accel_Y.c ****                                 (uint32)((uint32)(mode) << (Accel_Y_DRIVE_MODE_BITS * (shift))); \
+  25:.\Generated_Source\PSoC4/Accel_Y.c ****     } while (0)
+  26:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  27:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  28:.\Generated_Source\PSoC4/Accel_Y.c **** /*******************************************************************************
+  29:.\Generated_Source\PSoC4/Accel_Y.c **** * Function Name: Accel_Y_Write
+  30:.\Generated_Source\PSoC4/Accel_Y.c **** ********************************************************************************
+  31:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  32:.\Generated_Source\PSoC4/Accel_Y.c **** * Summary:
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 2
 
 
-  33:.\Generated_Source\PSoC4/Accel_y.c **** *  Assign a new value to the digital port's data output register.  
-  34:.\Generated_Source\PSoC4/Accel_y.c **** *
-  35:.\Generated_Source\PSoC4/Accel_y.c **** * Parameters:  
-  36:.\Generated_Source\PSoC4/Accel_y.c **** *  prtValue:  The value to be assigned to the Digital Port. 
-  37:.\Generated_Source\PSoC4/Accel_y.c **** *
-  38:.\Generated_Source\PSoC4/Accel_y.c **** * Return: 
-  39:.\Generated_Source\PSoC4/Accel_y.c **** *  None 
-  40:.\Generated_Source\PSoC4/Accel_y.c **** *  
-  41:.\Generated_Source\PSoC4/Accel_y.c **** *******************************************************************************/
-  42:.\Generated_Source\PSoC4/Accel_y.c **** void Accel_y_Write(uint8 value) 
-  43:.\Generated_Source\PSoC4/Accel_y.c **** {
+  33:.\Generated_Source\PSoC4/Accel_Y.c **** *  Assign a new value to the digital port's data output register.  
+  34:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  35:.\Generated_Source\PSoC4/Accel_Y.c **** * Parameters:  
+  36:.\Generated_Source\PSoC4/Accel_Y.c **** *  prtValue:  The value to be assigned to the Digital Port. 
+  37:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  38:.\Generated_Source\PSoC4/Accel_Y.c **** * Return: 
+  39:.\Generated_Source\PSoC4/Accel_Y.c **** *  None 
+  40:.\Generated_Source\PSoC4/Accel_Y.c **** *  
+  41:.\Generated_Source\PSoC4/Accel_Y.c **** *******************************************************************************/
+  42:.\Generated_Source\PSoC4/Accel_Y.c **** void Accel_Y_Write(uint8 value) 
+  43:.\Generated_Source\PSoC4/Accel_Y.c **** {
   26              		.loc 1 43 0
   27              		.cfi_startproc
   28 0000 80B5     		push	{r7, lr}
@@ -85,7 +85,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
   36 0006 021C     		mov	r2, r0
   37 0008 FB1D     		add	r3, r7, #7
   38 000a 1A70     		strb	r2, [r3]
-  44:.\Generated_Source\PSoC4/Accel_y.c ****     uint8 drVal = (uint8)(Accel_y_DR & (uint8)(~Accel_y_MASK));
+  44:.\Generated_Source\PSoC4/Accel_Y.c ****     uint8 drVal = (uint8)(Accel_Y_DR & (uint8)(~Accel_Y_MASK));
   39              		.loc 1 44 0
   40 000c 0E4B     		ldr	r3, .L2
   41 000e 1B68     		ldr	r3, [r3]
@@ -95,7 +95,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
   45 0016 0221     		mov	r1, #2
   46 0018 8A43     		bic	r2, r1
   47 001a 1A70     		strb	r2, [r3]
-  45:.\Generated_Source\PSoC4/Accel_y.c ****     drVal = (drVal | ((uint8)(value << Accel_y_SHIFT) & Accel_y_MASK));
+  45:.\Generated_Source\PSoC4/Accel_Y.c ****     drVal = (drVal | ((uint8)(value << Accel_Y_SHIFT) & Accel_Y_MASK));
   48              		.loc 1 45 0
   49 001c FB1D     		add	r3, r7, #7
   50 001e 1B78     		ldrb	r3, [r3]
@@ -111,17 +111,17 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
   60 0032 1278     		ldrb	r2, [r2]
   61 0034 0A43     		orr	r2, r1
   62 0036 1A70     		strb	r2, [r3]
-  46:.\Generated_Source\PSoC4/Accel_y.c ****     Accel_y_DR = (uint32)drVal;
+  46:.\Generated_Source\PSoC4/Accel_Y.c ****     Accel_Y_DR = (uint32)drVal;
   63              		.loc 1 46 0
   64 0038 034B     		ldr	r3, .L2
   65 003a 3A1C     		mov	r2, r7
   66 003c 0F32     		add	r2, r2, #15
   67 003e 1278     		ldrb	r2, [r2]
   68 0040 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 3
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 3
 
 
-  47:.\Generated_Source\PSoC4/Accel_y.c **** }
+  47:.\Generated_Source\PSoC4/Accel_Y.c **** }
   69              		.loc 1 47 0
   70 0042 BD46     		mov	sp, r7
   71 0044 04B0     		add	sp, sp, #16
@@ -133,42 +133,42 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
   77 0048 00030440 		.word	1074004736
   78              		.cfi_endproc
   79              	.LFE0:
-  80              		.size	Accel_y_Write, .-Accel_y_Write
-  81              		.section	.text.Accel_y_SetDriveMode,"ax",%progbits
+  80              		.size	Accel_Y_Write, .-Accel_Y_Write
+  81              		.section	.text.Accel_Y_SetDriveMode,"ax",%progbits
   82              		.align	2
-  83              		.global	Accel_y_SetDriveMode
+  83              		.global	Accel_Y_SetDriveMode
   84              		.code	16
   85              		.thumb_func
-  86              		.type	Accel_y_SetDriveMode, %function
-  87              	Accel_y_SetDriveMode:
+  86              		.type	Accel_Y_SetDriveMode, %function
+  87              	Accel_Y_SetDriveMode:
   88              	.LFB1:
-  48:.\Generated_Source\PSoC4/Accel_y.c **** 
-  49:.\Generated_Source\PSoC4/Accel_y.c **** 
-  50:.\Generated_Source\PSoC4/Accel_y.c **** /*******************************************************************************
-  51:.\Generated_Source\PSoC4/Accel_y.c **** * Function Name: Accel_y_SetDriveMode
-  52:.\Generated_Source\PSoC4/Accel_y.c **** ********************************************************************************
-  53:.\Generated_Source\PSoC4/Accel_y.c **** *
-  54:.\Generated_Source\PSoC4/Accel_y.c **** * Summary:
-  55:.\Generated_Source\PSoC4/Accel_y.c **** *  Change the drive mode on the pins of the port.
-  56:.\Generated_Source\PSoC4/Accel_y.c **** * 
-  57:.\Generated_Source\PSoC4/Accel_y.c **** * Parameters:  
-  58:.\Generated_Source\PSoC4/Accel_y.c **** *  mode:  Change the pins to one of the following drive modes.
-  59:.\Generated_Source\PSoC4/Accel_y.c **** *
-  60:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_STRONG     Strong Drive 
-  61:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_OD_HI      Open Drain, Drives High 
-  62:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_OD_LO      Open Drain, Drives Low 
-  63:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_RES_UP     Resistive Pull Up 
-  64:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_RES_DWN    Resistive Pull Down 
-  65:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_RES_UPDWN  Resistive Pull Up/Down 
-  66:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_DIG_HIZ    High Impedance Digital 
-  67:.\Generated_Source\PSoC4/Accel_y.c **** *  Accel_y_DM_ALG_HIZ    High Impedance Analog 
-  68:.\Generated_Source\PSoC4/Accel_y.c **** *
-  69:.\Generated_Source\PSoC4/Accel_y.c **** * Return: 
-  70:.\Generated_Source\PSoC4/Accel_y.c **** *  None
-  71:.\Generated_Source\PSoC4/Accel_y.c **** *
-  72:.\Generated_Source\PSoC4/Accel_y.c **** *******************************************************************************/
-  73:.\Generated_Source\PSoC4/Accel_y.c **** void Accel_y_SetDriveMode(uint8 mode) 
-  74:.\Generated_Source\PSoC4/Accel_y.c **** {
+  48:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  49:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  50:.\Generated_Source\PSoC4/Accel_Y.c **** /*******************************************************************************
+  51:.\Generated_Source\PSoC4/Accel_Y.c **** * Function Name: Accel_Y_SetDriveMode
+  52:.\Generated_Source\PSoC4/Accel_Y.c **** ********************************************************************************
+  53:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  54:.\Generated_Source\PSoC4/Accel_Y.c **** * Summary:
+  55:.\Generated_Source\PSoC4/Accel_Y.c **** *  Change the drive mode on the pins of the port.
+  56:.\Generated_Source\PSoC4/Accel_Y.c **** * 
+  57:.\Generated_Source\PSoC4/Accel_Y.c **** * Parameters:  
+  58:.\Generated_Source\PSoC4/Accel_Y.c **** *  mode:  Change the pins to one of the following drive modes.
+  59:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  60:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_STRONG     Strong Drive 
+  61:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_OD_HI      Open Drain, Drives High 
+  62:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_OD_LO      Open Drain, Drives Low 
+  63:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_RES_UP     Resistive Pull Up 
+  64:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_RES_DWN    Resistive Pull Down 
+  65:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_RES_UPDWN  Resistive Pull Up/Down 
+  66:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_DIG_HIZ    High Impedance Digital 
+  67:.\Generated_Source\PSoC4/Accel_Y.c **** *  Accel_Y_DM_ALG_HIZ    High Impedance Analog 
+  68:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  69:.\Generated_Source\PSoC4/Accel_Y.c **** * Return: 
+  70:.\Generated_Source\PSoC4/Accel_Y.c **** *  None
+  71:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  72:.\Generated_Source\PSoC4/Accel_Y.c **** *******************************************************************************/
+  73:.\Generated_Source\PSoC4/Accel_Y.c **** void Accel_Y_SetDriveMode(uint8 mode) 
+  74:.\Generated_Source\PSoC4/Accel_Y.c **** {
   89              		.loc 1 74 0
   90              		.cfi_startproc
   91 0000 80B5     		push	{r7, lr}
@@ -178,14 +178,14 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
   95 0002 82B0     		sub	sp, sp, #8
   96              		.cfi_def_cfa_offset 16
   97 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 4
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 4
 
 
   98              		.cfi_def_cfa_register 7
   99 0006 021C     		mov	r2, r0
  100 0008 FB1D     		add	r3, r7, #7
  101 000a 1A70     		strb	r2, [r3]
-  75:.\Generated_Source\PSoC4/Accel_y.c **** 	SetP4PinDriveMode(Accel_y__0__SHIFT, mode);
+  75:.\Generated_Source\PSoC4/Accel_Y.c **** 	SetP4PinDriveMode(Accel_Y__0__SHIFT, mode);
  102              		.loc 1 75 0
  103 000c 074B     		ldr	r3, .L5
  104 000e 074A     		ldr	r2, .L5
@@ -199,7 +199,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  112 001e D200     		lsl	r2, r2, #3
  113 0020 0A43     		orr	r2, r1
  114 0022 1A60     		str	r2, [r3]
-  76:.\Generated_Source\PSoC4/Accel_y.c **** }
+  76:.\Generated_Source\PSoC4/Accel_Y.c **** }
  115              		.loc 1 76 0
  116 0024 BD46     		mov	sp, r7
  117 0026 02B0     		add	sp, sp, #8
@@ -211,40 +211,40 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  123 002c 08030440 		.word	1074004744
  124              		.cfi_endproc
  125              	.LFE1:
- 126              		.size	Accel_y_SetDriveMode, .-Accel_y_SetDriveMode
- 127              		.section	.text.Accel_y_Read,"ax",%progbits
+ 126              		.size	Accel_Y_SetDriveMode, .-Accel_Y_SetDriveMode
+ 127              		.section	.text.Accel_Y_Read,"ax",%progbits
  128              		.align	2
- 129              		.global	Accel_y_Read
+ 129              		.global	Accel_Y_Read
  130              		.code	16
  131              		.thumb_func
- 132              		.type	Accel_y_Read, %function
- 133              	Accel_y_Read:
+ 132              		.type	Accel_Y_Read, %function
+ 133              	Accel_Y_Read:
  134              	.LFB2:
-  77:.\Generated_Source\PSoC4/Accel_y.c **** 
-  78:.\Generated_Source\PSoC4/Accel_y.c **** 
-  79:.\Generated_Source\PSoC4/Accel_y.c **** /*******************************************************************************
-  80:.\Generated_Source\PSoC4/Accel_y.c **** * Function Name: Accel_y_Read
-  81:.\Generated_Source\PSoC4/Accel_y.c **** ********************************************************************************
-  82:.\Generated_Source\PSoC4/Accel_y.c **** *
-  83:.\Generated_Source\PSoC4/Accel_y.c **** * Summary:
-  84:.\Generated_Source\PSoC4/Accel_y.c **** *  Read the current value on the pins of the Digital Port in right justified 
-  85:.\Generated_Source\PSoC4/Accel_y.c **** *  form.
-  86:.\Generated_Source\PSoC4/Accel_y.c **** *
-  87:.\Generated_Source\PSoC4/Accel_y.c **** * Parameters:  
-  88:.\Generated_Source\PSoC4/Accel_y.c **** *  None 
-  89:.\Generated_Source\PSoC4/Accel_y.c **** *
-  90:.\Generated_Source\PSoC4/Accel_y.c **** * Return: 
-  91:.\Generated_Source\PSoC4/Accel_y.c **** *  Returns the current value of the Digital Port as a right justified number
-  92:.\Generated_Source\PSoC4/Accel_y.c **** *  
-  93:.\Generated_Source\PSoC4/Accel_y.c **** * Note:
-  94:.\Generated_Source\PSoC4/Accel_y.c **** *  Macro Accel_y_ReadPS calls this function. 
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 5
+  77:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  78:.\Generated_Source\PSoC4/Accel_Y.c **** 
+  79:.\Generated_Source\PSoC4/Accel_Y.c **** /*******************************************************************************
+  80:.\Generated_Source\PSoC4/Accel_Y.c **** * Function Name: Accel_Y_Read
+  81:.\Generated_Source\PSoC4/Accel_Y.c **** ********************************************************************************
+  82:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  83:.\Generated_Source\PSoC4/Accel_Y.c **** * Summary:
+  84:.\Generated_Source\PSoC4/Accel_Y.c **** *  Read the current value on the pins of the Digital Port in right justified 
+  85:.\Generated_Source\PSoC4/Accel_Y.c **** *  form.
+  86:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  87:.\Generated_Source\PSoC4/Accel_Y.c **** * Parameters:  
+  88:.\Generated_Source\PSoC4/Accel_Y.c **** *  None 
+  89:.\Generated_Source\PSoC4/Accel_Y.c **** *
+  90:.\Generated_Source\PSoC4/Accel_Y.c **** * Return: 
+  91:.\Generated_Source\PSoC4/Accel_Y.c **** *  Returns the current value of the Digital Port as a right justified number
+  92:.\Generated_Source\PSoC4/Accel_Y.c **** *  
+  93:.\Generated_Source\PSoC4/Accel_Y.c **** * Note:
+  94:.\Generated_Source\PSoC4/Accel_Y.c **** *  Macro Accel_Y_ReadPS calls this function. 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 5
 
 
-  95:.\Generated_Source\PSoC4/Accel_y.c **** *  
-  96:.\Generated_Source\PSoC4/Accel_y.c **** *******************************************************************************/
-  97:.\Generated_Source\PSoC4/Accel_y.c **** uint8 Accel_y_Read(void) 
-  98:.\Generated_Source\PSoC4/Accel_y.c **** {
+  95:.\Generated_Source\PSoC4/Accel_Y.c **** *  
+  96:.\Generated_Source\PSoC4/Accel_Y.c **** *******************************************************************************/
+  97:.\Generated_Source\PSoC4/Accel_Y.c **** uint8 Accel_Y_Read(void) 
+  98:.\Generated_Source\PSoC4/Accel_Y.c **** {
  135              		.loc 1 98 0
  136              		.cfi_startproc
  137 0000 80B5     		push	{r7, lr}
@@ -253,7 +253,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  140              		.cfi_offset 14, -4
  141 0002 00AF     		add	r7, sp, #0
  142              		.cfi_def_cfa_register 7
-  99:.\Generated_Source\PSoC4/Accel_y.c ****     return (uint8)((Accel_y_PS & Accel_y_MASK) >> Accel_y_SHIFT);
+  99:.\Generated_Source\PSoC4/Accel_Y.c ****     return (uint8)((Accel_Y_PS & Accel_Y_MASK) >> Accel_Y_SHIFT);
  143              		.loc 1 99 0
  144 0004 044B     		ldr	r3, .L9
  145 0006 1A68     		ldr	r2, [r3]
@@ -261,7 +261,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  147 000a 1340     		and	r3, r2
  148 000c 5B08     		lsr	r3, r3, #1
  149 000e DBB2     		uxtb	r3, r3
- 100:.\Generated_Source\PSoC4/Accel_y.c **** }
+ 100:.\Generated_Source\PSoC4/Accel_Y.c **** }
  150              		.loc 1 100 0
  151 0010 181C     		mov	r0, r3
  152 0012 BD46     		mov	sp, r7
@@ -273,36 +273,36 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  158 0018 04030440 		.word	1074004740
  159              		.cfi_endproc
  160              	.LFE2:
- 161              		.size	Accel_y_Read, .-Accel_y_Read
- 162              		.section	.text.Accel_y_ReadDataReg,"ax",%progbits
+ 161              		.size	Accel_Y_Read, .-Accel_Y_Read
+ 162              		.section	.text.Accel_Y_ReadDataReg,"ax",%progbits
  163              		.align	2
- 164              		.global	Accel_y_ReadDataReg
+ 164              		.global	Accel_Y_ReadDataReg
  165              		.code	16
  166              		.thumb_func
- 167              		.type	Accel_y_ReadDataReg, %function
- 168              	Accel_y_ReadDataReg:
+ 167              		.type	Accel_Y_ReadDataReg, %function
+ 168              	Accel_Y_ReadDataReg:
  169              	.LFB3:
- 101:.\Generated_Source\PSoC4/Accel_y.c **** 
- 102:.\Generated_Source\PSoC4/Accel_y.c **** 
- 103:.\Generated_Source\PSoC4/Accel_y.c **** /*******************************************************************************
- 104:.\Generated_Source\PSoC4/Accel_y.c **** * Function Name: Accel_y_ReadDataReg
- 105:.\Generated_Source\PSoC4/Accel_y.c **** ********************************************************************************
- 106:.\Generated_Source\PSoC4/Accel_y.c **** *
- 107:.\Generated_Source\PSoC4/Accel_y.c **** * Summary:
- 108:.\Generated_Source\PSoC4/Accel_y.c **** *  Read the current value assigned to a Digital Port's data output register
- 109:.\Generated_Source\PSoC4/Accel_y.c **** *
- 110:.\Generated_Source\PSoC4/Accel_y.c **** * Parameters:  
- 111:.\Generated_Source\PSoC4/Accel_y.c **** *  None 
- 112:.\Generated_Source\PSoC4/Accel_y.c **** *
- 113:.\Generated_Source\PSoC4/Accel_y.c **** * Return: 
- 114:.\Generated_Source\PSoC4/Accel_y.c **** *  Returns the current value assigned to the Digital Port's data output register
- 115:.\Generated_Source\PSoC4/Accel_y.c **** *  
- 116:.\Generated_Source\PSoC4/Accel_y.c **** *******************************************************************************/
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 6
+ 101:.\Generated_Source\PSoC4/Accel_Y.c **** 
+ 102:.\Generated_Source\PSoC4/Accel_Y.c **** 
+ 103:.\Generated_Source\PSoC4/Accel_Y.c **** /*******************************************************************************
+ 104:.\Generated_Source\PSoC4/Accel_Y.c **** * Function Name: Accel_Y_ReadDataReg
+ 105:.\Generated_Source\PSoC4/Accel_Y.c **** ********************************************************************************
+ 106:.\Generated_Source\PSoC4/Accel_Y.c **** *
+ 107:.\Generated_Source\PSoC4/Accel_Y.c **** * Summary:
+ 108:.\Generated_Source\PSoC4/Accel_Y.c **** *  Read the current value assigned to a Digital Port's data output register
+ 109:.\Generated_Source\PSoC4/Accel_Y.c **** *
+ 110:.\Generated_Source\PSoC4/Accel_Y.c **** * Parameters:  
+ 111:.\Generated_Source\PSoC4/Accel_Y.c **** *  None 
+ 112:.\Generated_Source\PSoC4/Accel_Y.c **** *
+ 113:.\Generated_Source\PSoC4/Accel_Y.c **** * Return: 
+ 114:.\Generated_Source\PSoC4/Accel_Y.c **** *  Returns the current value assigned to the Digital Port's data output register
+ 115:.\Generated_Source\PSoC4/Accel_Y.c **** *  
+ 116:.\Generated_Source\PSoC4/Accel_Y.c **** *******************************************************************************/
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 6
 
 
- 117:.\Generated_Source\PSoC4/Accel_y.c **** uint8 Accel_y_ReadDataReg(void) 
- 118:.\Generated_Source\PSoC4/Accel_y.c **** {
+ 117:.\Generated_Source\PSoC4/Accel_Y.c **** uint8 Accel_Y_ReadDataReg(void) 
+ 118:.\Generated_Source\PSoC4/Accel_Y.c **** {
  170              		.loc 1 118 0
  171              		.cfi_startproc
  172 0000 80B5     		push	{r7, lr}
@@ -311,7 +311,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  175              		.cfi_offset 14, -4
  176 0002 00AF     		add	r7, sp, #0
  177              		.cfi_def_cfa_register 7
- 119:.\Generated_Source\PSoC4/Accel_y.c ****     return (uint8)((Accel_y_DR & Accel_y_MASK) >> Accel_y_SHIFT);
+ 119:.\Generated_Source\PSoC4/Accel_Y.c ****     return (uint8)((Accel_Y_DR & Accel_Y_MASK) >> Accel_Y_SHIFT);
  178              		.loc 1 119 0
  179 0004 044B     		ldr	r3, .L13
  180 0006 1A68     		ldr	r2, [r3]
@@ -319,7 +319,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  182 000a 1340     		and	r3, r2
  183 000c 5B08     		lsr	r3, r3, #1
  184 000e DBB2     		uxtb	r3, r3
- 120:.\Generated_Source\PSoC4/Accel_y.c **** }
+ 120:.\Generated_Source\PSoC4/Accel_Y.c **** }
  185              		.loc 1 120 0
  186 0010 181C     		mov	r0, r3
  187 0012 BD46     		mov	sp, r7
@@ -331,40 +331,40 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  193 0018 00030440 		.word	1074004736
  194              		.cfi_endproc
  195              	.LFE3:
- 196              		.size	Accel_y_ReadDataReg, .-Accel_y_ReadDataReg
- 197              		.section	.text.Accel_y_ClearInterrupt,"ax",%progbits
+ 196              		.size	Accel_Y_ReadDataReg, .-Accel_Y_ReadDataReg
+ 197              		.section	.text.Accel_Y_ClearInterrupt,"ax",%progbits
  198              		.align	2
- 199              		.global	Accel_y_ClearInterrupt
+ 199              		.global	Accel_Y_ClearInterrupt
  200              		.code	16
  201              		.thumb_func
- 202              		.type	Accel_y_ClearInterrupt, %function
- 203              	Accel_y_ClearInterrupt:
+ 202              		.type	Accel_Y_ClearInterrupt, %function
+ 203              	Accel_Y_ClearInterrupt:
  204              	.LFB4:
- 121:.\Generated_Source\PSoC4/Accel_y.c **** 
- 122:.\Generated_Source\PSoC4/Accel_y.c **** 
- 123:.\Generated_Source\PSoC4/Accel_y.c **** /* If Interrupts Are Enabled for this Pins component */ 
- 124:.\Generated_Source\PSoC4/Accel_y.c **** #if defined(Accel_y_INTSTAT) 
- 125:.\Generated_Source\PSoC4/Accel_y.c **** 
- 126:.\Generated_Source\PSoC4/Accel_y.c ****     /*******************************************************************************
- 127:.\Generated_Source\PSoC4/Accel_y.c ****     * Function Name: Accel_y_ClearInterrupt
- 128:.\Generated_Source\PSoC4/Accel_y.c ****     ********************************************************************************
- 129:.\Generated_Source\PSoC4/Accel_y.c ****     *
- 130:.\Generated_Source\PSoC4/Accel_y.c ****     * Summary:
- 131:.\Generated_Source\PSoC4/Accel_y.c ****     *  Clears any active interrupts attached to port and returns the value of the 
- 132:.\Generated_Source\PSoC4/Accel_y.c ****     *  interrupt status register.
- 133:.\Generated_Source\PSoC4/Accel_y.c ****     *
- 134:.\Generated_Source\PSoC4/Accel_y.c ****     * Parameters:  
- 135:.\Generated_Source\PSoC4/Accel_y.c ****     *  None 
- 136:.\Generated_Source\PSoC4/Accel_y.c ****     *
- 137:.\Generated_Source\PSoC4/Accel_y.c ****     * Return: 
- 138:.\Generated_Source\PSoC4/Accel_y.c ****     *  Returns the value of the interrupt status register
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 7
+ 121:.\Generated_Source\PSoC4/Accel_Y.c **** 
+ 122:.\Generated_Source\PSoC4/Accel_Y.c **** 
+ 123:.\Generated_Source\PSoC4/Accel_Y.c **** /* If Interrupts Are Enabled for this Pins component */ 
+ 124:.\Generated_Source\PSoC4/Accel_Y.c **** #if defined(Accel_Y_INTSTAT) 
+ 125:.\Generated_Source\PSoC4/Accel_Y.c **** 
+ 126:.\Generated_Source\PSoC4/Accel_Y.c ****     /*******************************************************************************
+ 127:.\Generated_Source\PSoC4/Accel_Y.c ****     * Function Name: Accel_Y_ClearInterrupt
+ 128:.\Generated_Source\PSoC4/Accel_Y.c ****     ********************************************************************************
+ 129:.\Generated_Source\PSoC4/Accel_Y.c ****     *
+ 130:.\Generated_Source\PSoC4/Accel_Y.c ****     * Summary:
+ 131:.\Generated_Source\PSoC4/Accel_Y.c ****     *  Clears any active interrupts attached to port and returns the value of the 
+ 132:.\Generated_Source\PSoC4/Accel_Y.c ****     *  interrupt status register.
+ 133:.\Generated_Source\PSoC4/Accel_Y.c ****     *
+ 134:.\Generated_Source\PSoC4/Accel_Y.c ****     * Parameters:  
+ 135:.\Generated_Source\PSoC4/Accel_Y.c ****     *  None 
+ 136:.\Generated_Source\PSoC4/Accel_Y.c ****     *
+ 137:.\Generated_Source\PSoC4/Accel_Y.c ****     * Return: 
+ 138:.\Generated_Source\PSoC4/Accel_Y.c ****     *  Returns the value of the interrupt status register
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 7
 
 
- 139:.\Generated_Source\PSoC4/Accel_y.c ****     *  
- 140:.\Generated_Source\PSoC4/Accel_y.c ****     *******************************************************************************/
- 141:.\Generated_Source\PSoC4/Accel_y.c ****     uint8 Accel_y_ClearInterrupt(void) 
- 142:.\Generated_Source\PSoC4/Accel_y.c ****     {
+ 139:.\Generated_Source\PSoC4/Accel_Y.c ****     *  
+ 140:.\Generated_Source\PSoC4/Accel_Y.c ****     *******************************************************************************/
+ 141:.\Generated_Source\PSoC4/Accel_Y.c ****     uint8 Accel_Y_ClearInterrupt(void) 
+ 142:.\Generated_Source\PSoC4/Accel_Y.c ****     {
  205              		.loc 1 142 0
  206              		.cfi_startproc
  207 0000 80B5     		push	{r7, lr}
@@ -375,7 +375,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  212              		.cfi_def_cfa_offset 16
  213 0004 00AF     		add	r7, sp, #0
  214              		.cfi_def_cfa_register 7
- 143:.\Generated_Source\PSoC4/Accel_y.c **** 		uint8 maskedStatus = (uint8)(Accel_y_INTSTAT & Accel_y_MASK);
+ 143:.\Generated_Source\PSoC4/Accel_Y.c **** 		uint8 maskedStatus = (uint8)(Accel_Y_INTSTAT & Accel_Y_MASK);
  215              		.loc 1 143 0
  216 0006 094B     		ldr	r3, .L17
  217 0008 1B68     		ldr	r3, [r3]
@@ -384,19 +384,19 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  220 000e 0222     		mov	r2, #2
  221 0010 0A40     		and	r2, r1
  222 0012 1A70     		strb	r2, [r3]
- 144:.\Generated_Source\PSoC4/Accel_y.c **** 		Accel_y_INTSTAT = maskedStatus;
+ 144:.\Generated_Source\PSoC4/Accel_Y.c **** 		Accel_Y_INTSTAT = maskedStatus;
  223              		.loc 1 144 0
  224 0014 054B     		ldr	r3, .L17
  225 0016 FA1D     		add	r2, r7, #7
  226 0018 1278     		ldrb	r2, [r2]
  227 001a 1A60     		str	r2, [r3]
- 145:.\Generated_Source\PSoC4/Accel_y.c ****         return maskedStatus >> Accel_y_SHIFT;
+ 145:.\Generated_Source\PSoC4/Accel_Y.c ****         return maskedStatus >> Accel_Y_SHIFT;
  228              		.loc 1 145 0
  229 001c FB1D     		add	r3, r7, #7
  230 001e 1B78     		ldrb	r3, [r3]
  231 0020 5B08     		lsr	r3, r3, #1
  232 0022 DBB2     		uxtb	r3, r3
- 146:.\Generated_Source\PSoC4/Accel_y.c ****     }
+ 146:.\Generated_Source\PSoC4/Accel_Y.c ****     }
  233              		.loc 1 146 0
  234 0024 181C     		mov	r0, r3
  235 0026 BD46     		mov	sp, r7
@@ -409,7 +409,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  242 002c 10030440 		.word	1074004752
  243              		.cfi_endproc
  244              	.LFE4:
- 245              		.size	Accel_y_ClearInterrupt, .-Accel_y_ClearInterrupt
+ 245              		.size	Accel_Y_ClearInterrupt, .-Accel_Y_ClearInterrupt
  246              		.text
  247              	.Letext0:
  248              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
@@ -418,50 +418,50 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  251 0000 48010000 		.4byte	0x148
  252 0004 0400     		.2byte	0x4
  253 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 8
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 8
 
 
  254 000a 04       		.byte	0x4
  255 000b 01       		.uleb128 0x1
- 256 000c 31010000 		.4byte	.LASF24
+ 256 000c D6000000 		.4byte	.LASF24
  257 0010 01       		.byte	0x1
- 258 0011 64000000 		.4byte	.LASF25
- 259 0015 06000000 		.4byte	.LASF26
+ 258 0011 06000000 		.4byte	.LASF25
+ 259 0015 C1010000 		.4byte	.LASF26
  260 0019 00000000 		.4byte	.Ldebug_ranges0+0
  261 001d 00000000 		.4byte	0
  262 0021 00000000 		.4byte	.Ldebug_line0
  263 0025 02       		.uleb128 0x2
  264 0026 01       		.byte	0x1
  265 0027 06       		.byte	0x6
- 266 0028 0D020000 		.4byte	.LASF0
+ 266 0028 B5010000 		.4byte	.LASF0
  267 002c 02       		.uleb128 0x2
  268 002d 01       		.byte	0x1
  269 002e 08       		.byte	0x8
- 270 002f DD000000 		.4byte	.LASF1
+ 270 002f 4C000000 		.4byte	.LASF1
  271 0033 02       		.uleb128 0x2
  272 0034 02       		.byte	0x2
  273 0035 05       		.byte	0x5
- 274 0036 F4010000 		.4byte	.LASF2
+ 274 0036 9C010000 		.4byte	.LASF2
  275 003a 02       		.uleb128 0x2
  276 003b 02       		.byte	0x2
  277 003c 07       		.byte	0x7
- 278 003d 03010000 		.4byte	.LASF3
+ 278 003d 87000000 		.4byte	.LASF3
  279 0041 02       		.uleb128 0x2
  280 0042 04       		.byte	0x4
  281 0043 05       		.byte	0x5
- 282 0044 04020000 		.4byte	.LASF4
+ 282 0044 AC010000 		.4byte	.LASF4
  283 0048 02       		.uleb128 0x2
  284 0049 04       		.byte	0x4
  285 004a 07       		.byte	0x7
- 286 004b F1000000 		.4byte	.LASF5
+ 286 004b 75000000 		.4byte	.LASF5
  287 004f 02       		.uleb128 0x2
  288 0050 08       		.byte	0x8
  289 0051 05       		.byte	0x5
- 290 0052 D4010000 		.4byte	.LASF6
+ 290 0052 7C010000 		.4byte	.LASF6
  291 0056 02       		.uleb128 0x2
  292 0057 08       		.byte	0x8
  293 0058 07       		.byte	0x7
- 294 0059 C6000000 		.4byte	.LASF7
+ 294 0059 35000000 		.4byte	.LASF7
  295 005d 03       		.uleb128 0x3
  296 005e 04       		.byte	0x4
  297 005f 05       		.byte	0x5
@@ -469,16 +469,16 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  299 0064 02       		.uleb128 0x2
  300 0065 04       		.byte	0x4
  301 0066 07       		.byte	0x7
- 302 0067 24010000 		.4byte	.LASF8
+ 302 0067 C9000000 		.4byte	.LASF8
  303 006b 04       		.uleb128 0x4
- 304 006c FE010000 		.4byte	.LASF9
+ 304 006c A6010000 		.4byte	.LASF9
  305 0070 02       		.byte	0x2
  306 0071 A1       		.byte	0xa1
  307 0072 2C000000 		.4byte	0x2c
  308 0076 04       		.uleb128 0x4
- 309 0077 1D010000 		.4byte	.LASF10
+ 309 0077 C2000000 		.4byte	.LASF10
  310 007b 02       		.byte	0x2
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 9
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 9
 
 
  311 007c A3       		.byte	0xa3
@@ -486,15 +486,15 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  313 0081 02       		.uleb128 0x2
  314 0082 04       		.byte	0x4
  315 0083 04       		.byte	0x4
- 316 0084 C0000000 		.4byte	.LASF11
+ 316 0084 2F000000 		.4byte	.LASF11
  317 0088 02       		.uleb128 0x2
  318 0089 08       		.byte	0x8
  319 008a 04       		.byte	0x4
- 320 008b 16010000 		.4byte	.LASF12
+ 320 008b A7000000 		.4byte	.LASF12
  321 008f 02       		.uleb128 0x2
  322 0090 01       		.byte	0x1
  323 0091 08       		.byte	0x8
- 324 0092 EF010000 		.4byte	.LASF13
+ 324 0092 97010000 		.4byte	.LASF13
  325 0096 05       		.uleb128 0x5
  326 0097 00000000 		.4byte	.LASF14
  327 009b 02       		.byte	0x2
@@ -503,7 +503,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  330 00a2 06       		.uleb128 0x6
  331 00a3 76000000 		.4byte	0x76
  332 00a7 07       		.uleb128 0x7
- 333 00a8 9B000000 		.4byte	.LASF15
+ 333 00a8 6E010000 		.4byte	.LASF15
  334 00ac 01       		.byte	0x1
  335 00ad 2A       		.byte	0x2a
  336 00ae 00000000 		.4byte	.LFB0
@@ -512,7 +512,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  339 00b7 9C       		.byte	0x9c
  340 00b8 D9000000 		.4byte	0xd9
  341 00bc 08       		.uleb128 0x8
- 342 00bd 5E000000 		.4byte	.LASF17
+ 342 00bd 29000000 		.4byte	.LASF17
  343 00c1 01       		.byte	0x1
  344 00c2 2A       		.byte	0x2a
  345 00c3 6B000000 		.4byte	0x6b
@@ -520,7 +520,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  347 00c8 91       		.byte	0x91
  348 00c9 6F       		.sleb128 -17
  349 00ca 09       		.uleb128 0x9
- 350 00cb EB000000 		.4byte	.LASF22
+ 350 00cb 5A000000 		.4byte	.LASF22
  351 00cf 01       		.byte	0x1
  352 00d0 2C       		.byte	0x2c
  353 00d1 6B000000 		.4byte	0x6b
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  356 00d7 77       		.sleb128 -9
  357 00d8 00       		.byte	0
  358 00d9 07       		.uleb128 0x7
- 359 00da AD010000 		.4byte	.LASF16
+ 359 00da 60000000 		.4byte	.LASF16
  360 00de 01       		.byte	0x1
  361 00df 49       		.byte	0x49
  362 00e0 00000000 		.4byte	.LFB1
@@ -538,10 +538,10 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  365 00e9 9C       		.byte	0x9c
  366 00ea FD000000 		.4byte	0xfd
  367 00ee 08       		.uleb128 0x8
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 10
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 10
 
 
- 368 00ef CF010000 		.4byte	.LASF18
+ 368 00ef 52010000 		.4byte	.LASF18
  369 00f3 01       		.byte	0x1
  370 00f4 49       		.byte	0x49
  371 00f5 6B000000 		.4byte	0x6b
@@ -550,7 +550,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  374 00fb 77       		.sleb128 -9
  375 00fc 00       		.byte	0
  376 00fd 0A       		.uleb128 0xa
- 377 00fe C2010000 		.4byte	.LASF19
+ 377 00fe 9A000000 		.4byte	.LASF19
  378 0102 01       		.byte	0x1
  379 0103 61       		.byte	0x61
  380 0104 6B000000 		.4byte	0x6b
@@ -559,7 +559,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  383 0110 01       		.uleb128 0x1
  384 0111 9C       		.byte	0x9c
  385 0112 0A       		.uleb128 0xa
- 386 0113 87000000 		.4byte	.LASF20
+ 386 0113 AE000000 		.4byte	.LASF20
  387 0117 01       		.byte	0x1
  388 0118 75       		.byte	0x75
  389 0119 6B000000 		.4byte	0x6b
@@ -568,7 +568,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  392 0125 01       		.uleb128 0x1
  393 0126 9C       		.byte	0x9c
  394 0127 0B       		.uleb128 0xb
- 395 0128 A9000000 		.4byte	.LASF21
+ 395 0128 57010000 		.4byte	.LASF21
  396 012c 01       		.byte	0x1
  397 012d 8D       		.byte	0x8d
  398 012e 6B000000 		.4byte	0x6b
@@ -577,7 +577,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  401 013a 01       		.uleb128 0x1
  402 013b 9C       		.byte	0x9c
  403 013c 09       		.uleb128 0x9
- 404 013d E2010000 		.4byte	.LASF23
+ 404 013d 8A010000 		.4byte	.LASF23
  405 0141 01       		.byte	0x1
  406 0142 8F       		.byte	0x8f
  407 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  422 0007 03       		.uleb128 0x3
  423 0008 0E       		.uleb128 0xe
  424 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 11
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 11
 
 
  425 000a 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  479 0040 13       		.uleb128 0x13
  480 0041 00       		.byte	0
  481 0042 00       		.byte	0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 12
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 12
 
 
  482 0043 06       		.uleb128 0x6
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  536 007a 3B       		.uleb128 0x3b
  537 007b 0B       		.uleb128 0xb
  538 007c 49       		.uleb128 0x49
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 13
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 13
 
 
  539 007d 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  593 00b5 00       		.byte	0
  594 00b6 00       		.byte	0
  595              		.section	.debug_aranges,"",%progbits
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 14
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 14
 
 
  596 0000 3C000000 		.4byte	0x3c
@@ -824,148 +824,150 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 1
  632              	.LASF14:
  633 0000 72656733 		.ascii	"reg32\000"
  633      3200
- 634              	.LASF26:
- 635 0006 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\Accelero"
- 635      73657273 
- 635      5C6A7369 
- 635      6E675C44 
- 635      6F63756D 
- 636 0034 6D657465 		.ascii	"meter Testing\\Accelerometer Testing.cydsn\000"
- 636      72205465 
- 636      7374696E 
- 636      675C4163 
- 636      63656C65 
- 637              	.LASF17:
- 638 005e 76616C75 		.ascii	"value\000"
- 638      6500
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 15
+ 634              	.LASF25:
+ 635 0006 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Accel_Y.c\000"
+ 635      6E657261 
+ 635      7465645F 
+ 635      536F7572 
+ 635      63655C50 
+ 636              	.LASF17:
+ 637 0029 76616C75 		.ascii	"value\000"
+ 637      6500
+ 638              	.LASF11:
+ 639 002f 666C6F61 		.ascii	"float\000"
+ 639      7400
+ 640              	.LASF7:
+ 641 0035 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 15
 
 
- 639              	.LASF25:
- 640 0064 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Accel_y.c\000"
- 640      6E657261 
- 640      7465645F 
- 640      536F7572 
- 640      63655C50 
- 641              	.LASF20:
- 642 0087 41636365 		.ascii	"Accel_y_ReadDataReg\000"
- 642      6C5F795F 
- 642      52656164 
- 642      44617461 
- 642      52656700 
- 643              	.LASF15:
- 644 009b 41636365 		.ascii	"Accel_y_Write\000"
- 644      6C5F795F 
- 644      57726974 
- 644      6500
- 645              	.LASF21:
- 646 00a9 41636365 		.ascii	"Accel_y_ClearInterrupt\000"
- 646      6C5F795F 
- 646      436C6561 
- 646      72496E74 
- 646      65727275 
- 647              	.LASF11:
- 648 00c0 666C6F61 		.ascii	"float\000"
- 648      7400
- 649              	.LASF7:
- 650 00c6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 650      206C6F6E 
- 650      6720756E 
- 650      7369676E 
- 650      65642069 
- 651              	.LASF1:
- 652 00dd 756E7369 		.ascii	"unsigned char\000"
- 652      676E6564 
- 652      20636861 
- 652      7200
- 653              	.LASF22:
- 654 00eb 64725661 		.ascii	"drVal\000"
- 654      6C00
- 655              	.LASF5:
- 656 00f1 6C6F6E67 		.ascii	"long unsigned int\000"
- 656      20756E73 
- 656      69676E65 
- 656      6420696E 
- 656      7400
- 657              	.LASF3:
- 658 0103 73686F72 		.ascii	"short unsigned int\000"
- 658      7420756E 
- 658      7369676E 
- 658      65642069 
- 658      6E7400
- 659              	.LASF12:
- 660 0116 646F7562 		.ascii	"double\000"
- 660      6C6500
- 661              	.LASF10:
- 662 011d 75696E74 		.ascii	"uint32\000"
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 16
+ 641      206C6F6E 
+ 641      6720756E 
+ 641      7369676E 
+ 641      65642069 
+ 642              	.LASF1:
+ 643 004c 756E7369 		.ascii	"unsigned char\000"
+ 643      676E6564 
+ 643      20636861 
+ 643      7200
+ 644              	.LASF22:
+ 645 005a 64725661 		.ascii	"drVal\000"
+ 645      6C00
+ 646              	.LASF16:
+ 647 0060 41636365 		.ascii	"Accel_Y_SetDriveMode\000"
+ 647      6C5F595F 
+ 647      53657444 
+ 647      72697665 
+ 647      4D6F6465 
+ 648              	.LASF5:
+ 649 0075 6C6F6E67 		.ascii	"long unsigned int\000"
+ 649      20756E73 
+ 649      69676E65 
+ 649      6420696E 
+ 649      7400
+ 650              	.LASF3:
+ 651 0087 73686F72 		.ascii	"short unsigned int\000"
+ 651      7420756E 
+ 651      7369676E 
+ 651      65642069 
+ 651      6E7400
+ 652              	.LASF19:
+ 653 009a 41636365 		.ascii	"Accel_Y_Read\000"
+ 653      6C5F595F 
+ 653      52656164 
+ 653      00
+ 654              	.LASF12:
+ 655 00a7 646F7562 		.ascii	"double\000"
+ 655      6C6500
+ 656              	.LASF20:
+ 657 00ae 41636365 		.ascii	"Accel_Y_ReadDataReg\000"
+ 657      6C5F595F 
+ 657      52656164 
+ 657      44617461 
+ 657      52656700 
+ 658              	.LASF10:
+ 659 00c2 75696E74 		.ascii	"uint32\000"
+ 659      333200
+ 660              	.LASF8:
+ 661 00c9 756E7369 		.ascii	"unsigned int\000"
+ 661      676E6564 
+ 661      20696E74 
+ 661      00
+ 662              	.LASF24:
+ 663 00d6 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 663      4320342E 
+ 663      382E3420 
+ 663      32303134 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 16
 
 
- 662      333200
- 663              	.LASF8:
- 664 0124 756E7369 		.ascii	"unsigned int\000"
- 664      676E6564 
- 664      20696E74 
- 664      00
- 665              	.LASF24:
- 666 0131 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 666      4320342E 
- 666      382E3420 
- 666      32303134 
- 666      30353236 
- 667 0164 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 667      20726576 
- 667      6973696F 
- 667      6E203231 
- 667      31333538 
- 668 0197 30202D66 		.ascii	"0 -ffunction-sections\000"
- 668      66756E63 
- 668      74696F6E 
- 668      2D736563 
- 668      74696F6E 
- 669              	.LASF16:
- 670 01ad 41636365 		.ascii	"Accel_y_SetDriveMode\000"
- 670      6C5F795F 
- 670      53657444 
- 670      72697665 
- 670      4D6F6465 
- 671              	.LASF19:
- 672 01c2 41636365 		.ascii	"Accel_y_Read\000"
- 672      6C5F795F 
- 672      52656164 
- 672      00
- 673              	.LASF18:
- 674 01cf 6D6F6465 		.ascii	"mode\000"
- 674      00
- 675              	.LASF6:
- 676 01d4 6C6F6E67 		.ascii	"long long int\000"
- 676      206C6F6E 
- 676      6720696E 
- 676      7400
- 677              	.LASF23:
- 678 01e2 6D61736B 		.ascii	"maskedStatus\000"
- 678      65645374 
- 678      61747573 
- 678      00
- 679              	.LASF13:
- 680 01ef 63686172 		.ascii	"char\000"
- 680      00
- 681              	.LASF2:
- 682 01f4 73686F72 		.ascii	"short int\000"
- 682      7420696E 
- 682      7400
- 683              	.LASF9:
- 684 01fe 75696E74 		.ascii	"uint8\000"
- 684      3800
- 685              	.LASF4:
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccx81Lcb.s 			page 17
+ 663      30353236 
+ 664 0109 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 664      20726576 
+ 664      6973696F 
+ 664      6E203231 
+ 664      31333538 
+ 665 013c 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 665      66756E63 
+ 665      74696F6E 
+ 665      2D736563 
+ 665      74696F6E 
+ 666              	.LASF18:
+ 667 0152 6D6F6465 		.ascii	"mode\000"
+ 667      00
+ 668              	.LASF21:
+ 669 0157 41636365 		.ascii	"Accel_Y_ClearInterrupt\000"
+ 669      6C5F595F 
+ 669      436C6561 
+ 669      72496E74 
+ 669      65727275 
+ 670              	.LASF15:
+ 671 016e 41636365 		.ascii	"Accel_Y_Write\000"
+ 671      6C5F595F 
+ 671      57726974 
+ 671      6500
+ 672              	.LASF6:
+ 673 017c 6C6F6E67 		.ascii	"long long int\000"
+ 673      206C6F6E 
+ 673      6720696E 
+ 673      7400
+ 674              	.LASF23:
+ 675 018a 6D61736B 		.ascii	"maskedStatus\000"
+ 675      65645374 
+ 675      61747573 
+ 675      00
+ 676              	.LASF13:
+ 677 0197 63686172 		.ascii	"char\000"
+ 677      00
+ 678              	.LASF2:
+ 679 019c 73686F72 		.ascii	"short int\000"
+ 679      7420696E 
+ 679      7400
+ 680              	.LASF9:
+ 681 01a6 75696E74 		.ascii	"uint8\000"
+ 681      3800
+ 682              	.LASF4:
+ 683 01ac 6C6F6E67 		.ascii	"long int\000"
+ 683      20696E74 
+ 683      00
+ 684              	.LASF0:
+ 685 01b5 7369676E 		.ascii	"signed char\000"
+ 685      65642063 
+ 685      68617200 
+ 686              	.LASF26:
+ 687 01c1 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\lastProj"
+ 687      73657273 
+ 687      5C6A7369 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccjGadsj.s 			page 17
 
 
- 686 0204 6C6F6E67 		.ascii	"long int\000"
- 686      20696E74 
- 686      00
- 687              	.LASF0:
- 688 020d 7369676E 		.ascii	"signed char\000"
- 688      65642063 
- 688      68617200 
- 689              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 687      6E675C44 
+ 687      6F63756D 
+ 688 01ef 6563745C 		.ascii	"ect\\Accelerometer Testing\\Accelerometer Testing.c"
+ 688      41636365 
+ 688      6C65726F 
+ 688      6D657465 
+ 688      72205465 
+ 689 0220 7964736E 		.ascii	"ydsn\000"
+ 689      00
+ 690              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

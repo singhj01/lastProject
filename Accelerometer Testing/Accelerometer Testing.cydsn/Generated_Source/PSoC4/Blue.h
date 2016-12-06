@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Blue.h  
+* File Name: BLUE.h  
 * Version 2.10
 *
 * Description:
@@ -14,23 +14,23 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Blue_H) /* Pins Blue_H */
-#define CY_PINS_Blue_H
+#if !defined(CY_PINS_BLUE_H) /* Pins BLUE_H */
+#define CY_PINS_BLUE_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
-#include "Blue_aliases.h"
+#include "BLUE_aliases.h"
 
 
 /***************************************
 *        Function Prototypes             
 ***************************************/    
 
-void    Blue_Write(uint8 value) ;
-void    Blue_SetDriveMode(uint8 mode) ;
-uint8   Blue_ReadDataReg(void) ;
-uint8   Blue_Read(void) ;
-uint8   Blue_ClearInterrupt(void) ;
+void    BLUE_Write(uint8 value) ;
+void    BLUE_SetDriveMode(uint8 mode) ;
+uint8   BLUE_ReadDataReg(void) ;
+uint8   BLUE_Read(void) ;
+uint8   BLUE_ClearInterrupt(void) ;
 
 
 /***************************************
@@ -38,22 +38,22 @@ uint8   Blue_ClearInterrupt(void) ;
 ***************************************/
 
 /* Drive Modes */
-#define Blue_DRIVE_MODE_BITS        (3)
-#define Blue_DRIVE_MODE_IND_MASK    (0xFFFFFFFFu >> (32 - Blue_DRIVE_MODE_BITS))
+#define BLUE_DRIVE_MODE_BITS        (3)
+#define BLUE_DRIVE_MODE_IND_MASK    (0xFFFFFFFFu >> (32 - BLUE_DRIVE_MODE_BITS))
 
-#define Blue_DM_ALG_HIZ         (0x00u)
-#define Blue_DM_DIG_HIZ         (0x01u)
-#define Blue_DM_RES_UP          (0x02u)
-#define Blue_DM_RES_DWN         (0x03u)
-#define Blue_DM_OD_LO           (0x04u)
-#define Blue_DM_OD_HI           (0x05u)
-#define Blue_DM_STRONG          (0x06u)
-#define Blue_DM_RES_UPDWN       (0x07u)
+#define BLUE_DM_ALG_HIZ         (0x00u)
+#define BLUE_DM_DIG_HIZ         (0x01u)
+#define BLUE_DM_RES_UP          (0x02u)
+#define BLUE_DM_RES_DWN         (0x03u)
+#define BLUE_DM_OD_LO           (0x04u)
+#define BLUE_DM_OD_HI           (0x05u)
+#define BLUE_DM_STRONG          (0x06u)
+#define BLUE_DM_RES_UPDWN       (0x07u)
 
 /* Digital Port Constants */
-#define Blue_MASK               Blue__MASK
-#define Blue_SHIFT              Blue__SHIFT
-#define Blue_WIDTH              1u
+#define BLUE_MASK               BLUE__MASK
+#define BLUE_SHIFT              BLUE__SHIFT
+#define BLUE_WIDTH              1u
 
 
 /***************************************
@@ -62,18 +62,18 @@ uint8   Blue_ClearInterrupt(void) ;
 
 /* Main Port Registers */
 /* Pin State */
-#define Blue_PS                     (* (reg32 *) Blue__PS)
+#define BLUE_PS                     (* (reg32 *) BLUE__PS)
 /* Port Configuration */
-#define Blue_PC                     (* (reg32 *) Blue__PC)
+#define BLUE_PC                     (* (reg32 *) BLUE__PC)
 /* Data Register */
-#define Blue_DR                     (* (reg32 *) Blue__DR)
+#define BLUE_DR                     (* (reg32 *) BLUE__DR)
 /* Input Buffer Disable Override */
-#define Blue_INP_DIS                (* (reg32 *) Blue__PC2)
+#define BLUE_INP_DIS                (* (reg32 *) BLUE__PC2)
 
 
-#if defined(Blue__INTSTAT)  /* Interrupt Registers */
+#if defined(BLUE__INTSTAT)  /* Interrupt Registers */
 
-    #define Blue_INTSTAT                (* (reg32 *) Blue__INTSTAT)
+    #define BLUE_INTSTAT                (* (reg32 *) BLUE__INTSTAT)
 
 #endif /* Interrupt Registers */
 
@@ -83,11 +83,11 @@ uint8   Blue_ClearInterrupt(void) ;
 * must not be used.
 ***************************************/
 
-#define Blue_DRIVE_MODE_SHIFT       (0x00u)
-#define Blue_DRIVE_MODE_MASK        (0x07u << Blue_DRIVE_MODE_SHIFT)
+#define BLUE_DRIVE_MODE_SHIFT       (0x00u)
+#define BLUE_DRIVE_MODE_MASK        (0x07u << BLUE_DRIVE_MODE_SHIFT)
 
 
-#endif /* End Pins Blue_H */
+#endif /* End Pins BLUE_H */
 
 
 /* [] END OF FILE */

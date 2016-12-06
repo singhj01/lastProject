@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Accel_y.c  
+* File Name: Accel_Y.c  
 * Version 2.10
 *
 * Description:
@@ -15,18 +15,18 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Accel_y.h"
+#include "Accel_Y.h"
 
 #define SetP4PinDriveMode(shift, mode)  \
     do { \
-        Accel_y_PC =   (Accel_y_PC & \
-                                (uint32)(~(uint32)(Accel_y_DRIVE_MODE_IND_MASK << (Accel_y_DRIVE_MODE_BITS * (shift))))) | \
-                                (uint32)((uint32)(mode) << (Accel_y_DRIVE_MODE_BITS * (shift))); \
+        Accel_Y_PC =   (Accel_Y_PC & \
+                                (uint32)(~(uint32)(Accel_Y_DRIVE_MODE_IND_MASK << (Accel_Y_DRIVE_MODE_BITS * (shift))))) | \
+                                (uint32)((uint32)(mode) << (Accel_Y_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 
 
 /*******************************************************************************
-* Function Name: Accel_y_Write
+* Function Name: Accel_Y_Write
 ********************************************************************************
 *
 * Summary:
@@ -39,16 +39,16 @@
 *  None 
 *  
 *******************************************************************************/
-void Accel_y_Write(uint8 value) 
+void Accel_Y_Write(uint8 value) 
 {
-    uint8 drVal = (uint8)(Accel_y_DR & (uint8)(~Accel_y_MASK));
-    drVal = (drVal | ((uint8)(value << Accel_y_SHIFT) & Accel_y_MASK));
-    Accel_y_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(Accel_Y_DR & (uint8)(~Accel_Y_MASK));
+    drVal = (drVal | ((uint8)(value << Accel_Y_SHIFT) & Accel_Y_MASK));
+    Accel_Y_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: Accel_y_SetDriveMode
+* Function Name: Accel_Y_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -57,27 +57,27 @@ void Accel_y_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  Accel_y_DM_STRONG     Strong Drive 
-*  Accel_y_DM_OD_HI      Open Drain, Drives High 
-*  Accel_y_DM_OD_LO      Open Drain, Drives Low 
-*  Accel_y_DM_RES_UP     Resistive Pull Up 
-*  Accel_y_DM_RES_DWN    Resistive Pull Down 
-*  Accel_y_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  Accel_y_DM_DIG_HIZ    High Impedance Digital 
-*  Accel_y_DM_ALG_HIZ    High Impedance Analog 
+*  Accel_Y_DM_STRONG     Strong Drive 
+*  Accel_Y_DM_OD_HI      Open Drain, Drives High 
+*  Accel_Y_DM_OD_LO      Open Drain, Drives Low 
+*  Accel_Y_DM_RES_UP     Resistive Pull Up 
+*  Accel_Y_DM_RES_DWN    Resistive Pull Down 
+*  Accel_Y_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  Accel_Y_DM_DIG_HIZ    High Impedance Digital 
+*  Accel_Y_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void Accel_y_SetDriveMode(uint8 mode) 
+void Accel_Y_SetDriveMode(uint8 mode) 
 {
-	SetP4PinDriveMode(Accel_y__0__SHIFT, mode);
+	SetP4PinDriveMode(Accel_Y__0__SHIFT, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Accel_y_Read
+* Function Name: Accel_Y_Read
 ********************************************************************************
 *
 * Summary:
@@ -91,17 +91,17 @@ void Accel_y_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro Accel_y_ReadPS calls this function. 
+*  Macro Accel_Y_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 Accel_y_Read(void) 
+uint8 Accel_Y_Read(void) 
 {
-    return (uint8)((Accel_y_PS & Accel_y_MASK) >> Accel_y_SHIFT);
+    return (uint8)((Accel_Y_PS & Accel_Y_MASK) >> Accel_Y_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Accel_y_ReadDataReg
+* Function Name: Accel_Y_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -114,17 +114,17 @@ uint8 Accel_y_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 Accel_y_ReadDataReg(void) 
+uint8 Accel_Y_ReadDataReg(void) 
 {
-    return (uint8)((Accel_y_DR & Accel_y_MASK) >> Accel_y_SHIFT);
+    return (uint8)((Accel_Y_DR & Accel_Y_MASK) >> Accel_Y_SHIFT);
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(Accel_y_INTSTAT) 
+#if defined(Accel_Y_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Accel_y_ClearInterrupt
+    * Function Name: Accel_Y_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -138,11 +138,11 @@ uint8 Accel_y_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 Accel_y_ClearInterrupt(void) 
+    uint8 Accel_Y_ClearInterrupt(void) 
     {
-		uint8 maskedStatus = (uint8)(Accel_y_INTSTAT & Accel_y_MASK);
-		Accel_y_INTSTAT = maskedStatus;
-        return maskedStatus >> Accel_y_SHIFT;
+		uint8 maskedStatus = (uint8)(Accel_Y_INTSTAT & Accel_Y_MASK);
+		Accel_Y_INTSTAT = maskedStatus;
+        return maskedStatus >> Accel_Y_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

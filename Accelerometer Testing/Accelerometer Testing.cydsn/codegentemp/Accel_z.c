@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Accel_z.c  
+* File Name: Accel_Z.c  
 * Version 2.10
 *
 * Description:
@@ -15,18 +15,18 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Accel_z.h"
+#include "Accel_Z.h"
 
 #define SetP4PinDriveMode(shift, mode)  \
     do { \
-        Accel_z_PC =   (Accel_z_PC & \
-                                (uint32)(~(uint32)(Accel_z_DRIVE_MODE_IND_MASK << (Accel_z_DRIVE_MODE_BITS * (shift))))) | \
-                                (uint32)((uint32)(mode) << (Accel_z_DRIVE_MODE_BITS * (shift))); \
+        Accel_Z_PC =   (Accel_Z_PC & \
+                                (uint32)(~(uint32)(Accel_Z_DRIVE_MODE_IND_MASK << (Accel_Z_DRIVE_MODE_BITS * (shift))))) | \
+                                (uint32)((uint32)(mode) << (Accel_Z_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 
 
 /*******************************************************************************
-* Function Name: Accel_z_Write
+* Function Name: Accel_Z_Write
 ********************************************************************************
 *
 * Summary:
@@ -39,16 +39,16 @@
 *  None 
 *  
 *******************************************************************************/
-void Accel_z_Write(uint8 value) 
+void Accel_Z_Write(uint8 value) 
 {
-    uint8 drVal = (uint8)(Accel_z_DR & (uint8)(~Accel_z_MASK));
-    drVal = (drVal | ((uint8)(value << Accel_z_SHIFT) & Accel_z_MASK));
-    Accel_z_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(Accel_Z_DR & (uint8)(~Accel_Z_MASK));
+    drVal = (drVal | ((uint8)(value << Accel_Z_SHIFT) & Accel_Z_MASK));
+    Accel_Z_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: Accel_z_SetDriveMode
+* Function Name: Accel_Z_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -57,27 +57,27 @@ void Accel_z_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  Accel_z_DM_STRONG     Strong Drive 
-*  Accel_z_DM_OD_HI      Open Drain, Drives High 
-*  Accel_z_DM_OD_LO      Open Drain, Drives Low 
-*  Accel_z_DM_RES_UP     Resistive Pull Up 
-*  Accel_z_DM_RES_DWN    Resistive Pull Down 
-*  Accel_z_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  Accel_z_DM_DIG_HIZ    High Impedance Digital 
-*  Accel_z_DM_ALG_HIZ    High Impedance Analog 
+*  Accel_Z_DM_STRONG     Strong Drive 
+*  Accel_Z_DM_OD_HI      Open Drain, Drives High 
+*  Accel_Z_DM_OD_LO      Open Drain, Drives Low 
+*  Accel_Z_DM_RES_UP     Resistive Pull Up 
+*  Accel_Z_DM_RES_DWN    Resistive Pull Down 
+*  Accel_Z_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  Accel_Z_DM_DIG_HIZ    High Impedance Digital 
+*  Accel_Z_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void Accel_z_SetDriveMode(uint8 mode) 
+void Accel_Z_SetDriveMode(uint8 mode) 
 {
-	SetP4PinDriveMode(Accel_z__0__SHIFT, mode);
+	SetP4PinDriveMode(Accel_Z__0__SHIFT, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Accel_z_Read
+* Function Name: Accel_Z_Read
 ********************************************************************************
 *
 * Summary:
@@ -91,17 +91,17 @@ void Accel_z_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro Accel_z_ReadPS calls this function. 
+*  Macro Accel_Z_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 Accel_z_Read(void) 
+uint8 Accel_Z_Read(void) 
 {
-    return (uint8)((Accel_z_PS & Accel_z_MASK) >> Accel_z_SHIFT);
+    return (uint8)((Accel_Z_PS & Accel_Z_MASK) >> Accel_Z_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Accel_z_ReadDataReg
+* Function Name: Accel_Z_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -114,17 +114,17 @@ uint8 Accel_z_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 Accel_z_ReadDataReg(void) 
+uint8 Accel_Z_ReadDataReg(void) 
 {
-    return (uint8)((Accel_z_DR & Accel_z_MASK) >> Accel_z_SHIFT);
+    return (uint8)((Accel_Z_DR & Accel_Z_MASK) >> Accel_Z_SHIFT);
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(Accel_z_INTSTAT) 
+#if defined(Accel_Z_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Accel_z_ClearInterrupt
+    * Function Name: Accel_Z_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -138,11 +138,11 @@ uint8 Accel_z_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 Accel_z_ClearInterrupt(void) 
+    uint8 Accel_Z_ClearInterrupt(void) 
     {
-		uint8 maskedStatus = (uint8)(Accel_z_INTSTAT & Accel_z_MASK);
-		Accel_z_INTSTAT = maskedStatus;
-        return maskedStatus >> Accel_z_SHIFT;
+		uint8 maskedStatus = (uint8)(Accel_Z_INTSTAT & Accel_Z_MASK);
+		Accel_Z_INTSTAT = maskedStatus;
+        return maskedStatus >> Accel_Z_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

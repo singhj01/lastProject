@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Blue.h  
+* File Name: BLUE.h  
 * Version 2.10
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Blue_ALIASES_H) /* Pins Blue_ALIASES_H */
-#define CY_PINS_Blue_ALIASES_H
+#if !defined(CY_PINS_BLUE_ALIASES_H) /* Pins BLUE_ALIASES_H */
+#define CY_PINS_BLUE_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,14 +26,14 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Blue_0		(Blue__0__PC)
-#define Blue_0_PS		(Blue__0__PS)
-#define Blue_0_PC		(Blue__0__PC)
-#define Blue_0_DR		(Blue__0__DR)
-#define Blue_0_SHIFT	(Blue__0__SHIFT)
+#define BLUE_0		(BLUE__0__PC)
+#define BLUE_0_PS		(BLUE__0__PS)
+#define BLUE_0_PC		(BLUE__0__PC)
+#define BLUE_0_DR		(BLUE__0__DR)
+#define BLUE_0_SHIFT	(BLUE__0__SHIFT)
 
 
-#endif /* End Pins Blue_ALIASES_H */
+#endif /* End Pins BLUE_ALIASES_H */
 
 
 /* [] END OF FILE */

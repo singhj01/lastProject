@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 1
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -17,15 +17,37 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 1
   14              		.text
   15              	.Ltext0:
   16              		.cfi_sections	.debug_frame
-  17              		.section	.text.colorChange,"ax",%progbits
-  18              		.align	2
-  19              		.global	colorChange
-  20              		.code	16
-  21              		.thumb_func
-  22              		.type	colorChange, %function
-  23              	colorChange:
-  24              	.LFB35:
-  25              		.file 1 ".\\main.c"
+  17              		.global	X_DEFAULT
+  18              		.data
+  19              		.align	1
+  20              		.type	X_DEFAULT, %object
+  21              		.size	X_DEFAULT, 2
+  22              	X_DEFAULT:
+  23 0000 6206     		.short	1634
+  24              		.global	Y_DEFAULT
+  25              		.align	1
+  26              		.type	Y_DEFAULT, %object
+  27              		.size	Y_DEFAULT, 2
+  28              	Y_DEFAULT:
+  29 0002 0606     		.short	1542
+  30              		.global	Z_DEFAULT
+  31              		.align	1
+  32              		.type	Z_DEFAULT, %object
+  33              		.size	Z_DEFAULT, 2
+  34              	Z_DEFAULT:
+  35 0004 FB04     		.short	1275
+  36              		.comm	ADC_x_current,2,2
+  37              		.comm	ADC_y_current,2,2
+  38              		.comm	ADC_z_current,2,2
+  39              		.section	.text.colorChange,"ax",%progbits
+  40              		.align	2
+  41              		.global	colorChange
+  42              		.code	16
+  43              		.thumb_func
+  44              		.type	colorChange, %function
+  45              	colorChange:
+  46              	.LFB35:
+  47              		.file 1 ".\\main.c"
    1:.\main.c      **** /* ========================================
    2:.\main.c      ****  *
    3:.\main.c      ****  * Copyright YOUR COMPANY, THE YEAR
@@ -36,697 +58,1511 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 1
    8:.\main.c      ****  * WHICH IS THE PROPERTY OF your company.
    9:.\main.c      ****  *
   10:.\main.c      ****  * ========================================
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 2
+
+
   11:.\main.c      **** */
   12:.\main.c      **** #include <project.h>
   13:.\main.c      **** 
-  14:.\main.c      **** void colorChange(int state);
-  15:.\main.c      **** void Intensity(int state);
-  16:.\main.c      **** 
-  17:.\main.c      **** void colorChange(state){
-  26              		.loc 1 17 0
-  27              		.cfi_startproc
-  28 0000 80B5     		push	{r7, lr}
-  29              		.cfi_def_cfa_offset 8
-  30              		.cfi_offset 7, -8
-  31              		.cfi_offset 14, -4
-  32 0002 82B0     		sub	sp, sp, #8
-  33              		.cfi_def_cfa_offset 16
-  34 0004 00AF     		add	r7, sp, #0
-  35              		.cfi_def_cfa_register 7
-  36 0006 7860     		str	r0, [r7, #4]
-  18:.\main.c      ****   switch (state){
-  37              		.loc 1 18 0
-  38 0008 7B68     		ldr	r3, [r7, #4]
-  39 000a 022B     		cmp	r3, #2
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 2
+  14:.\main.c      **** void colorChange(int state, uint8 intensity);
+  15:.\main.c      **** uint8 Intensity(int state);
+  16:.\main.c      **** uint8 Scan_Accelerometer();
+  17:.\main.c      **** 
+  18:.\main.c      **** int16 X_DEFAULT = 0x0662;
+  19:.\main.c      **** int16 Y_DEFAULT = 0x0606;
+  20:.\main.c      **** int16 Z_DEFAULT = 0x04FB;
+  21:.\main.c      **** int16 ADC_x_current, ADC_y_current, ADC_z_current;
+  22:.\main.c      **** 
+  23:.\main.c      **** 
+  24:.\main.c      **** void colorChange(int state, uint8 intensity){
+  48              		.loc 1 24 0
+  49              		.cfi_startproc
+  50 0000 80B5     		push	{r7, lr}
+  51              		.cfi_def_cfa_offset 8
+  52              		.cfi_offset 7, -8
+  53              		.cfi_offset 14, -4
+  54 0002 82B0     		sub	sp, sp, #8
+  55              		.cfi_def_cfa_offset 16
+  56 0004 00AF     		add	r7, sp, #0
+  57              		.cfi_def_cfa_register 7
+  58 0006 7860     		str	r0, [r7, #4]
+  59 0008 0A1C     		mov	r2, r1
+  60 000a FB1C     		add	r3, r7, #3
+  61 000c 1A70     		strb	r2, [r3]
+  25:.\main.c      ****   switch (state){
+  62              		.loc 1 25 0
+  63 000e 7B68     		ldr	r3, [r7, #4]
+  64 0010 022B     		cmp	r3, #2
+  65 0012 14D0     		beq	.L3
+  66 0014 02DC     		bgt	.L4
+  67 0016 012B     		cmp	r3, #1
+  68 0018 05D0     		beq	.L5
+  69 001a 36E0     		b	.L2
+  70              	.L4:
+  71 001c 032B     		cmp	r3, #3
+  72 001e 1AD0     		beq	.L6
+  73 0020 042B     		cmp	r3, #4
+  74 0022 24D0     		beq	.L7
+  75 0024 31E0     		b	.L2
+  76              	.L5:
+  26:.\main.c      ****     case 1:
+  27:.\main.c      ****         /*Red*/
+  28:.\main.c      ****         RED_Write(intensity);
+  77              		.loc 1 28 0
+  78 0026 FB1C     		add	r3, r7, #3
+  79 0028 1B78     		ldrb	r3, [r3]
+  80 002a 181C     		mov	r0, r3
+  81 002c FFF7FEFF 		bl	RED_Write
+  29:.\main.c      ****         BLUE_Write(0xFF);
+  82              		.loc 1 29 0
+  83 0030 FF20     		mov	r0, #255
+  84 0032 FFF7FEFF 		bl	BLUE_Write
+  30:.\main.c      ****         GREEN_Write(0xFF);
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 3
 
 
-  40 000c 12D0     		beq	.L9
-  41 000e 02DC     		bgt	.L4
-  42 0010 012B     		cmp	r3, #1
-  43 0012 05D0     		beq	.L5
-  19:.\main.c      ****     case 1:
-  20:.\main.c      ****         /*Red*/
-  21:.\main.c      ****         Red_Write(0xFF);
-  22:.\main.c      ****         Blue_Write(0x00);
-  23:.\main.c      ****         Green_Write(0x00);
-  24:.\main.c      ****         break;
-  25:.\main.c      ****     case 2:
-  26:.\main.c      ****         /*Blue*/
-  27:.\main.c      ****         break;
-  28:.\main.c      ****     case 3:
-  29:.\main.c      ****         /*Green*/
-  30:.\main.c      ****         break;
-  31:.\main.c      ****     case 4:
-  32:.\main.c      ****         /*more colors*/
-  33:.\main.c      ****         break;
-  34:.\main.c      ****     default:
-  35:.\main.c      ****         /*back to white*/
-  36:.\main.c      ****         break;
-  44              		.loc 1 36 0
-  45 0014 13E0     		b	.L1
-  46              	.L4:
-  18:.\main.c      ****   switch (state){
-  47              		.loc 1 18 0
-  48 0016 032B     		cmp	r3, #3
-  49 0018 0ED0     		beq	.L10
-  50 001a 042B     		cmp	r3, #4
-  51 001c 0ED0     		beq	.L11
-  52              		.loc 1 36 0
-  53 001e 0EE0     		b	.L1
-  54              	.L5:
-  21:.\main.c      ****         Red_Write(0xFF);
-  55              		.loc 1 21 0
-  56 0020 FF20     		mov	r0, #255
-  57 0022 FFF7FEFF 		bl	Red_Write
-  22:.\main.c      ****         Blue_Write(0x00);
-  58              		.loc 1 22 0
-  59 0026 0020     		mov	r0, #0
-  60 0028 FFF7FEFF 		bl	Blue_Write
-  23:.\main.c      ****         Green_Write(0x00);
-  61              		.loc 1 23 0
-  62 002c 0020     		mov	r0, #0
-  63 002e FFF7FEFF 		bl	Green_Write
-  24:.\main.c      ****         break;
-  64              		.loc 1 24 0
-  65 0032 04E0     		b	.L1
-  66              	.L9:
-  27:.\main.c      ****         break;
-  67              		.loc 1 27 0
-  68 0034 C046     		mov	r8, r8
-  69 0036 02E0     		b	.L1
-  70              	.L10:
-  30:.\main.c      ****         break;
-  71              		.loc 1 30 0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 3
-
-
-  72 0038 C046     		mov	r8, r8
-  73 003a 00E0     		b	.L1
-  74              	.L11:
-  33:.\main.c      ****         break;
-  75              		.loc 1 33 0
-  76 003c C046     		mov	r8, r8
-  77              	.L1:
-  37:.\main.c      ****     }
-  38:.\main.c      **** }
-  78              		.loc 1 38 0
-  79 003e BD46     		mov	sp, r7
-  80 0040 02B0     		add	sp, sp, #8
-  81              		@ sp needed
-  82 0042 80BD     		pop	{r7, pc}
-  83              		.cfi_endproc
-  84              	.LFE35:
-  85              		.size	colorChange, .-colorChange
-  86              		.section	.text.Intensity,"ax",%progbits
-  87              		.align	2
-  88              		.global	Intensity
-  89              		.code	16
-  90              		.thumb_func
-  91              		.type	Intensity, %function
-  92              	Intensity:
-  93              	.LFB36:
-  39:.\main.c      **** void Intensity(state){
-  94              		.loc 1 39 0
-  95              		.cfi_startproc
-  96 0000 80B5     		push	{r7, lr}
-  97              		.cfi_def_cfa_offset 8
-  98              		.cfi_offset 7, -8
-  99              		.cfi_offset 14, -4
- 100 0002 82B0     		sub	sp, sp, #8
- 101              		.cfi_def_cfa_offset 16
- 102 0004 00AF     		add	r7, sp, #0
- 103              		.cfi_def_cfa_register 7
- 104 0006 7860     		str	r0, [r7, #4]
-  40:.\main.c      ****     switch(state){
+  85              		.loc 1 30 0
+  86 0036 FF20     		mov	r0, #255
+  87 0038 FFF7FEFF 		bl	GREEN_Write
+  31:.\main.c      ****         break;
+  88              		.loc 1 31 0
+  89 003c 2FE0     		b	.L1
+  90              	.L3:
+  32:.\main.c      ****     case 2:
+  33:.\main.c      ****         /*Blue*/
+  34:.\main.c      ****         RED_Write(0xFF);
+  91              		.loc 1 34 0
+  92 003e FF20     		mov	r0, #255
+  93 0040 FFF7FEFF 		bl	RED_Write
+  35:.\main.c      ****         BLUE_Write(intensity);
+  94              		.loc 1 35 0
+  95 0044 FB1C     		add	r3, r7, #3
+  96 0046 1B78     		ldrb	r3, [r3]
+  97 0048 181C     		mov	r0, r3
+  98 004a FFF7FEFF 		bl	BLUE_Write
+  36:.\main.c      ****         GREEN_Write(0xFF);
+  99              		.loc 1 36 0
+ 100 004e FF20     		mov	r0, #255
+ 101 0050 FFF7FEFF 		bl	GREEN_Write
+  37:.\main.c      ****         break;
+ 102              		.loc 1 37 0
+ 103 0054 23E0     		b	.L1
+ 104              	.L6:
+  38:.\main.c      ****     case 3:
+  39:.\main.c      ****         /*Green*/
+  40:.\main.c      ****         RED_Write(0xFF);
  105              		.loc 1 40 0
- 106 0008 7B68     		ldr	r3, [r7, #4]
- 107 000a 022B     		cmp	r3, #2
- 108 000c 08D0     		beq	.L20
- 109 000e 02DC     		bgt	.L15
- 110 0010 012B     		cmp	r3, #1
- 111 0012 07D0     		beq	.L21
-  41:.\main.c      ****         case 1:
-  42:.\main.c      ****             /*max level*/
+ 106 0056 FF20     		mov	r0, #255
+ 107 0058 FFF7FEFF 		bl	RED_Write
+  41:.\main.c      ****         BLUE_Write(0xFF);
+ 108              		.loc 1 41 0
+ 109 005c FF20     		mov	r0, #255
+ 110 005e FFF7FEFF 		bl	BLUE_Write
+  42:.\main.c      ****         GREEN_Write(intensity);
+ 111              		.loc 1 42 0
+ 112 0062 FB1C     		add	r3, r7, #3
+ 113 0064 1B78     		ldrb	r3, [r3]
+ 114 0066 181C     		mov	r0, r3
+ 115 0068 FFF7FEFF 		bl	GREEN_Write
   43:.\main.c      ****         break;
-  44:.\main.c      ****         case 2:
-  45:.\main.c      ****             /*medium*/
-  46:.\main.c      ****         break;
-  47:.\main.c      ****         case 3:
-  48:.\main.c      ****             /*min*/
+ 116              		.loc 1 43 0
+ 117 006c 17E0     		b	.L1
+ 118              	.L7:
+  44:.\main.c      ****     case 4:
+  45:.\main.c      ****         /*purple*/
+  46:.\main.c      ****         RED_Write(intensity);
+ 119              		.loc 1 46 0
+ 120 006e FB1C     		add	r3, r7, #3
+ 121 0070 1B78     		ldrb	r3, [r3]
+ 122 0072 181C     		mov	r0, r3
+ 123 0074 FFF7FEFF 		bl	RED_Write
+  47:.\main.c      ****         BLUE_Write(intensity);
+ 124              		.loc 1 47 0
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 4
+
+
+ 125 0078 FB1C     		add	r3, r7, #3
+ 126 007a 1B78     		ldrb	r3, [r3]
+ 127 007c 181C     		mov	r0, r3
+ 128 007e FFF7FEFF 		bl	BLUE_Write
+  48:.\main.c      ****         GREEN_Write(0xFF);
+ 129              		.loc 1 48 0
+ 130 0082 FF20     		mov	r0, #255
+ 131 0084 FFF7FEFF 		bl	GREEN_Write
   49:.\main.c      ****         break;
-  50:.\main.c      ****         case 4:
-  51:.\main.c      ****             /*off*/
-  52:.\main.c      ****         break;
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 4
+ 132              		.loc 1 49 0
+ 133 0088 09E0     		b	.L1
+ 134              	.L2:
+  50:.\main.c      ****     default:
+  51:.\main.c      ****         RED_Write(0x00);
+ 135              		.loc 1 51 0
+ 136 008a 0020     		mov	r0, #0
+ 137 008c FFF7FEFF 		bl	RED_Write
+  52:.\main.c      ****         BLUE_Write(0x00);
+ 138              		.loc 1 52 0
+ 139 0090 0020     		mov	r0, #0
+ 140 0092 FFF7FEFF 		bl	BLUE_Write
+  53:.\main.c      ****         GREEN_Write(0x00);
+ 141              		.loc 1 53 0
+ 142 0096 0020     		mov	r0, #0
+ 143 0098 FFF7FEFF 		bl	GREEN_Write
+  54:.\main.c      ****         break;
+ 144              		.loc 1 54 0
+ 145 009c C046     		mov	r8, r8
+ 146              	.L1:
+  55:.\main.c      ****     }
+  56:.\main.c      **** }
+ 147              		.loc 1 56 0
+ 148 009e BD46     		mov	sp, r7
+ 149 00a0 02B0     		add	sp, sp, #8
+ 150              		@ sp needed
+ 151 00a2 80BD     		pop	{r7, pc}
+ 152              		.cfi_endproc
+ 153              	.LFE35:
+ 154              		.size	colorChange, .-colorChange
+ 155              		.section	.text.Intensity,"ax",%progbits
+ 156              		.align	2
+ 157              		.global	Intensity
+ 158              		.code	16
+ 159              		.thumb_func
+ 160              		.type	Intensity, %function
+ 161              	Intensity:
+ 162              	.LFB36:
+  57:.\main.c      **** uint8 Intensity(state){
+ 163              		.loc 1 57 0
+ 164              		.cfi_startproc
+ 165 0000 80B5     		push	{r7, lr}
+ 166              		.cfi_def_cfa_offset 8
+ 167              		.cfi_offset 7, -8
+ 168              		.cfi_offset 14, -4
+ 169 0002 84B0     		sub	sp, sp, #16
+ 170              		.cfi_def_cfa_offset 24
+ 171 0004 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 5
 
 
-  53:.\main.c      ****         default:
-  54:.\main.c      ****             /*make sure things are not breaking*/
-  55:.\main.c      ****         break;        
- 112              		.loc 1 55 0
- 113 0014 0BE0     		b	.L12
- 114              	.L15:
-  40:.\main.c      ****     switch(state){
- 115              		.loc 1 40 0
- 116 0016 032B     		cmp	r3, #3
- 117 0018 06D0     		beq	.L22
- 118 001a 042B     		cmp	r3, #4
- 119 001c 06D0     		beq	.L23
- 120              		.loc 1 55 0
- 121 001e 06E0     		b	.L12
- 122              	.L20:
-  46:.\main.c      ****         break;
- 123              		.loc 1 46 0
- 124 0020 C046     		mov	r8, r8
- 125 0022 04E0     		b	.L12
- 126              	.L21:
-  43:.\main.c      ****         break;
- 127              		.loc 1 43 0
- 128 0024 C046     		mov	r8, r8
- 129 0026 02E0     		b	.L12
- 130              	.L22:
-  49:.\main.c      ****         break;
- 131              		.loc 1 49 0
- 132 0028 C046     		mov	r8, r8
- 133 002a 00E0     		b	.L12
- 134              	.L23:
-  52:.\main.c      ****         break;
- 135              		.loc 1 52 0
- 136 002c C046     		mov	r8, r8
- 137              	.L12:
-  56:.\main.c      ****     }
-  57:.\main.c      **** }
- 138              		.loc 1 57 0
- 139 002e BD46     		mov	sp, r7
- 140 0030 02B0     		add	sp, sp, #8
- 141              		@ sp needed
- 142 0032 80BD     		pop	{r7, pc}
- 143              		.cfi_endproc
- 144              	.LFE36:
- 145              		.size	Intensity, .-Intensity
- 146              		.section	.text.main,"ax",%progbits
- 147              		.align	2
- 148              		.global	main
- 149              		.code	16
- 150              		.thumb_func
- 151              		.type	main, %function
- 152              	main:
- 153              	.LFB37:
-  58:.\main.c      **** 
-  59:.\main.c      **** int main()
-  60:.\main.c      **** {
- 154              		.loc 1 60 0
- 155              		.cfi_startproc
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 5
+ 172              		.cfi_def_cfa_register 7
+ 173 0006 7860     		str	r0, [r7, #4]
+  58:.\main.c      ****     uint8 intensity;
+  59:.\main.c      ****     switch(state){
+ 174              		.loc 1 59 0
+ 175 0008 7B68     		ldr	r3, [r7, #4]
+ 176 000a 022B     		cmp	r3, #2
+ 177 000c 0DD0     		beq	.L11
+ 178 000e 02DC     		bgt	.L12
+ 179 0010 012B     		cmp	r3, #1
+ 180 0012 05D0     		beq	.L13
+ 181 0014 18E0     		b	.L10
+ 182              	.L12:
+ 183 0016 032B     		cmp	r3, #3
+ 184 0018 0CD0     		beq	.L14
+ 185 001a 042B     		cmp	r3, #4
+ 186 001c 0FD0     		beq	.L15
+ 187 001e 13E0     		b	.L10
+ 188              	.L13:
+  60:.\main.c      ****         case 1:
+  61:.\main.c      ****             /*max level*/
+  62:.\main.c      ****             intensity = 0x00;
+ 189              		.loc 1 62 0
+ 190 0020 3B1C     		mov	r3, r7
+ 191 0022 0F33     		add	r3, r3, #15
+ 192 0024 0022     		mov	r2, #0
+ 193 0026 1A70     		strb	r2, [r3]
+  63:.\main.c      ****         break;
+ 194              		.loc 1 63 0
+ 195 0028 13E0     		b	.L16
+ 196              	.L11:
+  64:.\main.c      ****         case 2:
+  65:.\main.c      ****             /*medium*/
+  66:.\main.c      ****             intensity = 0x55;
+ 197              		.loc 1 66 0
+ 198 002a 3B1C     		mov	r3, r7
+ 199 002c 0F33     		add	r3, r3, #15
+ 200 002e 5522     		mov	r2, #85
+ 201 0030 1A70     		strb	r2, [r3]
+  67:.\main.c      ****         break;
+ 202              		.loc 1 67 0
+ 203 0032 0EE0     		b	.L16
+ 204              	.L14:
+  68:.\main.c      ****         case 3:
+  69:.\main.c      ****             /*min*/
+  70:.\main.c      ****             intensity = 0xAA;
+ 205              		.loc 1 70 0
+ 206 0034 3B1C     		mov	r3, r7
+ 207 0036 0F33     		add	r3, r3, #15
+ 208 0038 AA22     		mov	r2, #170
+ 209 003a 1A70     		strb	r2, [r3]
+  71:.\main.c      ****         break;
+ 210              		.loc 1 71 0
+ 211 003c 09E0     		b	.L16
+ 212              	.L15:
+  72:.\main.c      ****         case 4:
+  73:.\main.c      ****             /*off*/
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 6
 
 
- 156 0000 80B5     		push	{r7, lr}
- 157              		.cfi_def_cfa_offset 8
- 158              		.cfi_offset 7, -8
- 159              		.cfi_offset 14, -4
- 160 0002 00AF     		add	r7, sp, #0
- 161              		.cfi_def_cfa_register 7
-  61:.\main.c      ****     /* intialize state variables
-  62:.\main.c      ****     int colorState = 0;
-  63:.\main.c      ****     int intensityState = 0;
-  64:.\main.c      ****     */
-  65:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-  66:.\main.c      **** 
-  67:.\main.c      ****     CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
- 162              		.loc 1 67 0
- 163              	@ 67 ".\main.c" 1
- 164 0004 62B6     		CPSIE   i
- 165              	@ 0 "" 2
- 166              		.code	16
- 167              	.L25:
-  68:.\main.c      ****     for(;;)
-  69:.\main.c      ****     {
-  70:.\main.c      ****     /* generic outline for code
-  71:.\main.c      ****       
-  72:.\main.c      ****         
-  73:.\main.c      ****         if("LeftGesture"){
-  74:.\main.c      ****             if (colorState>=1){
-  75:.\main.c      ****                 colorState--;
-  76:.\main.c      ****             }
-  77:.\main.c      ****             if (colorState<1){
-  78:.\main.c      ****                 colorState = 1;
-  79:.\main.c      ****             }
-  80:.\main.c      ****             colorChange(colorState);
-  81:.\main.c      ****             delay(sometime);
-  82:.\main.c      ****         }
-  83:.\main.c      ****         
-  84:.\main.c      ****         if("RightGesture"){
-  85:.\main.c      ****             if (colorState < maxState){
-  86:.\main.c      ****                 colorState++;
-  87:.\main.c      ****             }
-  88:.\main.c      ****             if (colorState >= maxState){
-  89:.\main.c      ****                 colorState = maxState;
-  90:.\main.c      ****             }
-  91:.\main.c      ****             colorChange(colorState);
-  92:.\main.c      ****             delay(sometime);
-  93:.\main.c      ****         }
-  94:.\main.c      ****         
-  95:.\main.c      ****         if("FrontGesture"){
-  96:.\main.c      ****             if(intensityState < maxState){
-  97:.\main.c      ****                 intensityState++;
-  98:.\main.c      ****             }
-  99:.\main.c      ****             if(intensityState >= maxState){
- 100:.\main.c      ****                 intensityState = maxState;
- 101:.\main.c      ****             }
- 102:.\main.c      ****         Intensity(intensityState);
- 103:.\main.c      ****         delay(sometime);
- 104:.\main.c      ****         }
- 105:.\main.c      ****         
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 6
+  74:.\main.c      ****             intensity = 0xFF;
+ 213              		.loc 1 74 0
+ 214 003e 3B1C     		mov	r3, r7
+ 215 0040 0F33     		add	r3, r3, #15
+ 216 0042 FF22     		mov	r2, #255
+ 217 0044 1A70     		strb	r2, [r3]
+  75:.\main.c      ****         break;
+ 218              		.loc 1 75 0
+ 219 0046 04E0     		b	.L16
+ 220              	.L10:
+  76:.\main.c      ****         default:
+  77:.\main.c      ****             intensity = 0x00;
+ 221              		.loc 1 77 0
+ 222 0048 3B1C     		mov	r3, r7
+ 223 004a 0F33     		add	r3, r3, #15
+ 224 004c 0022     		mov	r2, #0
+ 225 004e 1A70     		strb	r2, [r3]
+  78:.\main.c      ****         break;        
+ 226              		.loc 1 78 0
+ 227 0050 C046     		mov	r8, r8
+ 228              	.L16:
+  79:.\main.c      ****     }
+  80:.\main.c      ****     return intensity;
+ 229              		.loc 1 80 0
+ 230 0052 3B1C     		mov	r3, r7
+ 231 0054 0F33     		add	r3, r3, #15
+ 232 0056 1B78     		ldrb	r3, [r3]
+  81:.\main.c      **** }
+ 233              		.loc 1 81 0
+ 234 0058 181C     		mov	r0, r3
+ 235 005a BD46     		mov	sp, r7
+ 236 005c 04B0     		add	sp, sp, #16
+ 237              		@ sp needed
+ 238 005e 80BD     		pop	{r7, pc}
+ 239              		.cfi_endproc
+ 240              	.LFE36:
+ 241              		.size	Intensity, .-Intensity
+ 242              		.section	.text.Scan_Accelerometer,"ax",%progbits
+ 243              		.align	2
+ 244              		.global	Scan_Accelerometer
+ 245              		.code	16
+ 246              		.thumb_func
+ 247              		.type	Scan_Accelerometer, %function
+ 248              	Scan_Accelerometer:
+ 249              	.LFB37:
+  82:.\main.c      **** uint8 Scan_Accelerometer()
+  83:.\main.c      **** {  
+ 250              		.loc 1 83 0
+ 251              		.cfi_startproc
+ 252 0000 80B5     		push	{r7, lr}
+ 253              		.cfi_def_cfa_offset 8
+ 254              		.cfi_offset 7, -8
+ 255              		.cfi_offset 14, -4
+ 256 0002 00AF     		add	r7, sp, #0
+ 257              		.cfi_def_cfa_register 7
+  84:.\main.c      **** 	
+  85:.\main.c      **** 	if(Sensor_ADC_IsEndConversion(Sensor_ADC_RETURN_STATUS))
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 7
 
 
- 106:.\main.c      ****         if("DownGesture"){
- 107:.\main.c      ****         if(intensityState >= 1){
- 108:.\main.c      ****                 intensityState++;
- 109:.\main.c      ****             }
- 110:.\main.c      ****             if(intensityState < 1){
- 111:.\main.c      ****                 intensityState = 1;
- 112:.\main.c      ****             }
- 113:.\main.c      ****         Intensity(intensityState);
- 114:.\main.c      ****         delay(sometime);
- 115:.\main.c      ****         }
- 116:.\main.c      ****         
- 117:.\main.c      ****         
- 118:.\main.c      ****     */    
- 119:.\main.c      ****     }
- 168              		.loc 1 119 0 discriminator 1
- 169 0006 FEE7     		b	.L25
- 170              		.cfi_endproc
- 171              	.LFE37:
- 172              		.size	main, .-main
- 173              		.text
- 174              	.Letext0:
- 175              		.section	.debug_info,"",%progbits
- 176              	.Ldebug_info0:
- 177 0000 E1000000 		.4byte	0xe1
- 178 0004 0400     		.2byte	0x4
- 179 0006 00000000 		.4byte	.Ldebug_abbrev0
- 180 000a 04       		.byte	0x4
- 181 000b 01       		.uleb128 0x1
- 182 000c 53000000 		.4byte	.LASF16
- 183 0010 01       		.byte	0x1
- 184 0011 97010000 		.4byte	.LASF17
- 185 0015 27010000 		.4byte	.LASF18
- 186 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 187 001d 00000000 		.4byte	0
- 188 0021 00000000 		.4byte	.Ldebug_line0
- 189 0025 02       		.uleb128 0x2
- 190 0026 01       		.byte	0x1
- 191 0027 06       		.byte	0x6
- 192 0028 1B010000 		.4byte	.LASF0
- 193 002c 02       		.uleb128 0x2
- 194 002d 01       		.byte	0x1
- 195 002e 08       		.byte	0x8
- 196 002f D9000000 		.4byte	.LASF1
- 197 0033 02       		.uleb128 0x2
- 198 0034 02       		.byte	0x2
- 199 0035 05       		.byte	0x5
- 200 0036 32000000 		.4byte	.LASF2
- 201 003a 02       		.uleb128 0x2
- 202 003b 02       		.byte	0x2
- 203 003c 07       		.byte	0x7
- 204 003d 08010000 		.4byte	.LASF3
- 205 0041 02       		.uleb128 0x2
- 206 0042 04       		.byte	0x4
- 207 0043 05       		.byte	0x5
- 208 0044 EC000000 		.4byte	.LASF4
- 209 0048 02       		.uleb128 0x2
- 210 0049 04       		.byte	0x4
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 7
+ 258              		.loc 1 85 0
+ 259 0004 0120     		mov	r0, #1
+ 260 0006 FFF7FEFF 		bl	Sensor_ADC_IsEndConversion
+ 261 000a 031C     		mov	r3, r0
+ 262 000c 002B     		cmp	r3, #0
+ 263 000e 00D1     		bne	.LCB203
+ 264 0010 95E0     		b	.L19	@long jump
+ 265              	.LCB203:
+  86:.\main.c      **** 	{
+  87:.\main.c      **** 		ADC_x_current = Sensor_ADC_CountsTo_mVolts(0, Sensor_ADC_GetResult16(0));
+ 266              		.loc 1 87 0
+ 267 0012 0020     		mov	r0, #0
+ 268 0014 FFF7FEFF 		bl	Sensor_ADC_GetResult16
+ 269 0018 031C     		mov	r3, r0
+ 270 001a 0020     		mov	r0, #0
+ 271 001c 191C     		mov	r1, r3
+ 272 001e FFF7FEFF 		bl	Sensor_ADC_CountsTo_mVolts
+ 273 0022 031C     		mov	r3, r0
+ 274 0024 1A1C     		mov	r2, r3
+ 275 0026 484B     		ldr	r3, .L26
+ 276 0028 1A80     		strh	r2, [r3]
+  88:.\main.c      **** 		ADC_y_current = Sensor_ADC_CountsTo_mVolts(1, Sensor_ADC_GetResult16(1));
+ 277              		.loc 1 88 0
+ 278 002a 0120     		mov	r0, #1
+ 279 002c FFF7FEFF 		bl	Sensor_ADC_GetResult16
+ 280 0030 031C     		mov	r3, r0
+ 281 0032 0120     		mov	r0, #1
+ 282 0034 191C     		mov	r1, r3
+ 283 0036 FFF7FEFF 		bl	Sensor_ADC_CountsTo_mVolts
+ 284 003a 031C     		mov	r3, r0
+ 285 003c 1A1C     		mov	r2, r3
+ 286 003e 434B     		ldr	r3, .L26+4
+ 287 0040 1A80     		strh	r2, [r3]
+  89:.\main.c      **** 		ADC_z_current = Sensor_ADC_CountsTo_mVolts(2, Sensor_ADC_GetResult16(2));
+ 288              		.loc 1 89 0
+ 289 0042 0220     		mov	r0, #2
+ 290 0044 FFF7FEFF 		bl	Sensor_ADC_GetResult16
+ 291 0048 031C     		mov	r3, r0
+ 292 004a 0220     		mov	r0, #2
+ 293 004c 191C     		mov	r1, r3
+ 294 004e FFF7FEFF 		bl	Sensor_ADC_CountsTo_mVolts
+ 295 0052 031C     		mov	r3, r0
+ 296 0054 1A1C     		mov	r2, r3
+ 297 0056 3E4B     		ldr	r3, .L26+8
+ 298 0058 1A80     		strh	r2, [r3]
+  90:.\main.c      **** 		/*Normal gesture idetified*/
+  91:.\main.c      **** 		if((ADC_y_current>=(Y_DEFAULT-0x00A0) && ADC_y_current<= (Y_DEFAULT+0x00A0))&&(ADC_z_current>=(Z_
+ 299              		.loc 1 91 0
+ 300 005a 3C4B     		ldr	r3, .L26+4
+ 301 005c 1B88     		ldrh	r3, [r3]
+ 302 005e 1AB2     		sxth	r2, r3
+ 303 0060 3C4B     		ldr	r3, .L26+12
+ 304 0062 1B88     		ldrh	r3, [r3]
+ 305 0064 1BB2     		sxth	r3, r3
+ 306 0066 A03B     		sub	r3, r3, #160
+ 307 0068 9A42     		cmp	r2, r3
+ 308 006a 2EDB     		blt	.L20
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 8
 
 
- 211 004a 07       		.byte	0x7
- 212 004b 20000000 		.4byte	.LASF5
- 213 004f 02       		.uleb128 0x2
- 214 0050 08       		.byte	0x8
- 215 0051 05       		.byte	0x5
- 216 0052 00000000 		.4byte	.LASF6
- 217 0056 02       		.uleb128 0x2
- 218 0057 08       		.byte	0x8
- 219 0058 07       		.byte	0x7
- 220 0059 3C000000 		.4byte	.LASF7
- 221 005d 03       		.uleb128 0x3
- 222 005e 04       		.byte	0x4
- 223 005f 05       		.byte	0x5
- 224 0060 696E7400 		.ascii	"int\000"
- 225 0064 02       		.uleb128 0x2
- 226 0065 04       		.byte	0x4
- 227 0066 07       		.byte	0x7
- 228 0067 0E000000 		.4byte	.LASF8
- 229 006b 02       		.uleb128 0x2
- 230 006c 04       		.byte	0x4
- 231 006d 04       		.byte	0x4
- 232 006e 91010000 		.4byte	.LASF9
- 233 0072 02       		.uleb128 0x2
- 234 0073 08       		.byte	0x8
- 235 0074 04       		.byte	0x4
- 236 0075 F5000000 		.4byte	.LASF10
- 237 0079 02       		.uleb128 0x2
- 238 007a 01       		.byte	0x1
- 239 007b 08       		.byte	0x8
- 240 007c E7000000 		.4byte	.LASF11
- 241 0080 02       		.uleb128 0x2
- 242 0081 04       		.byte	0x4
- 243 0082 07       		.byte	0x7
- 244 0083 A0010000 		.4byte	.LASF12
- 245 0087 04       		.uleb128 0x4
- 246 0088 FC000000 		.4byte	.LASF13
- 247 008c 01       		.byte	0x1
- 248 008d 11       		.byte	0x11
- 249 008e 00000000 		.4byte	.LFB35
- 250 0092 44000000 		.4byte	.LFE35-.LFB35
- 251 0096 01       		.uleb128 0x1
- 252 0097 9C       		.byte	0x9c
- 253 0098 AB000000 		.4byte	0xab
- 254 009c 05       		.uleb128 0x5
- 255 009d 8B010000 		.4byte	.LASF15
- 256 00a1 01       		.byte	0x1
- 257 00a2 11       		.byte	0x11
- 258 00a3 5D000000 		.4byte	0x5d
- 259 00a7 02       		.uleb128 0x2
- 260 00a8 91       		.byte	0x91
- 261 00a9 74       		.sleb128 -12
- 262 00aa 00       		.byte	0
- 263 00ab 06       		.uleb128 0x6
- 264 00ac CF000000 		.4byte	.LASF14
- 265 00b0 01       		.byte	0x1
- 266 00b1 27       		.byte	0x27
- 267 00b2 00000000 		.4byte	.LFB36
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 8
+ 309              		.loc 1 91 0 is_stmt 0 discriminator 1
+ 310 006c 374B     		ldr	r3, .L26+4
+ 311 006e 1B88     		ldrh	r3, [r3]
+ 312 0070 1AB2     		sxth	r2, r3
+ 313 0072 384B     		ldr	r3, .L26+12
+ 314 0074 1B88     		ldrh	r3, [r3]
+ 315 0076 1BB2     		sxth	r3, r3
+ 316 0078 A033     		add	r3, r3, #160
+ 317 007a 9A42     		cmp	r2, r3
+ 318 007c 25DC     		bgt	.L20
+ 319 007e 344B     		ldr	r3, .L26+8
+ 320 0080 1B88     		ldrh	r3, [r3]
+ 321 0082 1AB2     		sxth	r2, r3
+ 322 0084 344B     		ldr	r3, .L26+16
+ 323 0086 1B88     		ldrh	r3, [r3]
+ 324 0088 1BB2     		sxth	r3, r3
+ 325 008a 403B     		sub	r3, r3, #64
+ 326 008c 9A42     		cmp	r2, r3
+ 327 008e 1CDB     		blt	.L20
+ 328 0090 2F4B     		ldr	r3, .L26+8
+ 329 0092 1B88     		ldrh	r3, [r3]
+ 330 0094 1AB2     		sxth	r2, r3
+ 331 0096 304B     		ldr	r3, .L26+16
+ 332 0098 1B88     		ldrh	r3, [r3]
+ 333 009a 1BB2     		sxth	r3, r3
+ 334 009c 4033     		add	r3, r3, #64
+ 335 009e 9A42     		cmp	r2, r3
+ 336 00a0 13DC     		bgt	.L20
+ 337 00a2 294B     		ldr	r3, .L26
+ 338 00a4 1B88     		ldrh	r3, [r3]
+ 339 00a6 1AB2     		sxth	r2, r3
+ 340 00a8 2C4B     		ldr	r3, .L26+20
+ 341 00aa 1B88     		ldrh	r3, [r3]
+ 342 00ac 1BB2     		sxth	r3, r3
+ 343 00ae A03B     		sub	r3, r3, #160
+ 344 00b0 9A42     		cmp	r2, r3
+ 345 00b2 0ADB     		blt	.L20
+ 346 00b4 244B     		ldr	r3, .L26
+ 347 00b6 1B88     		ldrh	r3, [r3]
+ 348 00b8 1AB2     		sxth	r2, r3
+ 349 00ba 284B     		ldr	r3, .L26+20
+ 350 00bc 1B88     		ldrh	r3, [r3]
+ 351 00be 1BB2     		sxth	r3, r3
+ 352 00c0 A033     		add	r3, r3, #160
+ 353 00c2 9A42     		cmp	r2, r3
+ 354 00c4 01DC     		bgt	.L20
+  92:.\main.c      **** 		{
+  93:.\main.c      **** 			return 1;
+ 355              		.loc 1 93 0 is_stmt 1
+ 356 00c6 0123     		mov	r3, #1
+ 357 00c8 3AE0     		b	.L21
+ 358              	.L20:
+  94:.\main.c      **** 		}
+  95:.\main.c      **** 		/*Backward gesture idetified*/
+  96:.\main.c      **** 		if((ADC_y_current<=0x0566)&& (ADC_z_current>=0x051E))
+ 359              		.loc 1 96 0
+ 360 00ca 204B     		ldr	r3, .L26+4
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 9
 
 
- 268 00b6 34000000 		.4byte	.LFE36-.LFB36
- 269 00ba 01       		.uleb128 0x1
- 270 00bb 9C       		.byte	0x9c
- 271 00bc CF000000 		.4byte	0xcf
- 272 00c0 05       		.uleb128 0x5
- 273 00c1 8B010000 		.4byte	.LASF15
- 274 00c5 01       		.byte	0x1
- 275 00c6 27       		.byte	0x27
- 276 00c7 5D000000 		.4byte	0x5d
- 277 00cb 02       		.uleb128 0x2
- 278 00cc 91       		.byte	0x91
- 279 00cd 74       		.sleb128 -12
- 280 00ce 00       		.byte	0
- 281 00cf 07       		.uleb128 0x7
- 282 00d0 1B000000 		.4byte	.LASF19
- 283 00d4 01       		.byte	0x1
- 284 00d5 3B       		.byte	0x3b
- 285 00d6 5D000000 		.4byte	0x5d
- 286 00da 00000000 		.4byte	.LFB37
- 287 00de 08000000 		.4byte	.LFE37-.LFB37
- 288 00e2 01       		.uleb128 0x1
- 289 00e3 9C       		.byte	0x9c
- 290 00e4 00       		.byte	0
- 291              		.section	.debug_abbrev,"",%progbits
- 292              	.Ldebug_abbrev0:
- 293 0000 01       		.uleb128 0x1
- 294 0001 11       		.uleb128 0x11
- 295 0002 01       		.byte	0x1
- 296 0003 25       		.uleb128 0x25
- 297 0004 0E       		.uleb128 0xe
- 298 0005 13       		.uleb128 0x13
- 299 0006 0B       		.uleb128 0xb
- 300 0007 03       		.uleb128 0x3
- 301 0008 0E       		.uleb128 0xe
- 302 0009 1B       		.uleb128 0x1b
- 303 000a 0E       		.uleb128 0xe
- 304 000b 55       		.uleb128 0x55
- 305 000c 17       		.uleb128 0x17
- 306 000d 11       		.uleb128 0x11
- 307 000e 01       		.uleb128 0x1
- 308 000f 10       		.uleb128 0x10
- 309 0010 17       		.uleb128 0x17
- 310 0011 00       		.byte	0
- 311 0012 00       		.byte	0
- 312 0013 02       		.uleb128 0x2
- 313 0014 24       		.uleb128 0x24
- 314 0015 00       		.byte	0
- 315 0016 0B       		.uleb128 0xb
- 316 0017 0B       		.uleb128 0xb
- 317 0018 3E       		.uleb128 0x3e
- 318 0019 0B       		.uleb128 0xb
- 319 001a 03       		.uleb128 0x3
- 320 001b 0E       		.uleb128 0xe
- 321 001c 00       		.byte	0
- 322 001d 00       		.byte	0
- 323 001e 03       		.uleb128 0x3
- 324 001f 24       		.uleb128 0x24
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 9
+ 361 00cc 1B88     		ldrh	r3, [r3]
+ 362 00ce 1AB2     		sxth	r2, r3
+ 363 00d0 234B     		ldr	r3, .L26+24
+ 364 00d2 9A42     		cmp	r2, r3
+ 365 00d4 07DC     		bgt	.L22
+ 366              		.loc 1 96 0 is_stmt 0 discriminator 1
+ 367 00d6 1E4B     		ldr	r3, .L26+8
+ 368 00d8 1B88     		ldrh	r3, [r3]
+ 369 00da 1AB2     		sxth	r2, r3
+ 370 00dc 214B     		ldr	r3, .L26+28
+ 371 00de 9A42     		cmp	r2, r3
+ 372 00e0 01DD     		ble	.L22
+  97:.\main.c      **** 		{
+  98:.\main.c      **** 			return 2;
+ 373              		.loc 1 98 0 is_stmt 1
+ 374 00e2 0223     		mov	r3, #2
+ 375 00e4 2CE0     		b	.L21
+ 376              	.L22:
+  99:.\main.c      **** 		}
+ 100:.\main.c      **** 		/*Forward gesture idetified*/
+ 101:.\main.c      **** 		if((ADC_y_current>=0x06a6)&& (ADC_z_current>=0x051E))
+ 377              		.loc 1 101 0
+ 378 00e6 194B     		ldr	r3, .L26+4
+ 379 00e8 1B88     		ldrh	r3, [r3]
+ 380 00ea 1AB2     		sxth	r2, r3
+ 381 00ec 1E4B     		ldr	r3, .L26+32
+ 382 00ee 9A42     		cmp	r2, r3
+ 383 00f0 07DD     		ble	.L23
+ 384              		.loc 1 101 0 is_stmt 0 discriminator 1
+ 385 00f2 174B     		ldr	r3, .L26+8
+ 386 00f4 1B88     		ldrh	r3, [r3]
+ 387 00f6 1AB2     		sxth	r2, r3
+ 388 00f8 1A4B     		ldr	r3, .L26+28
+ 389 00fa 9A42     		cmp	r2, r3
+ 390 00fc 01DD     		ble	.L23
+ 102:.\main.c      **** 		{
+ 103:.\main.c      **** 			return 3;
+ 391              		.loc 1 103 0 is_stmt 1
+ 392 00fe 0323     		mov	r3, #3
+ 393 0100 1EE0     		b	.L21
+ 394              	.L23:
+ 104:.\main.c      **** 		}
+ 105:.\main.c      **** 		/*Right gesture idetified*/
+ 106:.\main.c      **** 		if((ADC_x_current>=0x06f0)&& (ADC_z_current>=0x0590))
+ 395              		.loc 1 106 0
+ 396 0102 114B     		ldr	r3, .L26
+ 397 0104 1B88     		ldrh	r3, [r3]
+ 398 0106 1AB2     		sxth	r2, r3
+ 399 0108 184B     		ldr	r3, .L26+36
+ 400 010a 9A42     		cmp	r2, r3
+ 401 010c 07DD     		ble	.L24
+ 402              		.loc 1 106 0 is_stmt 0 discriminator 1
+ 403 010e 104B     		ldr	r3, .L26+8
+ 404 0110 1B88     		ldrh	r3, [r3]
+ 405 0112 1AB2     		sxth	r2, r3
+ 406 0114 164B     		ldr	r3, .L26+40
+ 407 0116 9A42     		cmp	r2, r3
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 10
 
 
- 325 0020 00       		.byte	0
- 326 0021 0B       		.uleb128 0xb
- 327 0022 0B       		.uleb128 0xb
- 328 0023 3E       		.uleb128 0x3e
- 329 0024 0B       		.uleb128 0xb
- 330 0025 03       		.uleb128 0x3
- 331 0026 08       		.uleb128 0x8
- 332 0027 00       		.byte	0
- 333 0028 00       		.byte	0
- 334 0029 04       		.uleb128 0x4
- 335 002a 2E       		.uleb128 0x2e
- 336 002b 01       		.byte	0x1
- 337 002c 3F       		.uleb128 0x3f
- 338 002d 19       		.uleb128 0x19
- 339 002e 03       		.uleb128 0x3
- 340 002f 0E       		.uleb128 0xe
- 341 0030 3A       		.uleb128 0x3a
- 342 0031 0B       		.uleb128 0xb
- 343 0032 3B       		.uleb128 0x3b
- 344 0033 0B       		.uleb128 0xb
- 345 0034 27       		.uleb128 0x27
- 346 0035 19       		.uleb128 0x19
- 347 0036 11       		.uleb128 0x11
- 348 0037 01       		.uleb128 0x1
- 349 0038 12       		.uleb128 0x12
- 350 0039 06       		.uleb128 0x6
- 351 003a 40       		.uleb128 0x40
- 352 003b 18       		.uleb128 0x18
- 353 003c 9642     		.uleb128 0x2116
- 354 003e 19       		.uleb128 0x19
- 355 003f 01       		.uleb128 0x1
- 356 0040 13       		.uleb128 0x13
- 357 0041 00       		.byte	0
- 358 0042 00       		.byte	0
- 359 0043 05       		.uleb128 0x5
- 360 0044 05       		.uleb128 0x5
- 361 0045 00       		.byte	0
- 362 0046 03       		.uleb128 0x3
- 363 0047 0E       		.uleb128 0xe
- 364 0048 3A       		.uleb128 0x3a
- 365 0049 0B       		.uleb128 0xb
- 366 004a 3B       		.uleb128 0x3b
- 367 004b 0B       		.uleb128 0xb
- 368 004c 49       		.uleb128 0x49
- 369 004d 13       		.uleb128 0x13
- 370 004e 02       		.uleb128 0x2
- 371 004f 18       		.uleb128 0x18
- 372 0050 00       		.byte	0
- 373 0051 00       		.byte	0
- 374 0052 06       		.uleb128 0x6
- 375 0053 2E       		.uleb128 0x2e
- 376 0054 01       		.byte	0x1
- 377 0055 3F       		.uleb128 0x3f
- 378 0056 19       		.uleb128 0x19
- 379 0057 03       		.uleb128 0x3
- 380 0058 0E       		.uleb128 0xe
- 381 0059 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 10
+ 408 0118 01DD     		ble	.L24
+ 107:.\main.c      **** 		{
+ 108:.\main.c      **** 			return 4;
+ 409              		.loc 1 108 0 is_stmt 1
+ 410 011a 0423     		mov	r3, #4
+ 411 011c 10E0     		b	.L21
+ 412              	.L24:
+ 109:.\main.c      **** 		}
+ 110:.\main.c      **** 		/*Left gesture idetified*/
+ 111:.\main.c      **** 		if((ADC_x_current<=0x05E2)&& (ADC_z_current>=0x0590))
+ 413              		.loc 1 111 0
+ 414 011e 0A4B     		ldr	r3, .L26
+ 415 0120 1B88     		ldrh	r3, [r3]
+ 416 0122 1AB2     		sxth	r2, r3
+ 417 0124 134B     		ldr	r3, .L26+44
+ 418 0126 9A42     		cmp	r2, r3
+ 419 0128 07DC     		bgt	.L25
+ 420              		.loc 1 111 0 is_stmt 0 discriminator 1
+ 421 012a 094B     		ldr	r3, .L26+8
+ 422 012c 1B88     		ldrh	r3, [r3]
+ 423 012e 1AB2     		sxth	r2, r3
+ 424 0130 0F4B     		ldr	r3, .L26+40
+ 425 0132 9A42     		cmp	r2, r3
+ 426 0134 01DD     		ble	.L25
+ 112:.\main.c      **** 		{
+ 113:.\main.c      **** 			return 5;
+ 427              		.loc 1 113 0 is_stmt 1
+ 428 0136 0523     		mov	r3, #5
+ 429 0138 02E0     		b	.L21
+ 430              	.L25:
+ 114:.\main.c      **** 		}
+ 115:.\main.c      **** 		return 0;/*No change of state */
+ 431              		.loc 1 115 0
+ 432 013a 0023     		mov	r3, #0
+ 433 013c 00E0     		b	.L21
+ 434              	.L19:
+ 116:.\main.c      **** 	
+ 117:.\main.c      ****     }
+ 118:.\main.c      ****     else
+ 119:.\main.c      **** 		return 0;/*ADC is busy. Return 0 */
+ 435              		.loc 1 119 0
+ 436 013e 0023     		mov	r3, #0
+ 437              	.L21:
+ 120:.\main.c      **** }
+ 438              		.loc 1 120 0
+ 439 0140 181C     		mov	r0, r3
+ 440 0142 BD46     		mov	sp, r7
+ 441              		@ sp needed
+ 442 0144 80BD     		pop	{r7, pc}
+ 443              	.L27:
+ 444 0146 C046     		.align	2
+ 445              	.L26:
+ 446 0148 00000000 		.word	ADC_x_current
+ 447 014c 00000000 		.word	ADC_y_current
+ 448 0150 00000000 		.word	ADC_z_current
+ 449 0154 00000000 		.word	Y_DEFAULT
+ 450 0158 00000000 		.word	Z_DEFAULT
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 11
 
 
- 382 005a 0B       		.uleb128 0xb
- 383 005b 3B       		.uleb128 0x3b
- 384 005c 0B       		.uleb128 0xb
- 385 005d 27       		.uleb128 0x27
- 386 005e 19       		.uleb128 0x19
- 387 005f 11       		.uleb128 0x11
- 388 0060 01       		.uleb128 0x1
- 389 0061 12       		.uleb128 0x12
- 390 0062 06       		.uleb128 0x6
- 391 0063 40       		.uleb128 0x40
- 392 0064 18       		.uleb128 0x18
- 393 0065 9742     		.uleb128 0x2117
- 394 0067 19       		.uleb128 0x19
- 395 0068 01       		.uleb128 0x1
- 396 0069 13       		.uleb128 0x13
- 397 006a 00       		.byte	0
- 398 006b 00       		.byte	0
- 399 006c 07       		.uleb128 0x7
- 400 006d 2E       		.uleb128 0x2e
- 401 006e 00       		.byte	0
- 402 006f 3F       		.uleb128 0x3f
- 403 0070 19       		.uleb128 0x19
- 404 0071 03       		.uleb128 0x3
- 405 0072 0E       		.uleb128 0xe
- 406 0073 3A       		.uleb128 0x3a
- 407 0074 0B       		.uleb128 0xb
- 408 0075 3B       		.uleb128 0x3b
- 409 0076 0B       		.uleb128 0xb
- 410 0077 49       		.uleb128 0x49
- 411 0078 13       		.uleb128 0x13
- 412 0079 11       		.uleb128 0x11
- 413 007a 01       		.uleb128 0x1
- 414 007b 12       		.uleb128 0x12
- 415 007c 06       		.uleb128 0x6
- 416 007d 40       		.uleb128 0x40
- 417 007e 18       		.uleb128 0x18
- 418 007f 9742     		.uleb128 0x2117
- 419 0081 19       		.uleb128 0x19
- 420 0082 00       		.byte	0
- 421 0083 00       		.byte	0
- 422 0084 00       		.byte	0
- 423              		.section	.debug_aranges,"",%progbits
- 424 0000 2C000000 		.4byte	0x2c
- 425 0004 0200     		.2byte	0x2
- 426 0006 00000000 		.4byte	.Ldebug_info0
- 427 000a 04       		.byte	0x4
- 428 000b 00       		.byte	0
- 429 000c 0000     		.2byte	0
- 430 000e 0000     		.2byte	0
- 431 0010 00000000 		.4byte	.LFB35
- 432 0014 44000000 		.4byte	.LFE35-.LFB35
- 433 0018 00000000 		.4byte	.LFB36
- 434 001c 34000000 		.4byte	.LFE36-.LFB36
- 435 0020 00000000 		.4byte	.LFB37
- 436 0024 08000000 		.4byte	.LFE37-.LFB37
- 437 0028 00000000 		.4byte	0
- 438 002c 00000000 		.4byte	0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 11
+ 451 015c 00000000 		.word	X_DEFAULT
+ 452 0160 66050000 		.word	1382
+ 453 0164 1D050000 		.word	1309
+ 454 0168 A5060000 		.word	1701
+ 455 016c EF060000 		.word	1775
+ 456 0170 8F050000 		.word	1423
+ 457 0174 E2050000 		.word	1506
+ 458              		.cfi_endproc
+ 459              	.LFE37:
+ 460              		.size	Scan_Accelerometer, .-Scan_Accelerometer
+ 461              		.section	.text.main,"ax",%progbits
+ 462              		.align	2
+ 463              		.global	main
+ 464              		.code	16
+ 465              		.thumb_func
+ 466              		.type	main, %function
+ 467              	main:
+ 468              	.LFB38:
+ 121:.\main.c      **** int main()
+ 122:.\main.c      **** {
+ 469              		.loc 1 122 0
+ 470              		.cfi_startproc
+ 471 0000 90B5     		push	{r4, r7, lr}
+ 472              		.cfi_def_cfa_offset 12
+ 473              		.cfi_offset 4, -12
+ 474              		.cfi_offset 7, -8
+ 475              		.cfi_offset 14, -4
+ 476 0002 87B0     		sub	sp, sp, #28
+ 477              		.cfi_def_cfa_offset 40
+ 478 0004 00AF     		add	r7, sp, #0
+ 479              		.cfi_def_cfa_register 7
+ 123:.\main.c      ****     /*intialize state variables*/
+ 124:.\main.c      ****     int colorState = 1;
+ 480              		.loc 1 124 0
+ 481 0006 0123     		mov	r3, #1
+ 482 0008 7B61     		str	r3, [r7, #20]
+ 125:.\main.c      ****     int intensityState = 1;
+ 483              		.loc 1 125 0
+ 484 000a 0123     		mov	r3, #1
+ 485 000c 3B61     		str	r3, [r7, #16]
+ 126:.\main.c      ****     int curr_Intensity;
+ 127:.\main.c      ****     uint8 gesture;
+ 128:.\main.c      ****     /*delay counter*/
+ 129:.\main.c      ****     int i=0;
+ 486              		.loc 1 129 0
+ 487 000e 0023     		mov	r3, #0
+ 488 0010 FB60     		str	r3, [r7, #12]
+ 130:.\main.c      ****     
+ 131:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+ 132:.\main.c      **** 
+ 133:.\main.c      ****         Sensor_ADC_Start();
+ 489              		.loc 1 133 0
+ 490 0012 FFF7FEFF 		bl	Sensor_ADC_Start
+ 134:.\main.c      ****         Sensor_ADC_StartConvert();
+ 491              		.loc 1 134 0
+ 492 0016 FFF7FEFF 		bl	Sensor_ADC_StartConvert
+ 135:.\main.c      ****         
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 12
 
 
- 439              		.section	.debug_ranges,"",%progbits
- 440              	.Ldebug_ranges0:
- 441 0000 00000000 		.4byte	.LFB35
- 442 0004 44000000 		.4byte	.LFE35
- 443 0008 00000000 		.4byte	.LFB36
- 444 000c 34000000 		.4byte	.LFE36
- 445 0010 00000000 		.4byte	.LFB37
- 446 0014 08000000 		.4byte	.LFE37
- 447 0018 00000000 		.4byte	0
- 448 001c 00000000 		.4byte	0
- 449              		.section	.debug_line,"",%progbits
- 450              	.Ldebug_line0:
- 451 0000 7F000000 		.section	.debug_str,"MS",%progbits,1
- 451      02001F00 
- 451      00000201 
- 451      FB0E0D00 
- 451      01010101 
- 452              	.LASF6:
- 453 0000 6C6F6E67 		.ascii	"long long int\000"
- 453      206C6F6E 
- 453      6720696E 
- 453      7400
- 454              	.LASF8:
- 455 000e 756E7369 		.ascii	"unsigned int\000"
- 455      676E6564 
- 455      20696E74 
- 455      00
- 456              	.LASF19:
- 457 001b 6D61696E 		.ascii	"main\000"
- 457      00
- 458              	.LASF5:
- 459 0020 6C6F6E67 		.ascii	"long unsigned int\000"
- 459      20756E73 
- 459      69676E65 
- 459      6420696E 
- 459      7400
- 460              	.LASF2:
- 461 0032 73686F72 		.ascii	"short int\000"
- 461      7420696E 
- 461      7400
- 462              	.LASF7:
- 463 003c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 463      206C6F6E 
- 463      6720756E 
- 463      7369676E 
- 463      65642069 
- 464              	.LASF16:
- 465 0053 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 465      4320342E 
- 465      382E3420 
- 465      32303134 
- 465      30353236 
- 466 0086 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 466      20726576 
- 466      6973696F 
- 466      6E203231 
- 466      31333538 
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 12
+ 136:.\main.c      ****     CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
+ 493              		.loc 1 136 0
+ 494              	@ 136 ".\main.c" 1
+ 495 001a 62B6     		CPSIE   i
+ 496              	@ 0 "" 2
+ 497              		.code	16
+ 498              	.L39:
+ 137:.\main.c      ****     for(;;)
+ 138:.\main.c      ****     {
+ 139:.\main.c      ****         gesture = Scan_Accelerometer();
+ 499              		.loc 1 139 0
+ 500 001c 3C1C     		mov	r4, r7
+ 501 001e 0B34     		add	r4, r4, #11
+ 502 0020 FFF7FEFF 		bl	Scan_Accelerometer
+ 503 0024 031C     		mov	r3, r0
+ 504 0026 2370     		strb	r3, [r4]
+ 140:.\main.c      ****         //LEFT
+ 141:.\main.c      ****         if(gesture==5){
+ 505              		.loc 1 141 0
+ 506 0028 3B1C     		mov	r3, r7
+ 507 002a 0B33     		add	r3, r3, #11
+ 508 002c 1B78     		ldrb	r3, [r3]
+ 509 002e 052B     		cmp	r3, #5
+ 510 0030 0AD1     		bne	.L29
+ 142:.\main.c      ****             if (colorState>1){
+ 511              		.loc 1 142 0
+ 512 0032 7B69     		ldr	r3, [r7, #20]
+ 513 0034 012B     		cmp	r3, #1
+ 514 0036 02DD     		ble	.L30
+ 143:.\main.c      ****                 colorState--;
+ 515              		.loc 1 143 0
+ 516 0038 7B69     		ldr	r3, [r7, #20]
+ 517 003a 013B     		sub	r3, r3, #1
+ 518 003c 7B61     		str	r3, [r7, #20]
+ 519              	.L30:
+ 144:.\main.c      ****             }
+ 145:.\main.c      ****             if (colorState<=1){
+ 520              		.loc 1 145 0
+ 521 003e 7B69     		ldr	r3, [r7, #20]
+ 522 0040 012B     		cmp	r3, #1
+ 523 0042 01DC     		bgt	.L29
+ 146:.\main.c      ****                 colorState = 1;
+ 524              		.loc 1 146 0
+ 525 0044 0123     		mov	r3, #1
+ 526 0046 7B61     		str	r3, [r7, #20]
+ 527              	.L29:
+ 147:.\main.c      ****             }
+ 148:.\main.c      ****         }
+ 149:.\main.c      ****         //RIGHT
+ 150:.\main.c      ****         if(gesture==4){
+ 528              		.loc 1 150 0
+ 529 0048 3B1C     		mov	r3, r7
+ 530 004a 0B33     		add	r3, r3, #11
+ 531 004c 1B78     		ldrb	r3, [r3]
+ 532 004e 042B     		cmp	r3, #4
+ 533 0050 0AD1     		bne	.L31
+ 151:.\main.c      ****             if (colorState < 4){
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 13
 
 
- 467 00b9 30202D66 		.ascii	"0 -ffunction-sections\000"
- 467      66756E63 
- 467      74696F6E 
- 467      2D736563 
- 467      74696F6E 
- 468              	.LASF14:
- 469 00cf 496E7465 		.ascii	"Intensity\000"
- 469      6E736974 
- 469      7900
- 470              	.LASF1:
- 471 00d9 756E7369 		.ascii	"unsigned char\000"
- 471      676E6564 
- 471      20636861 
- 471      7200
- 472              	.LASF11:
- 473 00e7 63686172 		.ascii	"char\000"
- 473      00
- 474              	.LASF4:
- 475 00ec 6C6F6E67 		.ascii	"long int\000"
- 475      20696E74 
- 475      00
- 476              	.LASF10:
- 477 00f5 646F7562 		.ascii	"double\000"
- 477      6C6500
- 478              	.LASF13:
- 479 00fc 636F6C6F 		.ascii	"colorChange\000"
- 479      72436861 
- 479      6E676500 
- 480              	.LASF3:
- 481 0108 73686F72 		.ascii	"short unsigned int\000"
- 481      7420756E 
- 481      7369676E 
- 481      65642069 
- 481      6E7400
- 482              	.LASF0:
- 483 011b 7369676E 		.ascii	"signed char\000"
- 483      65642063 
- 483      68617200 
- 484              	.LASF18:
- 485 0127 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\lastProj"
- 485      73657273 
- 485      5C6A7369 
- 485      6E675C44 
- 485      6F63756D 
- 486 0155 6563745C 		.ascii	"ect\\Accelerometer Testing\\Accelerometer Testing.c"
- 486      41636365 
- 486      6C65726F 
- 486      6D657465 
- 486      72205465 
- 487 0186 7964736E 		.ascii	"ydsn\000"
- 487      00
- 488              	.LASF15:
- 489 018b 73746174 		.ascii	"state\000"
- 489      6500
- 490              	.LASF9:
- 491 0191 666C6F61 		.ascii	"float\000"
- 491      7400
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 13
+ 534              		.loc 1 151 0
+ 535 0052 7B69     		ldr	r3, [r7, #20]
+ 536 0054 032B     		cmp	r3, #3
+ 537 0056 02DC     		bgt	.L32
+ 152:.\main.c      ****                 colorState++;
+ 538              		.loc 1 152 0
+ 539 0058 7B69     		ldr	r3, [r7, #20]
+ 540 005a 0133     		add	r3, r3, #1
+ 541 005c 7B61     		str	r3, [r7, #20]
+ 542              	.L32:
+ 153:.\main.c      ****             }
+ 154:.\main.c      ****             if (colorState >= 4){
+ 543              		.loc 1 154 0
+ 544 005e 7B69     		ldr	r3, [r7, #20]
+ 545 0060 032B     		cmp	r3, #3
+ 546 0062 01DD     		ble	.L31
+ 155:.\main.c      ****                 colorState = 4;
+ 547              		.loc 1 155 0
+ 548 0064 0423     		mov	r3, #4
+ 549 0066 7B61     		str	r3, [r7, #20]
+ 550              	.L31:
+ 156:.\main.c      ****             }
+ 157:.\main.c      ****         }
+ 158:.\main.c      ****         //UP
+ 159:.\main.c      ****         if(gesture==3){
+ 551              		.loc 1 159 0
+ 552 0068 3B1C     		mov	r3, r7
+ 553 006a 0B33     		add	r3, r3, #11
+ 554 006c 1B78     		ldrb	r3, [r3]
+ 555 006e 032B     		cmp	r3, #3
+ 556 0070 0AD1     		bne	.L33
+ 160:.\main.c      ****             if(intensityState < 4){
+ 557              		.loc 1 160 0
+ 558 0072 3B69     		ldr	r3, [r7, #16]
+ 559 0074 032B     		cmp	r3, #3
+ 560 0076 02DC     		bgt	.L34
+ 161:.\main.c      ****                 intensityState++;
+ 561              		.loc 1 161 0
+ 562 0078 3B69     		ldr	r3, [r7, #16]
+ 563 007a 0133     		add	r3, r3, #1
+ 564 007c 3B61     		str	r3, [r7, #16]
+ 565              	.L34:
+ 162:.\main.c      ****             }
+ 163:.\main.c      ****             if(intensityState >= 4){
+ 566              		.loc 1 163 0
+ 567 007e 3B69     		ldr	r3, [r7, #16]
+ 568 0080 032B     		cmp	r3, #3
+ 569 0082 01DD     		ble	.L33
+ 164:.\main.c      ****                 intensityState = 4;
+ 570              		.loc 1 164 0
+ 571 0084 0423     		mov	r3, #4
+ 572 0086 3B61     		str	r3, [r7, #16]
+ 573              	.L33:
+ 165:.\main.c      ****             }
+ 166:.\main.c      ****         }
+ 167:.\main.c      ****         //DOWN
+ 168:.\main.c      ****         if(gesture==2){
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 14
 
 
- 492              	.LASF17:
- 493 0197 2E5C6D61 		.ascii	".\\main.c\000"
- 493      696E2E63 
- 493      00
- 494              	.LASF12:
- 495 01a0 73697A65 		.ascii	"sizetype\000"
- 495      74797065 
- 495      00
- 496              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 574              		.loc 1 168 0
+ 575 0088 3B1C     		mov	r3, r7
+ 576 008a 0B33     		add	r3, r3, #11
+ 577 008c 1B78     		ldrb	r3, [r3]
+ 578 008e 022B     		cmp	r3, #2
+ 579 0090 0AD1     		bne	.L35
+ 169:.\main.c      ****         if(intensityState >= 1){
+ 580              		.loc 1 169 0
+ 581 0092 3B69     		ldr	r3, [r7, #16]
+ 582 0094 002B     		cmp	r3, #0
+ 583 0096 02DD     		ble	.L36
+ 170:.\main.c      ****                 intensityState++;
+ 584              		.loc 1 170 0
+ 585 0098 3B69     		ldr	r3, [r7, #16]
+ 586 009a 0133     		add	r3, r3, #1
+ 587 009c 3B61     		str	r3, [r7, #16]
+ 588              	.L36:
+ 171:.\main.c      ****             }
+ 172:.\main.c      ****             if(intensityState < 1){
+ 589              		.loc 1 172 0
+ 590 009e 3B69     		ldr	r3, [r7, #16]
+ 591 00a0 002B     		cmp	r3, #0
+ 592 00a2 01DC     		bgt	.L35
+ 173:.\main.c      ****                 intensityState = 1;
+ 593              		.loc 1 173 0
+ 594 00a4 0123     		mov	r3, #1
+ 595 00a6 3B61     		str	r3, [r7, #16]
+ 596              	.L35:
+ 174:.\main.c      ****             }
+ 175:.\main.c      ****         }
+ 176:.\main.c      ****         curr_Intensity = Intensity(intensityState);
+ 597              		.loc 1 176 0
+ 598 00a8 3B69     		ldr	r3, [r7, #16]
+ 599 00aa 181C     		mov	r0, r3
+ 600 00ac FFF7FEFF 		bl	Intensity
+ 601 00b0 031C     		mov	r3, r0
+ 602 00b2 7B60     		str	r3, [r7, #4]
+ 177:.\main.c      ****         colorChange(colorState , curr_Intensity);
+ 603              		.loc 1 177 0
+ 604 00b4 7B68     		ldr	r3, [r7, #4]
+ 605 00b6 DBB2     		uxtb	r3, r3
+ 606 00b8 7A69     		ldr	r2, [r7, #20]
+ 607 00ba 101C     		mov	r0, r2
+ 608 00bc 191C     		mov	r1, r3
+ 609 00be FFF7FEFF 		bl	colorChange
+ 178:.\main.c      ****         
+ 179:.\main.c      ****         while(i<1000000){
+ 610              		.loc 1 179 0
+ 611 00c2 02E0     		b	.L37
+ 612              	.L38:
+ 180:.\main.c      ****             i++;
+ 613              		.loc 1 180 0
+ 614 00c4 FB68     		ldr	r3, [r7, #12]
+ 615 00c6 0133     		add	r3, r3, #1
+ 616 00c8 FB60     		str	r3, [r7, #12]
+ 617              	.L37:
+ 179:.\main.c      ****         while(i<1000000){
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 15
+
+
+ 618              		.loc 1 179 0 discriminator 1
+ 619 00ca FA68     		ldr	r2, [r7, #12]
+ 620 00cc 014B     		ldr	r3, .L40
+ 621 00ce 9A42     		cmp	r2, r3
+ 622 00d0 F8DD     		ble	.L38
+ 181:.\main.c      ****             //wait
+ 182:.\main.c      ****         }
+ 183:.\main.c      ****        
+ 184:.\main.c      ****         
+ 185:.\main.c      ****         
+ 186:.\main.c      ****         
+ 187:.\main.c      ****     
+ 188:.\main.c      ****     }
+ 623              		.loc 1 188 0
+ 624 00d2 A3E7     		b	.L39
+ 625              	.L41:
+ 626              		.align	2
+ 627              	.L40:
+ 628 00d4 3F420F00 		.word	999999
+ 629              		.cfi_endproc
+ 630              	.LFE38:
+ 631              		.size	main, .-main
+ 632              		.text
+ 633              	.Letext0:
+ 634              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
+ 635              		.section	.debug_info,"",%progbits
+ 636              	.Ldebug_info0:
+ 637 0000 DB010000 		.4byte	0x1db
+ 638 0004 0400     		.2byte	0x4
+ 639 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 640 000a 04       		.byte	0x4
+ 641 000b 01       		.uleb128 0x1
+ 642 000c 50000000 		.4byte	.LASF29
+ 643 0010 01       		.byte	0x1
+ 644 0011 24010000 		.4byte	.LASF30
+ 645 0015 E7010000 		.4byte	.LASF31
+ 646 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 647 001d 00000000 		.4byte	0
+ 648 0021 00000000 		.4byte	.Ldebug_line0
+ 649 0025 02       		.uleb128 0x2
+ 650 0026 01       		.byte	0x1
+ 651 0027 06       		.byte	0x6
+ 652 0028 DB010000 		.4byte	.LASF0
+ 653 002c 02       		.uleb128 0x2
+ 654 002d 01       		.byte	0x1
+ 655 002e 08       		.byte	0x8
+ 656 002f CC000000 		.4byte	.LASF1
+ 657 0033 02       		.uleb128 0x2
+ 658 0034 02       		.byte	0x2
+ 659 0035 05       		.byte	0x5
+ 660 0036 C8010000 		.4byte	.LASF2
+ 661 003a 02       		.uleb128 0x2
+ 662 003b 02       		.byte	0x2
+ 663 003c 07       		.byte	0x7
+ 664 003d 23000000 		.4byte	.LASF3
+ 665 0041 02       		.uleb128 0x2
+ 666 0042 04       		.byte	0x4
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 16
+
+
+ 667 0043 05       		.byte	0x5
+ 668 0044 D2010000 		.4byte	.LASF4
+ 669 0048 02       		.uleb128 0x2
+ 670 0049 04       		.byte	0x4
+ 671 004a 07       		.byte	0x7
+ 672 004b E0000000 		.4byte	.LASF5
+ 673 004f 02       		.uleb128 0x2
+ 674 0050 08       		.byte	0x8
+ 675 0051 05       		.byte	0x5
+ 676 0052 A7010000 		.4byte	.LASF6
+ 677 0056 02       		.uleb128 0x2
+ 678 0057 08       		.byte	0x8
+ 679 0058 07       		.byte	0x7
+ 680 0059 53010000 		.4byte	.LASF7
+ 681 005d 03       		.uleb128 0x3
+ 682 005e 04       		.byte	0x4
+ 683 005f 05       		.byte	0x5
+ 684 0060 696E7400 		.ascii	"int\000"
+ 685 0064 02       		.uleb128 0x2
+ 686 0065 04       		.byte	0x4
+ 687 0066 07       		.byte	0x7
+ 688 0067 46010000 		.4byte	.LASF8
+ 689 006b 04       		.uleb128 0x4
+ 690 006c F2000000 		.4byte	.LASF9
+ 691 0070 02       		.byte	0x2
+ 692 0071 A1       		.byte	0xa1
+ 693 0072 2C000000 		.4byte	0x2c
+ 694 0076 04       		.uleb128 0x4
+ 695 0077 DA000000 		.4byte	.LASF10
+ 696 007b 02       		.byte	0x2
+ 697 007c A5       		.byte	0xa5
+ 698 007d 33000000 		.4byte	0x33
+ 699 0081 02       		.uleb128 0x2
+ 700 0082 04       		.byte	0x4
+ 701 0083 04       		.byte	0x4
+ 702 0084 4A000000 		.4byte	.LASF11
+ 703 0088 02       		.uleb128 0x2
+ 704 0089 08       		.byte	0x8
+ 705 008a 04       		.byte	0x4
+ 706 008b 1D010000 		.4byte	.LASF12
+ 707 008f 02       		.uleb128 0x2
+ 708 0090 01       		.byte	0x1
+ 709 0091 08       		.byte	0x8
+ 710 0092 B5010000 		.4byte	.LASF13
+ 711 0096 02       		.uleb128 0x2
+ 712 0097 04       		.byte	0x4
+ 713 0098 07       		.byte	0x7
+ 714 0099 9E010000 		.4byte	.LASF14
+ 715 009d 05       		.uleb128 0x5
+ 716 009e 75010000 		.4byte	.LASF17
+ 717 00a2 01       		.byte	0x1
+ 718 00a3 18       		.byte	0x18
+ 719 00a4 00000000 		.4byte	.LFB35
+ 720 00a8 A4000000 		.4byte	.LFE35-.LFB35
+ 721 00ac 01       		.uleb128 0x1
+ 722 00ad 9C       		.byte	0x9c
+ 723 00ae CF000000 		.4byte	0xcf
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 17
+
+
+ 724 00b2 06       		.uleb128 0x6
+ 725 00b3 0E000000 		.4byte	.LASF15
+ 726 00b7 01       		.byte	0x1
+ 727 00b8 18       		.byte	0x18
+ 728 00b9 5D000000 		.4byte	0x5d
+ 729 00bd 02       		.uleb128 0x2
+ 730 00be 91       		.byte	0x91
+ 731 00bf 74       		.sleb128 -12
+ 732 00c0 06       		.uleb128 0x6
+ 733 00c1 2D010000 		.4byte	.LASF16
+ 734 00c5 01       		.byte	0x1
+ 735 00c6 18       		.byte	0x18
+ 736 00c7 6B000000 		.4byte	0x6b
+ 737 00cb 02       		.uleb128 0x2
+ 738 00cc 91       		.byte	0x91
+ 739 00cd 73       		.sleb128 -13
+ 740 00ce 00       		.byte	0
+ 741 00cf 07       		.uleb128 0x7
+ 742 00d0 36000000 		.4byte	.LASF32
+ 743 00d4 01       		.byte	0x1
+ 744 00d5 39       		.byte	0x39
+ 745 00d6 6B000000 		.4byte	0x6b
+ 746 00da 00000000 		.4byte	.LFB36
+ 747 00de 60000000 		.4byte	.LFE36-.LFB36
+ 748 00e2 01       		.uleb128 0x1
+ 749 00e3 9C       		.byte	0x9c
+ 750 00e4 05010000 		.4byte	0x105
+ 751 00e8 06       		.uleb128 0x6
+ 752 00e9 0E000000 		.4byte	.LASF15
+ 753 00ed 01       		.byte	0x1
+ 754 00ee 39       		.byte	0x39
+ 755 00ef 5D000000 		.4byte	0x5d
+ 756 00f3 02       		.uleb128 0x2
+ 757 00f4 91       		.byte	0x91
+ 758 00f5 6C       		.sleb128 -20
+ 759 00f6 08       		.uleb128 0x8
+ 760 00f7 2D010000 		.4byte	.LASF16
+ 761 00fb 01       		.byte	0x1
+ 762 00fc 3A       		.byte	0x3a
+ 763 00fd 6B000000 		.4byte	0x6b
+ 764 0101 02       		.uleb128 0x2
+ 765 0102 91       		.byte	0x91
+ 766 0103 77       		.sleb128 -9
+ 767 0104 00       		.byte	0
+ 768 0105 09       		.uleb128 0x9
+ 769 0106 8B010000 		.4byte	.LASF33
+ 770 010a 01       		.byte	0x1
+ 771 010b 52       		.byte	0x52
+ 772 010c 6B000000 		.4byte	0x6b
+ 773 0110 00000000 		.4byte	.LFB37
+ 774 0114 78010000 		.4byte	.LFE37-.LFB37
+ 775 0118 01       		.uleb128 0x1
+ 776 0119 9C       		.byte	0x9c
+ 777 011a 0A       		.uleb128 0xa
+ 778 011b 37010000 		.4byte	.LASF18
+ 779 011f 01       		.byte	0x1
+ 780 0120 79       		.byte	0x79
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 18
+
+
+ 781 0121 5D000000 		.4byte	0x5d
+ 782 0125 00000000 		.4byte	.LFB38
+ 783 0129 D8000000 		.4byte	.LFE38-.LFB38
+ 784 012d 01       		.uleb128 0x1
+ 785 012e 9C       		.byte	0x9c
+ 786 012f 78010000 		.4byte	0x178
+ 787 0133 08       		.uleb128 0x8
+ 788 0134 6A010000 		.4byte	.LASF19
+ 789 0138 01       		.byte	0x1
+ 790 0139 7C       		.byte	0x7c
+ 791 013a 5D000000 		.4byte	0x5d
+ 792 013e 02       		.uleb128 0x2
+ 793 013f 91       		.byte	0x91
+ 794 0140 6C       		.sleb128 -20
+ 795 0141 08       		.uleb128 0x8
+ 796 0142 0E010000 		.4byte	.LASF20
+ 797 0146 01       		.byte	0x1
+ 798 0147 7D       		.byte	0x7d
+ 799 0148 5D000000 		.4byte	0x5d
+ 800 014c 02       		.uleb128 0x2
+ 801 014d 91       		.byte	0x91
+ 802 014e 68       		.sleb128 -24
+ 803 014f 08       		.uleb128 0x8
+ 804 0150 14000000 		.4byte	.LASF21
+ 805 0154 01       		.byte	0x1
+ 806 0155 7E       		.byte	0x7e
+ 807 0156 5D000000 		.4byte	0x5d
+ 808 015a 02       		.uleb128 0x2
+ 809 015b 91       		.byte	0x91
+ 810 015c 5C       		.sleb128 -36
+ 811 015d 08       		.uleb128 0x8
+ 812 015e F8000000 		.4byte	.LASF22
+ 813 0162 01       		.byte	0x1
+ 814 0163 7F       		.byte	0x7f
+ 815 0164 6B000000 		.4byte	0x6b
+ 816 0168 02       		.uleb128 0x2
+ 817 0169 91       		.byte	0x91
+ 818 016a 63       		.sleb128 -29
+ 819 016b 0B       		.uleb128 0xb
+ 820 016c 6900     		.ascii	"i\000"
+ 821 016e 01       		.byte	0x1
+ 822 016f 81       		.byte	0x81
+ 823 0170 5D000000 		.4byte	0x5d
+ 824 0174 02       		.uleb128 0x2
+ 825 0175 91       		.byte	0x91
+ 826 0176 64       		.sleb128 -28
+ 827 0177 00       		.byte	0
+ 828 0178 0C       		.uleb128 0xc
+ 829 0179 81010000 		.4byte	.LASF23
+ 830 017d 01       		.byte	0x1
+ 831 017e 12       		.byte	0x12
+ 832 017f 76000000 		.4byte	0x76
+ 833 0183 05       		.uleb128 0x5
+ 834 0184 03       		.byte	0x3
+ 835 0185 00000000 		.4byte	X_DEFAULT
+ 836 0189 0C       		.uleb128 0xc
+ 837 018a 40000000 		.4byte	.LASF24
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 19
+
+
+ 838 018e 01       		.byte	0x1
+ 839 018f 13       		.byte	0x13
+ 840 0190 76000000 		.4byte	0x76
+ 841 0194 05       		.uleb128 0x5
+ 842 0195 03       		.byte	0x3
+ 843 0196 00000000 		.4byte	Y_DEFAULT
+ 844 019a 0C       		.uleb128 0xc
+ 845 019b 3C010000 		.4byte	.LASF25
+ 846 019f 01       		.byte	0x1
+ 847 01a0 14       		.byte	0x14
+ 848 01a1 76000000 		.4byte	0x76
+ 849 01a5 05       		.uleb128 0x5
+ 850 01a6 03       		.byte	0x3
+ 851 01a7 00000000 		.4byte	Z_DEFAULT
+ 852 01ab 0C       		.uleb128 0xc
+ 853 01ac 00000000 		.4byte	.LASF26
+ 854 01b0 01       		.byte	0x1
+ 855 01b1 15       		.byte	0x15
+ 856 01b2 76000000 		.4byte	0x76
+ 857 01b6 05       		.uleb128 0x5
+ 858 01b7 03       		.byte	0x3
+ 859 01b8 00000000 		.4byte	ADC_x_current
+ 860 01bc 0C       		.uleb128 0xc
+ 861 01bd 00010000 		.4byte	.LASF27
+ 862 01c1 01       		.byte	0x1
+ 863 01c2 15       		.byte	0x15
+ 864 01c3 76000000 		.4byte	0x76
+ 865 01c7 05       		.uleb128 0x5
+ 866 01c8 03       		.byte	0x3
+ 867 01c9 00000000 		.4byte	ADC_y_current
+ 868 01cd 0C       		.uleb128 0xc
+ 869 01ce BA010000 		.4byte	.LASF28
+ 870 01d2 01       		.byte	0x1
+ 871 01d3 15       		.byte	0x15
+ 872 01d4 76000000 		.4byte	0x76
+ 873 01d8 05       		.uleb128 0x5
+ 874 01d9 03       		.byte	0x3
+ 875 01da 00000000 		.4byte	ADC_z_current
+ 876 01de 00       		.byte	0
+ 877              		.section	.debug_abbrev,"",%progbits
+ 878              	.Ldebug_abbrev0:
+ 879 0000 01       		.uleb128 0x1
+ 880 0001 11       		.uleb128 0x11
+ 881 0002 01       		.byte	0x1
+ 882 0003 25       		.uleb128 0x25
+ 883 0004 0E       		.uleb128 0xe
+ 884 0005 13       		.uleb128 0x13
+ 885 0006 0B       		.uleb128 0xb
+ 886 0007 03       		.uleb128 0x3
+ 887 0008 0E       		.uleb128 0xe
+ 888 0009 1B       		.uleb128 0x1b
+ 889 000a 0E       		.uleb128 0xe
+ 890 000b 55       		.uleb128 0x55
+ 891 000c 17       		.uleb128 0x17
+ 892 000d 11       		.uleb128 0x11
+ 893 000e 01       		.uleb128 0x1
+ 894 000f 10       		.uleb128 0x10
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 20
+
+
+ 895 0010 17       		.uleb128 0x17
+ 896 0011 00       		.byte	0
+ 897 0012 00       		.byte	0
+ 898 0013 02       		.uleb128 0x2
+ 899 0014 24       		.uleb128 0x24
+ 900 0015 00       		.byte	0
+ 901 0016 0B       		.uleb128 0xb
+ 902 0017 0B       		.uleb128 0xb
+ 903 0018 3E       		.uleb128 0x3e
+ 904 0019 0B       		.uleb128 0xb
+ 905 001a 03       		.uleb128 0x3
+ 906 001b 0E       		.uleb128 0xe
+ 907 001c 00       		.byte	0
+ 908 001d 00       		.byte	0
+ 909 001e 03       		.uleb128 0x3
+ 910 001f 24       		.uleb128 0x24
+ 911 0020 00       		.byte	0
+ 912 0021 0B       		.uleb128 0xb
+ 913 0022 0B       		.uleb128 0xb
+ 914 0023 3E       		.uleb128 0x3e
+ 915 0024 0B       		.uleb128 0xb
+ 916 0025 03       		.uleb128 0x3
+ 917 0026 08       		.uleb128 0x8
+ 918 0027 00       		.byte	0
+ 919 0028 00       		.byte	0
+ 920 0029 04       		.uleb128 0x4
+ 921 002a 16       		.uleb128 0x16
+ 922 002b 00       		.byte	0
+ 923 002c 03       		.uleb128 0x3
+ 924 002d 0E       		.uleb128 0xe
+ 925 002e 3A       		.uleb128 0x3a
+ 926 002f 0B       		.uleb128 0xb
+ 927 0030 3B       		.uleb128 0x3b
+ 928 0031 0B       		.uleb128 0xb
+ 929 0032 49       		.uleb128 0x49
+ 930 0033 13       		.uleb128 0x13
+ 931 0034 00       		.byte	0
+ 932 0035 00       		.byte	0
+ 933 0036 05       		.uleb128 0x5
+ 934 0037 2E       		.uleb128 0x2e
+ 935 0038 01       		.byte	0x1
+ 936 0039 3F       		.uleb128 0x3f
+ 937 003a 19       		.uleb128 0x19
+ 938 003b 03       		.uleb128 0x3
+ 939 003c 0E       		.uleb128 0xe
+ 940 003d 3A       		.uleb128 0x3a
+ 941 003e 0B       		.uleb128 0xb
+ 942 003f 3B       		.uleb128 0x3b
+ 943 0040 0B       		.uleb128 0xb
+ 944 0041 27       		.uleb128 0x27
+ 945 0042 19       		.uleb128 0x19
+ 946 0043 11       		.uleb128 0x11
+ 947 0044 01       		.uleb128 0x1
+ 948 0045 12       		.uleb128 0x12
+ 949 0046 06       		.uleb128 0x6
+ 950 0047 40       		.uleb128 0x40
+ 951 0048 18       		.uleb128 0x18
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 21
+
+
+ 952 0049 9642     		.uleb128 0x2116
+ 953 004b 19       		.uleb128 0x19
+ 954 004c 01       		.uleb128 0x1
+ 955 004d 13       		.uleb128 0x13
+ 956 004e 00       		.byte	0
+ 957 004f 00       		.byte	0
+ 958 0050 06       		.uleb128 0x6
+ 959 0051 05       		.uleb128 0x5
+ 960 0052 00       		.byte	0
+ 961 0053 03       		.uleb128 0x3
+ 962 0054 0E       		.uleb128 0xe
+ 963 0055 3A       		.uleb128 0x3a
+ 964 0056 0B       		.uleb128 0xb
+ 965 0057 3B       		.uleb128 0x3b
+ 966 0058 0B       		.uleb128 0xb
+ 967 0059 49       		.uleb128 0x49
+ 968 005a 13       		.uleb128 0x13
+ 969 005b 02       		.uleb128 0x2
+ 970 005c 18       		.uleb128 0x18
+ 971 005d 00       		.byte	0
+ 972 005e 00       		.byte	0
+ 973 005f 07       		.uleb128 0x7
+ 974 0060 2E       		.uleb128 0x2e
+ 975 0061 01       		.byte	0x1
+ 976 0062 3F       		.uleb128 0x3f
+ 977 0063 19       		.uleb128 0x19
+ 978 0064 03       		.uleb128 0x3
+ 979 0065 0E       		.uleb128 0xe
+ 980 0066 3A       		.uleb128 0x3a
+ 981 0067 0B       		.uleb128 0xb
+ 982 0068 3B       		.uleb128 0x3b
+ 983 0069 0B       		.uleb128 0xb
+ 984 006a 27       		.uleb128 0x27
+ 985 006b 19       		.uleb128 0x19
+ 986 006c 49       		.uleb128 0x49
+ 987 006d 13       		.uleb128 0x13
+ 988 006e 11       		.uleb128 0x11
+ 989 006f 01       		.uleb128 0x1
+ 990 0070 12       		.uleb128 0x12
+ 991 0071 06       		.uleb128 0x6
+ 992 0072 40       		.uleb128 0x40
+ 993 0073 18       		.uleb128 0x18
+ 994 0074 9742     		.uleb128 0x2117
+ 995 0076 19       		.uleb128 0x19
+ 996 0077 01       		.uleb128 0x1
+ 997 0078 13       		.uleb128 0x13
+ 998 0079 00       		.byte	0
+ 999 007a 00       		.byte	0
+ 1000 007b 08       		.uleb128 0x8
+ 1001 007c 34       		.uleb128 0x34
+ 1002 007d 00       		.byte	0
+ 1003 007e 03       		.uleb128 0x3
+ 1004 007f 0E       		.uleb128 0xe
+ 1005 0080 3A       		.uleb128 0x3a
+ 1006 0081 0B       		.uleb128 0xb
+ 1007 0082 3B       		.uleb128 0x3b
+ 1008 0083 0B       		.uleb128 0xb
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 22
+
+
+ 1009 0084 49       		.uleb128 0x49
+ 1010 0085 13       		.uleb128 0x13
+ 1011 0086 02       		.uleb128 0x2
+ 1012 0087 18       		.uleb128 0x18
+ 1013 0088 00       		.byte	0
+ 1014 0089 00       		.byte	0
+ 1015 008a 09       		.uleb128 0x9
+ 1016 008b 2E       		.uleb128 0x2e
+ 1017 008c 00       		.byte	0
+ 1018 008d 3F       		.uleb128 0x3f
+ 1019 008e 19       		.uleb128 0x19
+ 1020 008f 03       		.uleb128 0x3
+ 1021 0090 0E       		.uleb128 0xe
+ 1022 0091 3A       		.uleb128 0x3a
+ 1023 0092 0B       		.uleb128 0xb
+ 1024 0093 3B       		.uleb128 0x3b
+ 1025 0094 0B       		.uleb128 0xb
+ 1026 0095 49       		.uleb128 0x49
+ 1027 0096 13       		.uleb128 0x13
+ 1028 0097 11       		.uleb128 0x11
+ 1029 0098 01       		.uleb128 0x1
+ 1030 0099 12       		.uleb128 0x12
+ 1031 009a 06       		.uleb128 0x6
+ 1032 009b 40       		.uleb128 0x40
+ 1033 009c 18       		.uleb128 0x18
+ 1034 009d 9642     		.uleb128 0x2116
+ 1035 009f 19       		.uleb128 0x19
+ 1036 00a0 00       		.byte	0
+ 1037 00a1 00       		.byte	0
+ 1038 00a2 0A       		.uleb128 0xa
+ 1039 00a3 2E       		.uleb128 0x2e
+ 1040 00a4 01       		.byte	0x1
+ 1041 00a5 3F       		.uleb128 0x3f
+ 1042 00a6 19       		.uleb128 0x19
+ 1043 00a7 03       		.uleb128 0x3
+ 1044 00a8 0E       		.uleb128 0xe
+ 1045 00a9 3A       		.uleb128 0x3a
+ 1046 00aa 0B       		.uleb128 0xb
+ 1047 00ab 3B       		.uleb128 0x3b
+ 1048 00ac 0B       		.uleb128 0xb
+ 1049 00ad 49       		.uleb128 0x49
+ 1050 00ae 13       		.uleb128 0x13
+ 1051 00af 11       		.uleb128 0x11
+ 1052 00b0 01       		.uleb128 0x1
+ 1053 00b1 12       		.uleb128 0x12
+ 1054 00b2 06       		.uleb128 0x6
+ 1055 00b3 40       		.uleb128 0x40
+ 1056 00b4 18       		.uleb128 0x18
+ 1057 00b5 9642     		.uleb128 0x2116
+ 1058 00b7 19       		.uleb128 0x19
+ 1059 00b8 01       		.uleb128 0x1
+ 1060 00b9 13       		.uleb128 0x13
+ 1061 00ba 00       		.byte	0
+ 1062 00bb 00       		.byte	0
+ 1063 00bc 0B       		.uleb128 0xb
+ 1064 00bd 34       		.uleb128 0x34
+ 1065 00be 00       		.byte	0
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 23
+
+
+ 1066 00bf 03       		.uleb128 0x3
+ 1067 00c0 08       		.uleb128 0x8
+ 1068 00c1 3A       		.uleb128 0x3a
+ 1069 00c2 0B       		.uleb128 0xb
+ 1070 00c3 3B       		.uleb128 0x3b
+ 1071 00c4 0B       		.uleb128 0xb
+ 1072 00c5 49       		.uleb128 0x49
+ 1073 00c6 13       		.uleb128 0x13
+ 1074 00c7 02       		.uleb128 0x2
+ 1075 00c8 18       		.uleb128 0x18
+ 1076 00c9 00       		.byte	0
+ 1077 00ca 00       		.byte	0
+ 1078 00cb 0C       		.uleb128 0xc
+ 1079 00cc 34       		.uleb128 0x34
+ 1080 00cd 00       		.byte	0
+ 1081 00ce 03       		.uleb128 0x3
+ 1082 00cf 0E       		.uleb128 0xe
+ 1083 00d0 3A       		.uleb128 0x3a
+ 1084 00d1 0B       		.uleb128 0xb
+ 1085 00d2 3B       		.uleb128 0x3b
+ 1086 00d3 0B       		.uleb128 0xb
+ 1087 00d4 49       		.uleb128 0x49
+ 1088 00d5 13       		.uleb128 0x13
+ 1089 00d6 3F       		.uleb128 0x3f
+ 1090 00d7 19       		.uleb128 0x19
+ 1091 00d8 02       		.uleb128 0x2
+ 1092 00d9 18       		.uleb128 0x18
+ 1093 00da 00       		.byte	0
+ 1094 00db 00       		.byte	0
+ 1095 00dc 00       		.byte	0
+ 1096              		.section	.debug_aranges,"",%progbits
+ 1097 0000 34000000 		.4byte	0x34
+ 1098 0004 0200     		.2byte	0x2
+ 1099 0006 00000000 		.4byte	.Ldebug_info0
+ 1100 000a 04       		.byte	0x4
+ 1101 000b 00       		.byte	0
+ 1102 000c 0000     		.2byte	0
+ 1103 000e 0000     		.2byte	0
+ 1104 0010 00000000 		.4byte	.LFB35
+ 1105 0014 A4000000 		.4byte	.LFE35-.LFB35
+ 1106 0018 00000000 		.4byte	.LFB36
+ 1107 001c 60000000 		.4byte	.LFE36-.LFB36
+ 1108 0020 00000000 		.4byte	.LFB37
+ 1109 0024 78010000 		.4byte	.LFE37-.LFB37
+ 1110 0028 00000000 		.4byte	.LFB38
+ 1111 002c D8000000 		.4byte	.LFE38-.LFB38
+ 1112 0030 00000000 		.4byte	0
+ 1113 0034 00000000 		.4byte	0
+ 1114              		.section	.debug_ranges,"",%progbits
+ 1115              	.Ldebug_ranges0:
+ 1116 0000 00000000 		.4byte	.LFB35
+ 1117 0004 A4000000 		.4byte	.LFE35
+ 1118 0008 00000000 		.4byte	.LFB36
+ 1119 000c 60000000 		.4byte	.LFE36
+ 1120 0010 00000000 		.4byte	.LFB37
+ 1121 0014 78010000 		.4byte	.LFE37
+ 1122 0018 00000000 		.4byte	.LFB38
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 24
+
+
+ 1123 001c D8000000 		.4byte	.LFE38
+ 1124 0020 00000000 		.4byte	0
+ 1125 0024 00000000 		.4byte	0
+ 1126              		.section	.debug_line,"",%progbits
+ 1127              	.Ldebug_line0:
+ 1128 0000 09010000 		.section	.debug_str,"MS",%progbits,1
+ 1128      02004500 
+ 1128      00000201 
+ 1128      FB0E0D00 
+ 1128      01010101 
+ 1129              	.LASF26:
+ 1130 0000 4144435F 		.ascii	"ADC_x_current\000"
+ 1130      785F6375 
+ 1130      7272656E 
+ 1130      7400
+ 1131              	.LASF15:
+ 1132 000e 73746174 		.ascii	"state\000"
+ 1132      6500
+ 1133              	.LASF21:
+ 1134 0014 63757272 		.ascii	"curr_Intensity\000"
+ 1134      5F496E74 
+ 1134      656E7369 
+ 1134      747900
+ 1135              	.LASF3:
+ 1136 0023 73686F72 		.ascii	"short unsigned int\000"
+ 1136      7420756E 
+ 1136      7369676E 
+ 1136      65642069 
+ 1136      6E7400
+ 1137              	.LASF32:
+ 1138 0036 496E7465 		.ascii	"Intensity\000"
+ 1138      6E736974 
+ 1138      7900
+ 1139              	.LASF24:
+ 1140 0040 595F4445 		.ascii	"Y_DEFAULT\000"
+ 1140      4641554C 
+ 1140      5400
+ 1141              	.LASF11:
+ 1142 004a 666C6F61 		.ascii	"float\000"
+ 1142      7400
+ 1143              	.LASF29:
+ 1144 0050 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1144      4320342E 
+ 1144      382E3420 
+ 1144      32303134 
+ 1144      30353236 
+ 1145 0083 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 1145      20726576 
+ 1145      6973696F 
+ 1145      6E203231 
+ 1145      31333538 
+ 1146 00b6 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 1146      66756E63 
+ 1146      74696F6E 
+ 1146      2D736563 
+ 1146      74696F6E 
+ 1147              	.LASF1:
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 25
+
+
+ 1148 00cc 756E7369 		.ascii	"unsigned char\000"
+ 1148      676E6564 
+ 1148      20636861 
+ 1148      7200
+ 1149              	.LASF10:
+ 1150 00da 696E7431 		.ascii	"int16\000"
+ 1150      3600
+ 1151              	.LASF5:
+ 1152 00e0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1152      20756E73 
+ 1152      69676E65 
+ 1152      6420696E 
+ 1152      7400
+ 1153              	.LASF9:
+ 1154 00f2 75696E74 		.ascii	"uint8\000"
+ 1154      3800
+ 1155              	.LASF22:
+ 1156 00f8 67657374 		.ascii	"gesture\000"
+ 1156      75726500 
+ 1157              	.LASF27:
+ 1158 0100 4144435F 		.ascii	"ADC_y_current\000"
+ 1158      795F6375 
+ 1158      7272656E 
+ 1158      7400
+ 1159              	.LASF20:
+ 1160 010e 696E7465 		.ascii	"intensityState\000"
+ 1160      6E736974 
+ 1160      79537461 
+ 1160      746500
+ 1161              	.LASF12:
+ 1162 011d 646F7562 		.ascii	"double\000"
+ 1162      6C6500
+ 1163              	.LASF30:
+ 1164 0124 2E5C6D61 		.ascii	".\\main.c\000"
+ 1164      696E2E63 
+ 1164      00
+ 1165              	.LASF16:
+ 1166 012d 696E7465 		.ascii	"intensity\000"
+ 1166      6E736974 
+ 1166      7900
+ 1167              	.LASF18:
+ 1168 0137 6D61696E 		.ascii	"main\000"
+ 1168      00
+ 1169              	.LASF25:
+ 1170 013c 5A5F4445 		.ascii	"Z_DEFAULT\000"
+ 1170      4641554C 
+ 1170      5400
+ 1171              	.LASF8:
+ 1172 0146 756E7369 		.ascii	"unsigned int\000"
+ 1172      676E6564 
+ 1172      20696E74 
+ 1172      00
+ 1173              	.LASF7:
+ 1174 0153 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1174      206C6F6E 
+ 1174      6720756E 
+ 1174      7369676E 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 26
+
+
+ 1174      65642069 
+ 1175              	.LASF19:
+ 1176 016a 636F6C6F 		.ascii	"colorState\000"
+ 1176      72537461 
+ 1176      746500
+ 1177              	.LASF17:
+ 1178 0175 636F6C6F 		.ascii	"colorChange\000"
+ 1178      72436861 
+ 1178      6E676500 
+ 1179              	.LASF23:
+ 1180 0181 585F4445 		.ascii	"X_DEFAULT\000"
+ 1180      4641554C 
+ 1180      5400
+ 1181              	.LASF33:
+ 1182 018b 5363616E 		.ascii	"Scan_Accelerometer\000"
+ 1182      5F416363 
+ 1182      656C6572 
+ 1182      6F6D6574 
+ 1182      657200
+ 1183              	.LASF14:
+ 1184 019e 73697A65 		.ascii	"sizetype\000"
+ 1184      74797065 
+ 1184      00
+ 1185              	.LASF6:
+ 1186 01a7 6C6F6E67 		.ascii	"long long int\000"
+ 1186      206C6F6E 
+ 1186      6720696E 
+ 1186      7400
+ 1187              	.LASF13:
+ 1188 01b5 63686172 		.ascii	"char\000"
+ 1188      00
+ 1189              	.LASF28:
+ 1190 01ba 4144435F 		.ascii	"ADC_z_current\000"
+ 1190      7A5F6375 
+ 1190      7272656E 
+ 1190      7400
+ 1191              	.LASF2:
+ 1192 01c8 73686F72 		.ascii	"short int\000"
+ 1192      7420696E 
+ 1192      7400
+ 1193              	.LASF4:
+ 1194 01d2 6C6F6E67 		.ascii	"long int\000"
+ 1194      20696E74 
+ 1194      00
+ 1195              	.LASF0:
+ 1196 01db 7369676E 		.ascii	"signed char\000"
+ 1196      65642063 
+ 1196      68617200 
+ 1197              	.LASF31:
+ 1198 01e7 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\lastProj"
+ 1198      73657273 
+ 1198      5C6A7369 
+ 1198      6E675C44 
+ 1198      6F63756D 
+ 1199 0215 6563745C 		.ascii	"ect\\Accelerometer Testing\\Accelerometer Testing.c"
+ 1199      41636365 
+ 1199      6C65726F 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccPDvyd2.s 			page 27
+
+
+ 1199      6D657465 
+ 1199      72205465 
+ 1200 0246 7964736E 		.ascii	"ydsn\000"
+ 1200      00
+ 1201              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

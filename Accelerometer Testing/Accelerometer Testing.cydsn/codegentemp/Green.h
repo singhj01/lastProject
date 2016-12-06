@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Green.h  
+* File Name: GREEN.h  
 * Version 2.10
 *
 * Description:
@@ -14,23 +14,23 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Green_H) /* Pins Green_H */
-#define CY_PINS_Green_H
+#if !defined(CY_PINS_GREEN_H) /* Pins GREEN_H */
+#define CY_PINS_GREEN_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
-#include "Green_aliases.h"
+#include "GREEN_aliases.h"
 
 
 /***************************************
 *        Function Prototypes             
 ***************************************/    
 
-void    Green_Write(uint8 value) ;
-void    Green_SetDriveMode(uint8 mode) ;
-uint8   Green_ReadDataReg(void) ;
-uint8   Green_Read(void) ;
-uint8   Green_ClearInterrupt(void) ;
+void    GREEN_Write(uint8 value) ;
+void    GREEN_SetDriveMode(uint8 mode) ;
+uint8   GREEN_ReadDataReg(void) ;
+uint8   GREEN_Read(void) ;
+uint8   GREEN_ClearInterrupt(void) ;
 
 
 /***************************************
@@ -38,22 +38,22 @@ uint8   Green_ClearInterrupt(void) ;
 ***************************************/
 
 /* Drive Modes */
-#define Green_DRIVE_MODE_BITS        (3)
-#define Green_DRIVE_MODE_IND_MASK    (0xFFFFFFFFu >> (32 - Green_DRIVE_MODE_BITS))
+#define GREEN_DRIVE_MODE_BITS        (3)
+#define GREEN_DRIVE_MODE_IND_MASK    (0xFFFFFFFFu >> (32 - GREEN_DRIVE_MODE_BITS))
 
-#define Green_DM_ALG_HIZ         (0x00u)
-#define Green_DM_DIG_HIZ         (0x01u)
-#define Green_DM_RES_UP          (0x02u)
-#define Green_DM_RES_DWN         (0x03u)
-#define Green_DM_OD_LO           (0x04u)
-#define Green_DM_OD_HI           (0x05u)
-#define Green_DM_STRONG          (0x06u)
-#define Green_DM_RES_UPDWN       (0x07u)
+#define GREEN_DM_ALG_HIZ         (0x00u)
+#define GREEN_DM_DIG_HIZ         (0x01u)
+#define GREEN_DM_RES_UP          (0x02u)
+#define GREEN_DM_RES_DWN         (0x03u)
+#define GREEN_DM_OD_LO           (0x04u)
+#define GREEN_DM_OD_HI           (0x05u)
+#define GREEN_DM_STRONG          (0x06u)
+#define GREEN_DM_RES_UPDWN       (0x07u)
 
 /* Digital Port Constants */
-#define Green_MASK               Green__MASK
-#define Green_SHIFT              Green__SHIFT
-#define Green_WIDTH              1u
+#define GREEN_MASK               GREEN__MASK
+#define GREEN_SHIFT              GREEN__SHIFT
+#define GREEN_WIDTH              1u
 
 
 /***************************************
@@ -62,18 +62,18 @@ uint8   Green_ClearInterrupt(void) ;
 
 /* Main Port Registers */
 /* Pin State */
-#define Green_PS                     (* (reg32 *) Green__PS)
+#define GREEN_PS                     (* (reg32 *) GREEN__PS)
 /* Port Configuration */
-#define Green_PC                     (* (reg32 *) Green__PC)
+#define GREEN_PC                     (* (reg32 *) GREEN__PC)
 /* Data Register */
-#define Green_DR                     (* (reg32 *) Green__DR)
+#define GREEN_DR                     (* (reg32 *) GREEN__DR)
 /* Input Buffer Disable Override */
-#define Green_INP_DIS                (* (reg32 *) Green__PC2)
+#define GREEN_INP_DIS                (* (reg32 *) GREEN__PC2)
 
 
-#if defined(Green__INTSTAT)  /* Interrupt Registers */
+#if defined(GREEN__INTSTAT)  /* Interrupt Registers */
 
-    #define Green_INTSTAT                (* (reg32 *) Green__INTSTAT)
+    #define GREEN_INTSTAT                (* (reg32 *) GREEN__INTSTAT)
 
 #endif /* Interrupt Registers */
 
@@ -83,11 +83,11 @@ uint8   Green_ClearInterrupt(void) ;
 * must not be used.
 ***************************************/
 
-#define Green_DRIVE_MODE_SHIFT       (0x00u)
-#define Green_DRIVE_MODE_MASK        (0x07u << Green_DRIVE_MODE_SHIFT)
+#define GREEN_DRIVE_MODE_SHIFT       (0x00u)
+#define GREEN_DRIVE_MODE_MASK        (0x07u << GREEN_DRIVE_MODE_SHIFT)
 
 
-#endif /* End Pins Green_H */
+#endif /* End Pins GREEN_H */
 
 
 /* [] END OF FILE */

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Blue.c  
+* File Name: BLUE.c  
 * Version 2.10
 *
 * Description:
@@ -15,18 +15,18 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Blue.h"
+#include "BLUE.h"
 
 #define SetP4PinDriveMode(shift, mode)  \
     do { \
-        Blue_PC =   (Blue_PC & \
-                                (uint32)(~(uint32)(Blue_DRIVE_MODE_IND_MASK << (Blue_DRIVE_MODE_BITS * (shift))))) | \
-                                (uint32)((uint32)(mode) << (Blue_DRIVE_MODE_BITS * (shift))); \
+        BLUE_PC =   (BLUE_PC & \
+                                (uint32)(~(uint32)(BLUE_DRIVE_MODE_IND_MASK << (BLUE_DRIVE_MODE_BITS * (shift))))) | \
+                                (uint32)((uint32)(mode) << (BLUE_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 
 
 /*******************************************************************************
-* Function Name: Blue_Write
+* Function Name: BLUE_Write
 ********************************************************************************
 *
 * Summary:
@@ -39,16 +39,16 @@
 *  None 
 *  
 *******************************************************************************/
-void Blue_Write(uint8 value) 
+void BLUE_Write(uint8 value) 
 {
-    uint8 drVal = (uint8)(Blue_DR & (uint8)(~Blue_MASK));
-    drVal = (drVal | ((uint8)(value << Blue_SHIFT) & Blue_MASK));
-    Blue_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(BLUE_DR & (uint8)(~BLUE_MASK));
+    drVal = (drVal | ((uint8)(value << BLUE_SHIFT) & BLUE_MASK));
+    BLUE_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: Blue_SetDriveMode
+* Function Name: BLUE_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -57,27 +57,27 @@ void Blue_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  Blue_DM_STRONG     Strong Drive 
-*  Blue_DM_OD_HI      Open Drain, Drives High 
-*  Blue_DM_OD_LO      Open Drain, Drives Low 
-*  Blue_DM_RES_UP     Resistive Pull Up 
-*  Blue_DM_RES_DWN    Resistive Pull Down 
-*  Blue_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  Blue_DM_DIG_HIZ    High Impedance Digital 
-*  Blue_DM_ALG_HIZ    High Impedance Analog 
+*  BLUE_DM_STRONG     Strong Drive 
+*  BLUE_DM_OD_HI      Open Drain, Drives High 
+*  BLUE_DM_OD_LO      Open Drain, Drives Low 
+*  BLUE_DM_RES_UP     Resistive Pull Up 
+*  BLUE_DM_RES_DWN    Resistive Pull Down 
+*  BLUE_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  BLUE_DM_DIG_HIZ    High Impedance Digital 
+*  BLUE_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void Blue_SetDriveMode(uint8 mode) 
+void BLUE_SetDriveMode(uint8 mode) 
 {
-	SetP4PinDriveMode(Blue__0__SHIFT, mode);
+	SetP4PinDriveMode(BLUE__0__SHIFT, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Blue_Read
+* Function Name: BLUE_Read
 ********************************************************************************
 *
 * Summary:
@@ -91,17 +91,17 @@ void Blue_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro Blue_ReadPS calls this function. 
+*  Macro BLUE_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 Blue_Read(void) 
+uint8 BLUE_Read(void) 
 {
-    return (uint8)((Blue_PS & Blue_MASK) >> Blue_SHIFT);
+    return (uint8)((BLUE_PS & BLUE_MASK) >> BLUE_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Blue_ReadDataReg
+* Function Name: BLUE_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -114,17 +114,17 @@ uint8 Blue_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 Blue_ReadDataReg(void) 
+uint8 BLUE_ReadDataReg(void) 
 {
-    return (uint8)((Blue_DR & Blue_MASK) >> Blue_SHIFT);
+    return (uint8)((BLUE_DR & BLUE_MASK) >> BLUE_SHIFT);
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(Blue_INTSTAT) 
+#if defined(BLUE_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Blue_ClearInterrupt
+    * Function Name: BLUE_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -138,11 +138,11 @@ uint8 Blue_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 Blue_ClearInterrupt(void) 
+    uint8 BLUE_ClearInterrupt(void) 
     {
-		uint8 maskedStatus = (uint8)(Blue_INTSTAT & Blue_MASK);
-		Blue_INTSTAT = maskedStatus;
-        return maskedStatus >> Blue_SHIFT;
+		uint8 maskedStatus = (uint8)(BLUE_INTSTAT & BLUE_MASK);
+		BLUE_INTSTAT = maskedStatus;
+        return maskedStatus >> BLUE_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

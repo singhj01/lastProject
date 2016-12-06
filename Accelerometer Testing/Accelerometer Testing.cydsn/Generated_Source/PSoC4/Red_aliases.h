@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Red.h  
+* File Name: RED.h  
 * Version 2.10
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Red_ALIASES_H) /* Pins Red_ALIASES_H */
-#define CY_PINS_Red_ALIASES_H
+#if !defined(CY_PINS_RED_ALIASES_H) /* Pins RED_ALIASES_H */
+#define CY_PINS_RED_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,14 +26,14 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Red_0		(Red__0__PC)
-#define Red_0_PS		(Red__0__PS)
-#define Red_0_PC		(Red__0__PC)
-#define Red_0_DR		(Red__0__DR)
-#define Red_0_SHIFT	(Red__0__SHIFT)
+#define RED_0		(RED__0__PC)
+#define RED_0_PS		(RED__0__PS)
+#define RED_0_PC		(RED__0__PC)
+#define RED_0_DR		(RED__0__DR)
+#define RED_0_SHIFT	(RED__0__SHIFT)
 
 
-#endif /* End Pins Red_ALIASES_H */
+#endif /* End Pins RED_ALIASES_H */
 
 
 /* [] END OF FILE */

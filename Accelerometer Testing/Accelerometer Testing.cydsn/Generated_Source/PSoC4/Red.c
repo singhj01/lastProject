@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Red.c  
+* File Name: RED.c  
 * Version 2.10
 *
 * Description:
@@ -15,18 +15,18 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Red.h"
+#include "RED.h"
 
 #define SetP4PinDriveMode(shift, mode)  \
     do { \
-        Red_PC =   (Red_PC & \
-                                (uint32)(~(uint32)(Red_DRIVE_MODE_IND_MASK << (Red_DRIVE_MODE_BITS * (shift))))) | \
-                                (uint32)((uint32)(mode) << (Red_DRIVE_MODE_BITS * (shift))); \
+        RED_PC =   (RED_PC & \
+                                (uint32)(~(uint32)(RED_DRIVE_MODE_IND_MASK << (RED_DRIVE_MODE_BITS * (shift))))) | \
+                                (uint32)((uint32)(mode) << (RED_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 
 
 /*******************************************************************************
-* Function Name: Red_Write
+* Function Name: RED_Write
 ********************************************************************************
 *
 * Summary:
@@ -39,16 +39,16 @@
 *  None 
 *  
 *******************************************************************************/
-void Red_Write(uint8 value) 
+void RED_Write(uint8 value) 
 {
-    uint8 drVal = (uint8)(Red_DR & (uint8)(~Red_MASK));
-    drVal = (drVal | ((uint8)(value << Red_SHIFT) & Red_MASK));
-    Red_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(RED_DR & (uint8)(~RED_MASK));
+    drVal = (drVal | ((uint8)(value << RED_SHIFT) & RED_MASK));
+    RED_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: Red_SetDriveMode
+* Function Name: RED_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -57,27 +57,27 @@ void Red_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  Red_DM_STRONG     Strong Drive 
-*  Red_DM_OD_HI      Open Drain, Drives High 
-*  Red_DM_OD_LO      Open Drain, Drives Low 
-*  Red_DM_RES_UP     Resistive Pull Up 
-*  Red_DM_RES_DWN    Resistive Pull Down 
-*  Red_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  Red_DM_DIG_HIZ    High Impedance Digital 
-*  Red_DM_ALG_HIZ    High Impedance Analog 
+*  RED_DM_STRONG     Strong Drive 
+*  RED_DM_OD_HI      Open Drain, Drives High 
+*  RED_DM_OD_LO      Open Drain, Drives Low 
+*  RED_DM_RES_UP     Resistive Pull Up 
+*  RED_DM_RES_DWN    Resistive Pull Down 
+*  RED_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  RED_DM_DIG_HIZ    High Impedance Digital 
+*  RED_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void Red_SetDriveMode(uint8 mode) 
+void RED_SetDriveMode(uint8 mode) 
 {
-	SetP4PinDriveMode(Red__0__SHIFT, mode);
+	SetP4PinDriveMode(RED__0__SHIFT, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Red_Read
+* Function Name: RED_Read
 ********************************************************************************
 *
 * Summary:
@@ -91,17 +91,17 @@ void Red_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro Red_ReadPS calls this function. 
+*  Macro RED_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 Red_Read(void) 
+uint8 RED_Read(void) 
 {
-    return (uint8)((Red_PS & Red_MASK) >> Red_SHIFT);
+    return (uint8)((RED_PS & RED_MASK) >> RED_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Red_ReadDataReg
+* Function Name: RED_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -114,17 +114,17 @@ uint8 Red_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 Red_ReadDataReg(void) 
+uint8 RED_ReadDataReg(void) 
 {
-    return (uint8)((Red_DR & Red_MASK) >> Red_SHIFT);
+    return (uint8)((RED_DR & RED_MASK) >> RED_SHIFT);
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(Red_INTSTAT) 
+#if defined(RED_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Red_ClearInterrupt
+    * Function Name: RED_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -138,11 +138,11 @@ uint8 Red_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 Red_ClearInterrupt(void) 
+    uint8 RED_ClearInterrupt(void) 
     {
-		uint8 maskedStatus = (uint8)(Red_INTSTAT & Red_MASK);
-		Red_INTSTAT = maskedStatus;
-        return maskedStatus >> Red_SHIFT;
+		uint8 maskedStatus = (uint8)(RED_INTSTAT & RED_MASK);
+		RED_INTSTAT = maskedStatus;
+        return maskedStatus >> RED_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

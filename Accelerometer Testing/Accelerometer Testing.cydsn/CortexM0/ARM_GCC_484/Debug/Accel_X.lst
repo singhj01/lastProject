@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
   30:.\Generated_Source\PSoC4/Accel_X.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/Accel_X.c **** *
   32:.\Generated_Source\PSoC4/Accel_X.c **** * Summary:
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 2
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/Accel_X.c **** *  Assign a new value to the digital port's data output register.  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
   66 003c 1A60     		str	r2, [r3]
   47:.\Generated_Source\PSoC4/Accel_X.c **** }
   67              		.loc 1 47 0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 3
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 3
 
 
   68 003e BD46     		mov	sp, r7
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
   95 0004 00AF     		add	r7, sp, #0
   96              		.cfi_def_cfa_register 7
   97 0006 021C     		mov	r2, r0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 4
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 4
 
 
   98 0008 FB1D     		add	r3, r7, #7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
   95:.\Generated_Source\PSoC4/Accel_X.c **** *  
   96:.\Generated_Source\PSoC4/Accel_X.c **** *******************************************************************************/
   97:.\Generated_Source\PSoC4/Accel_X.c **** uint8 Accel_X_Read(void) 
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 5
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 5
 
 
   98:.\Generated_Source\PSoC4/Accel_X.c **** {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  117:.\Generated_Source\PSoC4/Accel_X.c **** uint8 Accel_X_ReadDataReg(void) 
  118:.\Generated_Source\PSoC4/Accel_X.c **** {
  167              		.loc 1 118 0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 6
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 6
 
 
  168              		.cfi_startproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  139:.\Generated_Source\PSoC4/Accel_X.c ****     *  
  140:.\Generated_Source\PSoC4/Accel_X.c ****     *******************************************************************************/
  141:.\Generated_Source\PSoC4/Accel_X.c ****     uint8 Accel_X_ClearInterrupt(void) 
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 7
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 7
 
 
  142:.\Generated_Source\PSoC4/Accel_X.c ****     {
@@ -415,48 +415,48 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  248 0006 00000000 		.4byte	.Ldebug_abbrev0
  249 000a 04       		.byte	0x4
  250 000b 01       		.uleb128 0x1
- 251 000c 07010000 		.4byte	.LASF24
+ 251 000c AF000000 		.4byte	.LASF24
  252 0010 01       		.byte	0x1
- 253 0011 88010000 		.4byte	.LASF25
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 8
+ 253 0011 30010000 		.4byte	.LASF25
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 8
 
 
- 254 0015 06000000 		.4byte	.LASF26
+ 254 0015 C1010000 		.4byte	.LASF26
  255 0019 00000000 		.4byte	.Ldebug_ranges0+0
  256 001d 00000000 		.4byte	0
  257 0021 00000000 		.4byte	.Ldebug_line0
  258 0025 02       		.uleb128 0x2
  259 0026 01       		.byte	0x1
  260 0027 06       		.byte	0x6
- 261 0028 0D020000 		.4byte	.LASF0
+ 261 0028 B5010000 		.4byte	.LASF0
  262 002c 02       		.uleb128 0x2
  263 002d 01       		.byte	0x1
  264 002e 08       		.byte	0x8
- 265 002f 8E000000 		.4byte	.LASF1
+ 265 002f 36000000 		.4byte	.LASF1
  266 0033 02       		.uleb128 0x2
  267 0034 02       		.byte	0x2
  268 0035 05       		.byte	0x5
- 269 0036 DF010000 		.4byte	.LASF2
+ 269 0036 87010000 		.4byte	.LASF2
  270 003a 02       		.uleb128 0x2
  271 003b 02       		.byte	0x2
  272 003c 07       		.byte	0x7
- 273 003d C2000000 		.4byte	.LASF3
+ 273 003d 6A000000 		.4byte	.LASF3
  274 0041 02       		.uleb128 0x2
  275 0042 04       		.byte	0x4
  276 0043 05       		.byte	0x5
- 277 0044 04020000 		.4byte	.LASF4
+ 277 0044 AC010000 		.4byte	.LASF4
  278 0048 02       		.uleb128 0x2
  279 0049 04       		.byte	0x4
  280 004a 07       		.byte	0x7
- 281 004b A2000000 		.4byte	.LASF5
+ 281 004b 4A000000 		.4byte	.LASF5
  282 004f 02       		.uleb128 0x2
  283 0050 08       		.byte	0x8
  284 0051 05       		.byte	0x5
- 285 0052 AB010000 		.4byte	.LASF6
+ 285 0052 53010000 		.4byte	.LASF6
  286 0056 02       		.uleb128 0x2
  287 0057 08       		.byte	0x8
  288 0058 07       		.byte	0x7
- 289 0059 77000000 		.4byte	.LASF7
+ 289 0059 1F000000 		.4byte	.LASF7
  290 005d 03       		.uleb128 0x3
  291 005e 04       		.byte	0x4
  292 005f 05       		.byte	0x5
@@ -464,32 +464,32 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  294 0064 02       		.uleb128 0x2
  295 0065 04       		.byte	0x4
  296 0066 07       		.byte	0x7
- 297 0067 FA000000 		.4byte	.LASF8
+ 297 0067 A2000000 		.4byte	.LASF8
  298 006b 04       		.uleb128 0x4
- 299 006c E9010000 		.4byte	.LASF9
+ 299 006c 91010000 		.4byte	.LASF9
  300 0070 02       		.byte	0x2
  301 0071 A1       		.byte	0xa1
  302 0072 2C000000 		.4byte	0x2c
  303 0076 04       		.uleb128 0x4
- 304 0077 F3000000 		.4byte	.LASF10
+ 304 0077 9B000000 		.4byte	.LASF10
  305 007b 02       		.byte	0x2
  306 007c A3       		.byte	0xa3
  307 007d 48000000 		.4byte	0x48
  308 0081 02       		.uleb128 0x2
  309 0082 04       		.byte	0x4
  310 0083 04       		.byte	0x4
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 9
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 9
 
 
- 311 0084 71000000 		.4byte	.LASF11
+ 311 0084 19000000 		.4byte	.LASF11
  312 0088 02       		.uleb128 0x2
  313 0089 08       		.byte	0x8
  314 008a 04       		.byte	0x4
- 315 008b D5000000 		.4byte	.LASF12
+ 315 008b 7D000000 		.4byte	.LASF12
  316 008f 02       		.uleb128 0x2
  317 0090 01       		.byte	0x1
  318 0091 08       		.byte	0x8
- 319 0092 C6010000 		.4byte	.LASF13
+ 319 0092 6E010000 		.4byte	.LASF13
  320 0096 05       		.uleb128 0x5
  321 0097 00000000 		.4byte	.LASF14
  322 009b 02       		.byte	0x2
@@ -498,7 +498,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  325 00a2 06       		.uleb128 0x6
  326 00a3 76000000 		.4byte	0x76
  327 00a7 07       		.uleb128 0x7
- 328 00a8 B4000000 		.4byte	.LASF15
+ 328 00a8 5C000000 		.4byte	.LASF15
  329 00ac 01       		.byte	0x1
  330 00ad 2A       		.byte	0x2a
  331 00ae 00000000 		.4byte	.LFB0
@@ -507,7 +507,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  334 00b7 9C       		.byte	0x9c
  335 00b8 D9000000 		.4byte	0xd9
  336 00bc 08       		.uleb128 0x8
- 337 00bd 5E000000 		.4byte	.LASF17
+ 337 00bd 06000000 		.4byte	.LASF17
  338 00c1 01       		.byte	0x1
  339 00c2 2A       		.byte	0x2a
  340 00c3 6B000000 		.4byte	0x6b
@@ -515,7 +515,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  342 00c8 91       		.byte	0x91
  343 00c9 6F       		.sleb128 -17
  344 00ca 09       		.uleb128 0x9
- 345 00cb 9C000000 		.4byte	.LASF22
+ 345 00cb 44000000 		.4byte	.LASF22
  346 00cf 01       		.byte	0x1
  347 00d0 2C       		.byte	0x2c
  348 00d1 6B000000 		.4byte	0x6b
@@ -524,7 +524,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  351 00d7 77       		.sleb128 -9
  352 00d8 00       		.byte	0
  353 00d9 07       		.uleb128 0x7
- 354 00da EF010000 		.4byte	.LASF16
+ 354 00da 97010000 		.4byte	.LASF16
  355 00de 01       		.byte	0x1
  356 00df 49       		.byte	0x49
  357 00e0 00000000 		.4byte	.LFB1
@@ -533,19 +533,19 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  360 00e9 9C       		.byte	0x9c
  361 00ea FD000000 		.4byte	0xfd
  362 00ee 08       		.uleb128 0x8
- 363 00ef 83010000 		.4byte	.LASF18
+ 363 00ef 2B010000 		.4byte	.LASF18
  364 00f3 01       		.byte	0x1
  365 00f4 49       		.byte	0x49
  366 00f5 6B000000 		.4byte	0x6b
  367 00f9 02       		.uleb128 0x2
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 10
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 10
 
 
  368 00fa 91       		.byte	0x91
  369 00fb 77       		.sleb128 -9
  370 00fc 00       		.byte	0
  371 00fd 0A       		.uleb128 0xa
- 372 00fe 64000000 		.4byte	.LASF19
+ 372 00fe 0C000000 		.4byte	.LASF19
  373 0102 01       		.byte	0x1
  374 0103 61       		.byte	0x61
  375 0104 6B000000 		.4byte	0x6b
@@ -554,7 +554,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  378 0110 01       		.uleb128 0x1
  379 0111 9C       		.byte	0x9c
  380 0112 0A       		.uleb128 0xa
- 381 0113 CB010000 		.4byte	.LASF20
+ 381 0113 73010000 		.4byte	.LASF20
  382 0117 01       		.byte	0x1
  383 0118 75       		.byte	0x75
  384 0119 6B000000 		.4byte	0x6b
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  387 0125 01       		.uleb128 0x1
  388 0126 9C       		.byte	0x9c
  389 0127 0B       		.uleb128 0xb
- 390 0128 DC000000 		.4byte	.LASF21
+ 390 0128 84000000 		.4byte	.LASF21
  391 012c 01       		.byte	0x1
  392 012d 8D       		.byte	0x8d
  393 012e 6B000000 		.4byte	0x6b
@@ -572,7 +572,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  396 013a 01       		.uleb128 0x1
  397 013b 9C       		.byte	0x9c
  398 013c 09       		.uleb128 0x9
- 399 013d B9010000 		.4byte	.LASF23
+ 399 013d 61010000 		.4byte	.LASF23
  400 0141 01       		.byte	0x1
  401 0142 8F       		.byte	0x8f
  402 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  422 000c 17       		.uleb128 0x17
  423 000d 11       		.uleb128 0x11
  424 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 11
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 11
 
 
  425 000f 10       		.uleb128 0x10
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  479 0045 00       		.byte	0
  480 0046 49       		.uleb128 0x49
  481 0047 13       		.uleb128 0x13
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 12
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 12
 
 
  482 0048 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  536 007f 18       		.uleb128 0x18
  537 0080 00       		.byte	0
  538 0081 00       		.byte	0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 13
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 13
 
 
  539 0082 0A       		.uleb128 0xa
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  593 0006 00000000 		.4byte	.Ldebug_info0
  594 000a 04       		.byte	0x4
  595 000b 00       		.byte	0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 14
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 14
 
 
  596 000c 0000     		.2byte	0
@@ -819,148 +819,150 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 1
  627              	.LASF14:
  628 0000 72656733 		.ascii	"reg32\000"
  628      3200
- 629              	.LASF26:
- 630 0006 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\Accelero"
- 630      73657273 
- 630      5C6A7369 
- 630      6E675C44 
- 630      6F63756D 
- 631 0034 6D657465 		.ascii	"meter Testing\\Accelerometer Testing.cydsn\000"
- 631      72205465 
- 631      7374696E 
- 631      675C4163 
- 631      63656C65 
- 632              	.LASF17:
- 633 005e 76616C75 		.ascii	"value\000"
- 633      6500
- 634              	.LASF19:
- 635 0064 41636365 		.ascii	"Accel_X_Read\000"
- 635      6C5F585F 
- 635      52656164 
- 635      00
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 15
+ 629              	.LASF17:
+ 630 0006 76616C75 		.ascii	"value\000"
+ 630      6500
+ 631              	.LASF19:
+ 632 000c 41636365 		.ascii	"Accel_X_Read\000"
+ 632      6C5F585F 
+ 632      52656164 
+ 632      00
+ 633              	.LASF11:
+ 634 0019 666C6F61 		.ascii	"float\000"
+ 634      7400
+ 635              	.LASF7:
+ 636 001f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 636      206C6F6E 
+ 636      6720756E 
+ 636      7369676E 
+ 636      65642069 
+ 637              	.LASF1:
+ 638 0036 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 15
 
 
- 636              	.LASF11:
- 637 0071 666C6F61 		.ascii	"float\000"
- 637      7400
- 638              	.LASF7:
- 639 0077 6C6F6E67 		.ascii	"long long unsigned int\000"
- 639      206C6F6E 
- 639      6720756E 
- 639      7369676E 
- 639      65642069 
- 640              	.LASF1:
- 641 008e 756E7369 		.ascii	"unsigned char\000"
- 641      676E6564 
- 641      20636861 
- 641      7200
- 642              	.LASF22:
- 643 009c 64725661 		.ascii	"drVal\000"
- 643      6C00
- 644              	.LASF5:
- 645 00a2 6C6F6E67 		.ascii	"long unsigned int\000"
- 645      20756E73 
- 645      69676E65 
- 645      6420696E 
- 645      7400
- 646              	.LASF15:
- 647 00b4 41636365 		.ascii	"Accel_X_Write\000"
- 647      6C5F585F 
- 647      57726974 
- 647      6500
- 648              	.LASF3:
- 649 00c2 73686F72 		.ascii	"short unsigned int\000"
- 649      7420756E 
- 649      7369676E 
- 649      65642069 
- 649      6E7400
- 650              	.LASF12:
- 651 00d5 646F7562 		.ascii	"double\000"
- 651      6C6500
- 652              	.LASF21:
- 653 00dc 41636365 		.ascii	"Accel_X_ClearInterrupt\000"
- 653      6C5F585F 
- 653      436C6561 
- 653      72496E74 
- 653      65727275 
- 654              	.LASF10:
- 655 00f3 75696E74 		.ascii	"uint32\000"
- 655      333200
- 656              	.LASF8:
- 657 00fa 756E7369 		.ascii	"unsigned int\000"
- 657      676E6564 
- 657      20696E74 
- 657      00
- 658              	.LASF24:
- 659 0107 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 659      4320342E 
- 659      382E3420 
- 659      32303134 
- 659      30353236 
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 16
+ 638      676E6564 
+ 638      20636861 
+ 638      7200
+ 639              	.LASF22:
+ 640 0044 64725661 		.ascii	"drVal\000"
+ 640      6C00
+ 641              	.LASF5:
+ 642 004a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 642      20756E73 
+ 642      69676E65 
+ 642      6420696E 
+ 642      7400
+ 643              	.LASF15:
+ 644 005c 41636365 		.ascii	"Accel_X_Write\000"
+ 644      6C5F585F 
+ 644      57726974 
+ 644      6500
+ 645              	.LASF3:
+ 646 006a 73686F72 		.ascii	"short unsigned int\000"
+ 646      7420756E 
+ 646      7369676E 
+ 646      65642069 
+ 646      6E7400
+ 647              	.LASF12:
+ 648 007d 646F7562 		.ascii	"double\000"
+ 648      6C6500
+ 649              	.LASF21:
+ 650 0084 41636365 		.ascii	"Accel_X_ClearInterrupt\000"
+ 650      6C5F585F 
+ 650      436C6561 
+ 650      72496E74 
+ 650      65727275 
+ 651              	.LASF10:
+ 652 009b 75696E74 		.ascii	"uint32\000"
+ 652      333200
+ 653              	.LASF8:
+ 654 00a2 756E7369 		.ascii	"unsigned int\000"
+ 654      676E6564 
+ 654      20696E74 
+ 654      00
+ 655              	.LASF24:
+ 656 00af 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 656      4320342E 
+ 656      382E3420 
+ 656      32303134 
+ 656      30353236 
+ 657 00e2 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 657      20726576 
+ 657      6973696F 
+ 657      6E203231 
+ 657      31333538 
+ 658 0115 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 658      66756E63 
+ 658      74696F6E 
+ 658      2D736563 
+ 658      74696F6E 
+ 659              	.LASF18:
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 16
 
 
- 660 013a 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 660      20726576 
- 660      6973696F 
- 660      6E203231 
- 660      31333538 
- 661 016d 30202D66 		.ascii	"0 -ffunction-sections\000"
- 661      66756E63 
- 661      74696F6E 
- 661      2D736563 
- 661      74696F6E 
- 662              	.LASF18:
- 663 0183 6D6F6465 		.ascii	"mode\000"
- 663      00
- 664              	.LASF25:
- 665 0188 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Accel_X.c\000"
- 665      6E657261 
- 665      7465645F 
- 665      536F7572 
- 665      63655C50 
- 666              	.LASF6:
- 667 01ab 6C6F6E67 		.ascii	"long long int\000"
- 667      206C6F6E 
- 667      6720696E 
- 667      7400
- 668              	.LASF23:
- 669 01b9 6D61736B 		.ascii	"maskedStatus\000"
- 669      65645374 
- 669      61747573 
- 669      00
- 670              	.LASF13:
- 671 01c6 63686172 		.ascii	"char\000"
- 671      00
- 672              	.LASF20:
- 673 01cb 41636365 		.ascii	"Accel_X_ReadDataReg\000"
- 673      6C5F585F 
- 673      52656164 
- 673      44617461 
- 673      52656700 
- 674              	.LASF2:
- 675 01df 73686F72 		.ascii	"short int\000"
- 675      7420696E 
- 675      7400
- 676              	.LASF9:
- 677 01e9 75696E74 		.ascii	"uint8\000"
- 677      3800
- 678              	.LASF16:
- 679 01ef 41636365 		.ascii	"Accel_X_SetDriveMode\000"
- 679      6C5F585F 
- 679      53657444 
- 679      72697665 
- 679      4D6F6465 
- 680              	.LASF4:
- 681 0204 6C6F6E67 		.ascii	"long int\000"
- 681      20696E74 
- 681      00
- 682              	.LASF0:
- 683 020d 7369676E 		.ascii	"signed char\000"
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\cckAl10b.s 			page 17
+ 660 012b 6D6F6465 		.ascii	"mode\000"
+ 660      00
+ 661              	.LASF25:
+ 662 0130 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Accel_X.c\000"
+ 662      6E657261 
+ 662      7465645F 
+ 662      536F7572 
+ 662      63655C50 
+ 663              	.LASF6:
+ 664 0153 6C6F6E67 		.ascii	"long long int\000"
+ 664      206C6F6E 
+ 664      6720696E 
+ 664      7400
+ 665              	.LASF23:
+ 666 0161 6D61736B 		.ascii	"maskedStatus\000"
+ 666      65645374 
+ 666      61747573 
+ 666      00
+ 667              	.LASF13:
+ 668 016e 63686172 		.ascii	"char\000"
+ 668      00
+ 669              	.LASF20:
+ 670 0173 41636365 		.ascii	"Accel_X_ReadDataReg\000"
+ 670      6C5F585F 
+ 670      52656164 
+ 670      44617461 
+ 670      52656700 
+ 671              	.LASF2:
+ 672 0187 73686F72 		.ascii	"short int\000"
+ 672      7420696E 
+ 672      7400
+ 673              	.LASF9:
+ 674 0191 75696E74 		.ascii	"uint8\000"
+ 674      3800
+ 675              	.LASF16:
+ 676 0197 41636365 		.ascii	"Accel_X_SetDriveMode\000"
+ 676      6C5F585F 
+ 676      53657444 
+ 676      72697665 
+ 676      4D6F6465 
+ 677              	.LASF4:
+ 678 01ac 6C6F6E67 		.ascii	"long int\000"
+ 678      20696E74 
+ 678      00
+ 679              	.LASF0:
+ 680 01b5 7369676E 		.ascii	"signed char\000"
+ 680      65642063 
+ 680      68617200 
+ 681              	.LASF26:
+ 682 01c1 443A5C55 		.ascii	"D:\\Users\\jsing\\Documents\\PSoC Creator\\lastProj"
+ 682      73657273 
+ 682      5C6A7369 
+ 682      6E675C44 
+ 682      6F63756D 
+ 683 01ef 6563745C 		.ascii	"ect\\Accelerometer Testing\\Accelerometer Testing.c"
+ 683      41636365 
+ 683      6C65726F 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccMLvPhk.s 			page 17
 
 
- 683      65642063 
- 683      68617200 
- 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 683      6D657465 
+ 683      72205465 
+ 684 0220 7964736E 		.ascii	"ydsn\000"
+ 684      00
+ 685              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

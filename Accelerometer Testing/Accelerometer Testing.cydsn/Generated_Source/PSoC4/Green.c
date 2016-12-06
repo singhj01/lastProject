@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Green.c  
+* File Name: GREEN.c  
 * Version 2.10
 *
 * Description:
@@ -15,18 +15,18 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Green.h"
+#include "GREEN.h"
 
 #define SetP4PinDriveMode(shift, mode)  \
     do { \
-        Green_PC =   (Green_PC & \
-                                (uint32)(~(uint32)(Green_DRIVE_MODE_IND_MASK << (Green_DRIVE_MODE_BITS * (shift))))) | \
-                                (uint32)((uint32)(mode) << (Green_DRIVE_MODE_BITS * (shift))); \
+        GREEN_PC =   (GREEN_PC & \
+                                (uint32)(~(uint32)(GREEN_DRIVE_MODE_IND_MASK << (GREEN_DRIVE_MODE_BITS * (shift))))) | \
+                                (uint32)((uint32)(mode) << (GREEN_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 
 
 /*******************************************************************************
-* Function Name: Green_Write
+* Function Name: GREEN_Write
 ********************************************************************************
 *
 * Summary:
@@ -39,16 +39,16 @@
 *  None 
 *  
 *******************************************************************************/
-void Green_Write(uint8 value) 
+void GREEN_Write(uint8 value) 
 {
-    uint8 drVal = (uint8)(Green_DR & (uint8)(~Green_MASK));
-    drVal = (drVal | ((uint8)(value << Green_SHIFT) & Green_MASK));
-    Green_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(GREEN_DR & (uint8)(~GREEN_MASK));
+    drVal = (drVal | ((uint8)(value << GREEN_SHIFT) & GREEN_MASK));
+    GREEN_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: Green_SetDriveMode
+* Function Name: GREEN_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -57,27 +57,27 @@ void Green_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  Green_DM_STRONG     Strong Drive 
-*  Green_DM_OD_HI      Open Drain, Drives High 
-*  Green_DM_OD_LO      Open Drain, Drives Low 
-*  Green_DM_RES_UP     Resistive Pull Up 
-*  Green_DM_RES_DWN    Resistive Pull Down 
-*  Green_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  Green_DM_DIG_HIZ    High Impedance Digital 
-*  Green_DM_ALG_HIZ    High Impedance Analog 
+*  GREEN_DM_STRONG     Strong Drive 
+*  GREEN_DM_OD_HI      Open Drain, Drives High 
+*  GREEN_DM_OD_LO      Open Drain, Drives Low 
+*  GREEN_DM_RES_UP     Resistive Pull Up 
+*  GREEN_DM_RES_DWN    Resistive Pull Down 
+*  GREEN_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  GREEN_DM_DIG_HIZ    High Impedance Digital 
+*  GREEN_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void Green_SetDriveMode(uint8 mode) 
+void GREEN_SetDriveMode(uint8 mode) 
 {
-	SetP4PinDriveMode(Green__0__SHIFT, mode);
+	SetP4PinDriveMode(GREEN__0__SHIFT, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Green_Read
+* Function Name: GREEN_Read
 ********************************************************************************
 *
 * Summary:
@@ -91,17 +91,17 @@ void Green_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro Green_ReadPS calls this function. 
+*  Macro GREEN_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 Green_Read(void) 
+uint8 GREEN_Read(void) 
 {
-    return (uint8)((Green_PS & Green_MASK) >> Green_SHIFT);
+    return (uint8)((GREEN_PS & GREEN_MASK) >> GREEN_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Green_ReadDataReg
+* Function Name: GREEN_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -114,17 +114,17 @@ uint8 Green_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 Green_ReadDataReg(void) 
+uint8 GREEN_ReadDataReg(void) 
 {
-    return (uint8)((Green_DR & Green_MASK) >> Green_SHIFT);
+    return (uint8)((GREEN_DR & GREEN_MASK) >> GREEN_SHIFT);
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(Green_INTSTAT) 
+#if defined(GREEN_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Green_ClearInterrupt
+    * Function Name: GREEN_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -138,11 +138,11 @@ uint8 Green_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 Green_ClearInterrupt(void) 
+    uint8 GREEN_ClearInterrupt(void) 
     {
-		uint8 maskedStatus = (uint8)(Green_INTSTAT & Green_MASK);
-		Green_INTSTAT = maskedStatus;
-        return maskedStatus >> Green_SHIFT;
+		uint8 maskedStatus = (uint8)(GREEN_INTSTAT & GREEN_MASK);
+		GREEN_INTSTAT = maskedStatus;
+        return maskedStatus >> GREEN_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Green.h  
+* File Name: GREEN.h  
 * Version 2.10
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Green_ALIASES_H) /* Pins Green_ALIASES_H */
-#define CY_PINS_Green_ALIASES_H
+#if !defined(CY_PINS_GREEN_ALIASES_H) /* Pins GREEN_ALIASES_H */
+#define CY_PINS_GREEN_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,14 +26,14 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Green_0		(Green__0__PC)
-#define Green_0_PS		(Green__0__PS)
-#define Green_0_PC		(Green__0__PC)
-#define Green_0_DR		(Green__0__DR)
-#define Green_0_SHIFT	(Green__0__SHIFT)
+#define GREEN_0		(GREEN__0__PC)
+#define GREEN_0_PS		(GREEN__0__PS)
+#define GREEN_0_PC		(GREEN__0__PC)
+#define GREEN_0_DR		(GREEN__0__DR)
+#define GREEN_0_SHIFT	(GREEN__0__SHIFT)
 
 
-#endif /* End Pins Green_ALIASES_H */
+#endif /* End Pins GREEN_ALIASES_H */
 
 
 /* [] END OF FILE */
