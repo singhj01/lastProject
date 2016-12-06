@@ -168,6 +168,28 @@
 <VisibleNodeIds>
 <v>Accelerometer Testing</v>
 <v>Accelerometer Testing\Accelerometer Testing</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Accel_X.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Accel_y.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Accel_z.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Blue.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Green.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Red.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.elf</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.hex</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.map</v>
 <v>Accelerometer Testing\Accelerometer Testing\Accelerometer Testing.rpt</v>
 <v>Accelerometer Testing\Accelerometer Testing\Accelerometer Testing_timing.html</v>
 </VisibleNodeIds>

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
   37              		.loc 1 18 0
   38 0008 7B68     		ldr	r3, [r7, #4]
   39 000a 022B     		cmp	r3, #2
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 2
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 2
 
 
   40 000c 12D0     		beq	.L9
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
   70              	.L10:
   30:.\main.c      ****         break;
   71              		.loc 1 30 0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 3
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 3
 
 
   72 0038 C046     		mov	r8, r8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
   50:.\main.c      ****         case 4:
   51:.\main.c      ****             /*off*/
   52:.\main.c      ****         break;
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 4
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 4
 
 
   53:.\main.c      ****         default:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
   60:.\main.c      **** {
  154              		.loc 1 60 0
  155              		.cfi_startproc
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 5
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 5
 
 
  156 0000 80B5     		push	{r7, lr}
@@ -268,41 +268,54 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
   73:.\main.c      ****         if("LeftGesture"){
   74:.\main.c      ****             if (colorState>=1){
   75:.\main.c      ****                 colorState--;
-  76:.\main.c      ****                 colorChange(colorState);
-  77:.\main.c      ****             }
-  78:.\main.c      ****             if (colorState<1){
-  79:.\main.c      ****                 colorState = 1;
-  80:.\main.c      ****             }
+  76:.\main.c      ****             }
+  77:.\main.c      ****             if (colorState<1){
+  78:.\main.c      ****                 colorState = 1;
+  79:.\main.c      ****             }
+  80:.\main.c      ****             colorChange(colorState);
   81:.\main.c      ****             delay(sometime);
   82:.\main.c      ****         }
-  83:.\main.c      ****         if("RightGesture"){
-  84:.\main.c      ****             if (colorState <= maxState){
-  85:.\main.c      ****                 colorState++;
-  86:.\main.c      ****                 colorChange(colorState);
+  83:.\main.c      ****         
+  84:.\main.c      ****         if("RightGesture"){
+  85:.\main.c      ****             if (colorState < maxState){
+  86:.\main.c      ****                 colorState++;
   87:.\main.c      ****             }
-  88:.\main.c      ****             if (colorState>maxState){
+  88:.\main.c      ****             if (colorState >= maxState){
   89:.\main.c      ****                 colorState = maxState;
   90:.\main.c      ****             }
-  91:.\main.c      ****             delay(sometime);
-  92:.\main.c      ****         }
-  93:.\main.c      ****         if("FrontGesture"){
-  94:.\main.c      ****         intensityState++;
-  95:.\main.c      ****         Intensity(upState);
-  96:.\main.c      ****         delay(sometime);
-  97:.\main.c      ****         }
-  98:.\main.c      ****         if("DownGesture"){
-  99:.\main.c      ****         intensityState--;
- 100:.\main.c      ****         Intensity(downState);
- 101:.\main.c      ****         delay(sometime);
- 102:.\main.c      ****         }
- 103:.\main.c      ****         
- 104:.\main.c      ****         
- 105:.\main.c      ****     */    
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 6
+  91:.\main.c      ****             colorChange(colorState);
+  92:.\main.c      ****             delay(sometime);
+  93:.\main.c      ****         }
+  94:.\main.c      ****         
+  95:.\main.c      ****         if("FrontGesture"){
+  96:.\main.c      ****             if(intensityState < maxState){
+  97:.\main.c      ****                 intensityState++;
+  98:.\main.c      ****             }
+  99:.\main.c      ****             if(intensityState >= maxState){
+ 100:.\main.c      ****                 intensityState = maxState;
+ 101:.\main.c      ****             }
+ 102:.\main.c      ****         Intensity(intensityState);
+ 103:.\main.c      ****         delay(sometime);
+ 104:.\main.c      ****         }
+ 105:.\main.c      ****         
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 6
 
 
- 106:.\main.c      ****     }
- 168              		.loc 1 106 0 discriminator 1
+ 106:.\main.c      ****         if("DownGesture"){
+ 107:.\main.c      ****         if(intensityState >= 1){
+ 108:.\main.c      ****                 intensityState++;
+ 109:.\main.c      ****             }
+ 110:.\main.c      ****             if(intensityState < 1){
+ 111:.\main.c      ****                 intensityState = 1;
+ 112:.\main.c      ****             }
+ 113:.\main.c      ****         Intensity(intensityState);
+ 114:.\main.c      ****         delay(sometime);
+ 115:.\main.c      ****         }
+ 116:.\main.c      ****         
+ 117:.\main.c      ****         
+ 118:.\main.c      ****     */    
+ 119:.\main.c      ****     }
+ 168              		.loc 1 119 0 discriminator 1
  169 0006 FEE7     		b	.L25
  170              		.cfi_endproc
  171              	.LFE37:
@@ -345,6 +358,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  208 0044 EC000000 		.4byte	.LASF4
  209 0048 02       		.uleb128 0x2
  210 0049 04       		.byte	0x4
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 7
+
+
  211 004a 07       		.byte	0x7
  212 004b 20000000 		.4byte	.LASF5
  213 004f 02       		.uleb128 0x2
@@ -358,9 +374,6 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  221 005d 03       		.uleb128 0x3
  222 005e 04       		.byte	0x4
  223 005f 05       		.byte	0x5
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 7
-
-
  224 0060 696E7400 		.ascii	"int\000"
  225 0064 02       		.uleb128 0x2
  226 0065 04       		.byte	0x4
@@ -405,6 +418,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  265 00b0 01       		.byte	0x1
  266 00b1 27       		.byte	0x27
  267 00b2 00000000 		.4byte	.LFB36
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 8
+
+
  268 00b6 34000000 		.4byte	.LFE36-.LFB36
  269 00ba 01       		.uleb128 0x1
  270 00bb 9C       		.byte	0x9c
@@ -418,9 +434,6 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  278 00cc 91       		.byte	0x91
  279 00cd 74       		.sleb128 -12
  280 00ce 00       		.byte	0
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 8
-
-
  281 00cf 07       		.uleb128 0x7
  282 00d0 1B000000 		.4byte	.LASF19
  283 00d4 01       		.byte	0x1
@@ -465,6 +478,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  322 001d 00       		.byte	0
  323 001e 03       		.uleb128 0x3
  324 001f 24       		.uleb128 0x24
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 9
+
+
  325 0020 00       		.byte	0
  326 0021 0B       		.uleb128 0xb
  327 0022 0B       		.uleb128 0xb
@@ -478,9 +494,6 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  335 002a 2E       		.uleb128 0x2e
  336 002b 01       		.byte	0x1
  337 002c 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 9
-
-
  338 002d 19       		.uleb128 0x19
  339 002e 03       		.uleb128 0x3
  340 002f 0E       		.uleb128 0xe
@@ -525,6 +538,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  379 0057 03       		.uleb128 0x3
  380 0058 0E       		.uleb128 0xe
  381 0059 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 10
+
+
  382 005a 0B       		.uleb128 0xb
  383 005b 3B       		.uleb128 0x3b
  384 005c 0B       		.uleb128 0xb
@@ -538,9 +554,6 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  392 0064 18       		.uleb128 0x18
  393 0065 9742     		.uleb128 0x2117
  394 0067 19       		.uleb128 0x19
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 10
-
-
  395 0068 01       		.uleb128 0x1
  396 0069 13       		.uleb128 0x13
  397 006a 00       		.byte	0
@@ -585,6 +598,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  436 0024 08000000 		.4byte	.LFE37-.LFB37
  437 0028 00000000 		.4byte	0
  438 002c 00000000 		.4byte	0
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 11
+
+
  439              		.section	.debug_ranges,"",%progbits
  440              	.Ldebug_ranges0:
  441 0000 00000000 		.4byte	.LFB35
@@ -598,9 +614,6 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  449              		.section	.debug_line,"",%progbits
  450              	.Ldebug_line0:
  451 0000 7F000000 		.section	.debug_str,"MS",%progbits,1
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 11
-
-
  451      02001F00 
  451      00000201 
  451      FB0E0D00 
@@ -645,6 +658,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  466      6973696F 
  466      6E203231 
  466      31333538 
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 12
+
+
  467 00b9 30202D66 		.ascii	"0 -ffunction-sections\000"
  467      66756E63 
  467      74696F6E 
@@ -658,9 +674,6 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  471 00d9 756E7369 		.ascii	"unsigned char\000"
  471      676E6564 
  471      20636861 
-ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 12
-
-
  471      7200
  472              	.LASF11:
  473 00e7 63686172 		.ascii	"char\000"
@@ -705,6 +718,9 @@ ARM GAS  C:\Users\jsing\AppData\Local\Temp\ccE8exvb.s 			page 1
  490              	.LASF9:
  491 0191 666C6F61 		.ascii	"float\000"
  491      7400
+ARM GAS  C:\Users\jsing\AppData\Local\Temp\cchV19bB.s 			page 13
+
+
  492              	.LASF17:
  493 0197 2E5C6D61 		.ascii	".\\main.c\000"
  493      696E2E63 

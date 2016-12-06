@@ -1,4 +1,4 @@
---------------- Build Started: 11/29/2016 10:34:54 Project: Accelerometer Testing, Configuration: ARM GCC 4.8.4 Debug ---------------
+--------------- Build Started: 12/02/2016 09:18:07 Project: Accelerometer Testing, Configuration: ARM GCC 4.8.4 Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\main.c -o .\CortexM0\ARM_GCC_484\Debug\main.o
 arm-none-eabi-ar.exe -rs ".\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.a" .\CortexM0\ARM_GCC_484\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_484\Debug\Accel_X.o .\CortexM0\ARM_GCC_484\Debug\Accel_y.o .\CortexM0\ARM_GCC_484\Debug\Accel_z.o .\CortexM0\ARM_GCC_484\Debug\Red.o .\CortexM0\ARM_GCC_484\Debug\Green.o .\CortexM0\ARM_GCC_484\Debug\Blue.o .\CortexM0\ARM_GCC_484\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_484\Debug\CyFlash.o .\CortexM0\ARM_GCC_484\Debug\CyLib.o .\CortexM0\ARM_GCC_484\Debug\cyPm.o .\CortexM0\ARM_GCC_484\Debug\cyutils.o
@@ -8,4 +8,4 @@ cyelftool.exe -C "D:\Users\jsing\Documents\PSoC Creator\lastProject\Acceleromete
 cyelftool.exe -S "D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\CortexM0\ARM_GCC_484\Debug\Accelerometer Testing.elf"
 Flash used: 2080 of 131072 bytes (1.6 %).
 SRAM used: 2428 of 16384 bytes (14.8 %). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 11/29/2016 10:34:55 ---------------
+--------------- Build Succeeded: 12/02/2016 09:18:20 ---------------

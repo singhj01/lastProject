@@ -73,31 +73,44 @@ int main()
         if("LeftGesture"){
             if (colorState>=1){
                 colorState--;
-                colorChange(colorState);
             }
             if (colorState<1){
                 colorState = 1;
             }
+            colorChange(colorState);
             delay(sometime);
         }
+        
         if("RightGesture"){
-            if (colorState <= maxState){
+            if (colorState < maxState){
                 colorState++;
-                colorChange(colorState);
             }
-            if (colorState>maxState){
+            if (colorState >= maxState){
                 colorState = maxState;
             }
+            colorChange(colorState);
             delay(sometime);
         }
+        
         if("FrontGesture"){
-        intensityState++;
-        Intensity(upState);
+            if(intensityState < maxState){
+                intensityState++;
+            }
+            if(intensityState >= maxState){
+                intensityState = maxState;
+            }
+        Intensity(intensityState);
         delay(sometime);
         }
+        
         if("DownGesture"){
-        intensityState--;
-        Intensity(downState);
+        if(intensityState >= 1){
+                intensityState++;
+            }
+            if(intensityState < 1){
+                intensityState = 1;
+            }
+        Intensity(intensityState);
         delay(sometime);
         }
         
