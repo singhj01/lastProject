@@ -96,6 +96,14 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Sensor_ADC_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Sensor_ADC_intClock.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Sensor_ADC_intClock.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_Clock.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PRS_Clock.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\Export\ARM_GCC_Generic">

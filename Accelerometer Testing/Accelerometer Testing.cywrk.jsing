@@ -65,6 +65,17 @@
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\GREEN\GREEN.c</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\GREEN\GREEN.h</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\GREEN\GREEN_aliases.h</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_1</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_1\PRS_1.c</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_1\PRS_1.h</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_1\PRS_1_PM.c</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_2</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_2\PRS_2.c</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_2\PRS_2.h</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_2\PRS_2_PM.c</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_Clock</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_Clock\PRS_Clock.c</v>
+<v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\PRS_Clock\PRS_Clock.h</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\RED</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\RED\RED.c</v>
 <v>Accelerometer Testing\Accelerometer Testing\Generated_Source\PSoC4\RED\RED.h</v>
@@ -165,6 +176,11 @@
 <v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
 <v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
 <v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\PRS_1.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\PRS_1_PM.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\PRS_2.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\PRS_2_PM.lst</v>
+<v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\PRS_Clock.lst</v>
 <v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC.lst</v>
 <v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_INT.lst</v>
 <v>Accelerometer Testing\Accelerometer Testing\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_intClock.lst</v>
@@ -196,7 +212,10 @@
 <v>Accelerometer Testing\Accelerometer Testing\PSoC 4200 BLE Family Datasheet</v>
 <v>Accelerometer Testing\Accelerometer Testing\System Reference Guide v4_20</v>
 <v>Accelerometer Testing\Accelerometer Testing\ADC_SAR_SEQ_P4_v2_10</v>
+<v>Accelerometer Testing\Accelerometer Testing\cy_clock_v2_20</v>
+<v>Accelerometer Testing\Accelerometer Testing\cy_constant_v1_0</v>
 <v>Accelerometer Testing\Accelerometer Testing\cy_pins_v2_10</v>
+<v>Accelerometer Testing\Accelerometer Testing\PrISM_v2_20</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Accelerometer Testing</v>
@@ -205,7 +224,10 @@
 <v>Accelerometer Testing\Accelerometer Testing\PSoC 4200 BLE Family Datasheet</v>
 <v>Accelerometer Testing\Accelerometer Testing\System Reference Guide v4_20</v>
 <v>Accelerometer Testing\Accelerometer Testing\ADC_SAR_SEQ_P4_v2_10</v>
+<v>Accelerometer Testing\Accelerometer Testing\cy_clock_v2_20</v>
+<v>Accelerometer Testing\Accelerometer Testing\cy_constant_v1_0</v>
 <v>Accelerometer Testing\Accelerometer Testing\cy_pins_v2_10</v>
+<v>Accelerometer Testing\Accelerometer Testing\PrISM_v2_20</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -218,7 +240,6 @@
 <name v=".\Accelerometer Testing.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Accelerometer Testing.cydsn\Accelerometer Testing.cydwr" />
 <name v=".\Accelerometer Testing.cydsn\main.c" />
-<name v=".\Accelerometer Testing.cydsn\Generated_Source\PSoC4\Sensor_ADC.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

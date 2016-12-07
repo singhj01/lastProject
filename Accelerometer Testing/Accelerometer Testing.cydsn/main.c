@@ -25,50 +25,50 @@ void colorChange(int state, uint8 intensity){
   switch (state){
     case 1:
         /*Red*/
-        RED_Write(intensity);
-        BLUE_Write(0xFF);
-        GREEN_Write(0xFF);
+        PRS_1_WritePulse0(255-intensity);
+        PRS_1_WritePulse1(255);
+        PRS_2_WritePulse0(255);
         break;
     case 2:
         /*Blue*/
-        RED_Write(0xFF);
-        BLUE_Write(intensity);
-        GREEN_Write(0xFF);
+        PRS_1_WritePulse0(255);
+        PRS_1_WritePulse1(255-intensity);
+        PRS_2_WritePulse0(255);
         break;
     case 3:
         /*Green*/
-        RED_Write(0xFF);
-        BLUE_Write(0xFF);
-        GREEN_Write(intensity);
+        PRS_1_WritePulse0(255);
+        PRS_1_WritePulse1(255);
+        PRS_2_WritePulse0(255-intensity);;
         break;
     case 4:
         /*purple*/
-        RED_Write(intensity);
-        BLUE_Write(intensity);
-        GREEN_Write(0xFF);
+        PRS_1_WritePulse0(255-intensity);
+        PRS_1_WritePulse1(255-intensity);
+        PRS_2_WritePulse0(255);
         break;
     case 5:
         /*yellow*/
-        RED_Write(intensity);
-        BLUE_Write(0xFF);
-        GREEN_Write(intensity);
+        PRS_1_WritePulse0(255-intensity);
+        PRS_1_WritePulse1(255);
+        PRS_2_WritePulse0(255-intensity);;
         break;
     case 6:
         /*Blue Green*/
-        RED_Write(0xFF);
-        BLUE_Write(intensity);
-        GREEN_Write(intensity);
+        PRS_1_WritePulse0(255);
+        PRS_1_WritePulse1(255-intensity);
+        PRS_2_WritePulse0(255-intensity);
         break;
     case 7:
         /*White*/
-        RED_Write(intensity);
-        BLUE_Write(intensity);
-        GREEN_Write(intensity);
+        PRS_1_WritePulse0(255-intensity);
+        PRS_1_WritePulse1(255-intensity);
+        PRS_2_WritePulse0(255-intensity);
         break;   
     default:
-        RED_Write(0x00);
-        BLUE_Write(0x00);
-        GREEN_Write(0x00);
+        PRS_1_WritePulse0(255-intensity);
+        PRS_1_WritePulse1(255-intensity);
+        PRS_2_WritePulse0(255-intensity);
         break;
     }
     //wait
@@ -79,22 +79,22 @@ uint8 Intensity(state){
     switch(state){
         case 1:
             /*max level*/
-            intensity = 0x00;
+            intensity = 255;
         break;
         case 2:
             /*medium*/
-            intensity = 0x55;
+            intensity = 170;
         break;
         case 3:
             /*min*/
-            intensity = 0xAA;
+            intensity = 85;
         break;
         case 4:
             /*off*/
-            intensity = 0xFF;
+            intensity = 0;
         break;
         default:
-            intensity = 0x00;
+            intensity = 255;
         break;        
     }
     return intensity;
@@ -113,12 +113,12 @@ uint8 Scan_Accelerometer()
 			return 1;
 		}
 		/*Backward gesture idetified*/
-		if((ADC_y_current<=0x0566)&& (ADC_z_current>=0x051E))
+		if((ADC_y_current<=0x0566)&& (ADC_z_current>=0x0510))
 		{
 			return 2;
 		}
 		/*Forward gesture idetified*/
-		if((ADC_y_current>=0x06a6)&& (ADC_z_current>=0x051E))
+		if((ADC_y_current>=0x06a6)&& (ADC_z_current>=0x0510))
 		{
 			return 3;
 		}
@@ -150,6 +150,8 @@ int main()
 
         Sensor_ADC_Start();
         Sensor_ADC_StartConvert();
+        PRS_1_Start();
+        PRS_2_Start();
         
     CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
     for(;;)

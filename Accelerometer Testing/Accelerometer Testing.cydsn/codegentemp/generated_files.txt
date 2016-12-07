@@ -36,6 +36,14 @@
   <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\BLUE.c" value="ARM_C_FILE;BLUE" />
   <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\BLUE.h" value="NONE;BLUE" />
   <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\BLUE_aliases.h" value="NONE;BLUE" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_1.c" value="ARM_C_FILE;PRS_1" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_1.h" value="NONE;PRS_1" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_1_PM.c" value="ARM_C_FILE;PRS_1" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_2.c" value="ARM_C_FILE;PRS_2" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_2.h" value="NONE;PRS_2" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_2_PM.c" value="ARM_C_FILE;PRS_2" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_Clock.c" value="ARM_C_FILE;PRS_Clock" />
+  <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\PRS_Clock.h" value="NONE;PRS_Clock" />
   <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Sensor_ADC_IRQ.c" value="ARM_C_FILE;Sensor_ADC_IRQ" />
   <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Sensor_ADC_IRQ.h" value="NONE;Sensor_ADC_IRQ" />
   <file name="D:\Users\jsing\Documents\PSoC Creator\lastProject\Accelerometer Testing\Accelerometer Testing.cydsn\codegentemp\Sensor_ADC_intClock.c" value="ARM_C_FILE;Sensor_ADC_intClock" />

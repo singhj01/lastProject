@@ -1,6 +1,6 @@
 // ======================================================================
 // Accelerometer Testing.v generated from TopDesign.cysch
-// 12/06/2016 at 15:19
+// 12/07/2016 at 16:09
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -632,13 +632,52 @@ module ADC_SAR_SEQ_P4_v2_10_0 (
 
 endmodule
 
+// Component: PrISM_v2_20
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20"
+`include "$CYPRESS_DIR\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20\PrISM_v2_20.v"
+`else
+`define CY_BLK_DIR "D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20"
+`include "D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20\PrISM_v2_20.v"
+`endif
+
+// Component: cy_constant_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0"
+`include "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v"
+`else
+`define CY_BLK_DIR "D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0"
+`include "D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v"
+`endif
+
 // top
 module top ;
 
+          wire  Net_396;
+          wire  Net_394;
+          wire  Net_393;
+          wire  Net_392;
+          wire  Net_391;
+          wire  Net_390;
+          wire  Net_105;
           wire  Net_388;
           wire  Net_387;
           wire  Net_386;
     electrical  Net_385;
+          wire  Net_104;
+          wire  Net_108;
+          wire  Net_22;
+          wire  Net_24;
+          wire  Net_23;
+          wire  Net_21;
           wire  Net_255;
     electrical  Net_86;
     electrical  Net_64;
@@ -654,7 +693,7 @@ module top ;
 		#(.id("16031c29-3b69-4157-82c3-44f5e539b7a3"),
 		  .drive_mode(3'b110),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -672,7 +711,7 @@ module top ;
 		  .oe_sync(1'b0),
 		  .output_clk_en(0),
 		  .output_clock_mode(1'b0),
-		  .output_conn(1'b0),
+		  .output_conn(1'b1),
 		  .output_mode(1'b0),
 		  .output_reset(0),
 		  .output_sync(1'b0),
@@ -703,7 +742,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		GREEN
 		 (.oe(tmpOE__GREEN_net),
-		  .y({1'b0}),
+		  .y({Net_108}),
 		  .fb({tmpFB_0__GREEN_net[0:0]}),
 		  .io({tmpIO_0__GREEN_net[0:0]}),
 		  .siovref(tmpSIOVREF__GREEN_net),
@@ -727,7 +766,7 @@ module top ;
 		#(.id("e851a3b9-efb8-48be-bbb8-b303b216c393"),
 		  .drive_mode(3'b110),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -745,7 +784,7 @@ module top ;
 		  .oe_sync(1'b0),
 		  .output_clk_en(0),
 		  .output_clock_mode(1'b0),
-		  .output_conn(1'b0),
+		  .output_conn(1'b1),
 		  .output_mode(1'b0),
 		  .output_reset(0),
 		  .output_sync(1'b0),
@@ -776,7 +815,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		RED
 		 (.oe(tmpOE__RED_net),
-		  .y({1'b0}),
+		  .y({Net_104}),
 		  .fb({tmpFB_0__RED_net[0:0]}),
 		  .io({tmpIO_0__RED_net[0:0]}),
 		  .siovref(tmpSIOVREF__RED_net),
@@ -1032,7 +1071,7 @@ module top ;
 		#(.id("df29a555-7abb-4d12-b9e6-d3dd8dd3118d"),
 		  .drive_mode(3'b110),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b1),
 		  .input_sync_mode(1'b0),
@@ -1050,7 +1089,7 @@ module top ;
 		  .oe_sync(1'b0),
 		  .output_clk_en(0),
 		  .output_clock_mode(1'b0),
-		  .output_conn(1'b0),
+		  .output_conn(1'b1),
 		  .output_mode(1'b0),
 		  .output_reset(0),
 		  .output_sync(1'b0),
@@ -1081,7 +1120,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		BLUE
 		 (.oe(tmpOE__BLUE_net),
-		  .y({1'b0}),
+		  .y({Net_105}),
 		  .fb({tmpFB_0__BLUE_net[0:0]}),
 		  .io({tmpIO_0__BLUE_net[0:0]}),
 		  .siovref(tmpSIOVREF__BLUE_net),
@@ -1094,6 +1133,52 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__BLUE_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+    PrISM_v2_20 PRS_1 (
+        .clock(Net_21),
+        .enable(Net_22),
+        .reset(Net_23),
+        .kill(Net_24),
+        .pulse_den0(Net_104),
+        .pulse_den1(Net_105),
+        .bitstream(Net_390),
+        .tc(Net_391));
+    defparam PRS_1.CompareType0 = 0;
+    defparam PRS_1.CompareType1 = 0;
+    defparam PRS_1.PulseTypeHardcoded = 0;
+    defparam PRS_1.Resolution = 8;
+
+    PrISM_v2_20 PRS_2 (
+        .clock(Net_21),
+        .enable(Net_22),
+        .reset(Net_23),
+        .kill(Net_24),
+        .pulse_den0(Net_108),
+        .pulse_den1(Net_392),
+        .bitstream(Net_393),
+        .tc(Net_394));
+    defparam PRS_2.CompareType0 = 0;
+    defparam PRS_2.CompareType1 = 0;
+    defparam PRS_2.PulseTypeHardcoded = 0;
+    defparam PRS_2.Resolution = 8;
+
+    assign Net_22 = 1'h1;
+
+    assign Net_24 = 1'h0;
+
+    assign Net_23 = 1'h0;
+
+
+	cy_clock_v1_0
+		#(.id("da46012d-513f-476c-aba2-92cfdde04a3b"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("1000000000"),
+		  .is_direct(0),
+		  .is_digital(1))
+		PRS_Clock
+		 (.clock_out(Net_21));
+
 
 
 

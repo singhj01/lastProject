@@ -31,6 +31,9 @@
 #include <Accel_X_aliases.h>
 #include <BLUE.h>
 #include <BLUE_aliases.h>
+#include <PRS_1.h>
+#include <PRS_2.h>
+#include <PRS_Clock.h>
 #include <Sensor_ADC_IRQ.h>
 #include <Sensor_ADC_intClock.h>
 #include <core_cm0_psoc4.h>
