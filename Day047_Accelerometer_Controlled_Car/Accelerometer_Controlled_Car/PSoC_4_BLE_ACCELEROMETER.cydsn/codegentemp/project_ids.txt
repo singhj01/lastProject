@@ -1,0 +1,6 @@
+D:\Users\jsing\Desktop\Day047_Accelerometer_Controlled_Car\Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER.cydsn\PSoC_4_BLE_ACCELEROMETER.cyprj|339bab86-39eb-46bc-a770-97eeaf6506dd
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d632888f-ee8a-4754-981f-efb3f384018e
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|dc9c2f05-c440-44df-81a3-ca1aadc85fdf
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|faf49fab-ce00-4746-a20f-79137e9b906f
+D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0e165aa3-0112-4c88-8ac4-d1c7a793527b
+D:\Users\jsing\Desktop\Day047_Accelerometer_Controlled_Car\Accelerometer_Controlled_Car\PSoC_4_BLE_CAR.cydsn\PSoC_4_BLE_CAR.cyprj|2ee983e1-3841-4a41-a7e6-9b53f5695064

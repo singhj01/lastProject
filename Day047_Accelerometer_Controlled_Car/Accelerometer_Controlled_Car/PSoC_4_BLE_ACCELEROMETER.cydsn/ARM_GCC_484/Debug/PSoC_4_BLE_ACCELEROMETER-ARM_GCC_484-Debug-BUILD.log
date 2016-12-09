@@ -1,0 +1,59 @@
+--------------- Build Started: 11/21/2016 20:36:53 Project: PSoC_4_BLE_ACCELEROMETER, Configuration: ARM GCC 4.8.4 Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\jsing\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p D:\Users\jsing\Desktop\Day047_Accelerometer_Controlled_Car\Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER.cydsn\PSoC_4_BLE_ACCELEROMETER.cyprj -d CY8C4247LQI-BL483 -s D:\Users\jsing\Desktop\Day047_Accelerometer_Controlled_Car\Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation ...
+Synthesis ...
+Place and Route ...
+Tech mapping ...
+ADD: pft.M0040: information: The following 3 pin(s) will be assigned a location by the fitter: Accelerometer_X(0), Accelerometer_Y(0), Accelerometer_Z(0)
+Analog Placement ...
+Analog Routing ...
+Analog Code Generation ...
+Digital Placement ...
+Digital Routing ...
+Bitstream Generation ...
+Static timing analysis ...
+API Generation ...
+Dependency Generation ...
+Clean Temporary Files ...
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/app_Ble.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\app_Ble.c -o .\ARM_GCC_484\Debug\app_Ble.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/app_accel.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\app_accel.c -o .\ARM_GCC_484\Debug\app_accel.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\main.c -o .\ARM_GCC_484\Debug\main.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/cyfitter_cfg.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\cyfitter_cfg.c -o .\ARM_GCC_484\Debug\cyfitter_cfg.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/cymetadata.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\cymetadata.c -o .\ARM_GCC_484\Debug\cymetadata.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE.c -o .\ARM_GCC_484\Debug\BLE.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE_gatt.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE_gatt.c -o .\ARM_GCC_484\Debug\BLE_gatt.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE_eventHandler.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE_eventHandler.c -o .\ARM_GCC_484\Debug\BLE_eventHandler.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE_HAL_INT.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE_HAL_INT.c -o .\ARM_GCC_484\Debug\BLE_HAL_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE_HAL_PVT.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE_HAL_PVT.c -o .\ARM_GCC_484\Debug\BLE_HAL_PVT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE_custom.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE_custom.c -o .\ARM_GCC_484\Debug\BLE_custom.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/WakeUpISR.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\WakeUpISR.c -o .\ARM_GCC_484\Debug\WakeUpISR.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Accelerometer_X.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Accelerometer_X.c -o .\ARM_GCC_484\Debug\Accelerometer_X.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Accelerometer_Y.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Accelerometer_Y.c -o .\ARM_GCC_484\Debug\Accelerometer_Y.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Accelerometer_Z.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Accelerometer_Z.c -o .\ARM_GCC_484\Debug\Accelerometer_Z.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Sensor_ADC.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Sensor_ADC.c -o .\ARM_GCC_484\Debug\Sensor_ADC.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Sensor_ADC_PM.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Sensor_ADC_PM.c -o .\ARM_GCC_484\Debug\Sensor_ADC_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Sensor_ADC_INT.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Sensor_ADC_INT.c -o .\ARM_GCC_484\Debug\Sensor_ADC_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLE_bless_isr.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLE_bless_isr.c -o .\ARM_GCC_484\Debug\BLE_bless_isr.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Sensor_ADC_IRQ.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Sensor_ADC_IRQ.c -o .\ARM_GCC_484\Debug\Sensor_ADC_IRQ.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Sensor_ADC_intClock.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Sensor_ADC_intClock.c -o .\ARM_GCC_484\Debug\Sensor_ADC_intClock.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Cm0Start.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Cm0Start.c -o .\ARM_GCC_484\Debug\Cm0Start.o
+arm-none-eabi-as.exe -mcpu=cortex-m0 -mthumb -I. -I.\Generated_Source\PSoC4 -alh=.\ARM_GCC_484\Debug/CyBootAsmGnu.lst -g -W -o .\ARM_GCC_484\Debug\CyBootAsmGnu.o .\Generated_Source\PSoC4\CyBootAsmGnu.s
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/CyFlash.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\CyFlash.c -o .\ARM_GCC_484\Debug\CyFlash.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/CyLib.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\CyLib.c -o .\ARM_GCC_484\Debug\CyLib.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/cyPm.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\cyPm.c -o .\ARM_GCC_484\Debug\cyPm.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/cyutils.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\cyutils.c -o .\ARM_GCC_484\Debug\cyutils.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/RED.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\RED.c -o .\ARM_GCC_484\Debug\RED.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/GREEN.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\GREEN.c -o .\ARM_GCC_484\Debug\GREEN.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/BLUE.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\BLUE.c -o .\ARM_GCC_484\Debug\BLUE.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Pin_3.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Pin_3.c -o .\ARM_GCC_484\Debug\Pin_3.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Pin_2.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Pin_2.c -o .\ARM_GCC_484\Debug\Pin_2.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\ARM_GCC_484\Debug/Pin_1.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\Generated_Source\PSoC4\Pin_1.c -o .\ARM_GCC_484\Debug\Pin_1.o
+arm-none-eabi-ar.exe -rs .\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.a .\ARM_GCC_484\Debug\cyfitter_cfg.o .\ARM_GCC_484\Debug\BLE.o .\ARM_GCC_484\Debug\BLE_gatt.o .\ARM_GCC_484\Debug\BLE_eventHandler.o .\ARM_GCC_484\Debug\BLE_HAL_INT.o .\ARM_GCC_484\Debug\BLE_HAL_PVT.o .\ARM_GCC_484\Debug\BLE_custom.o .\ARM_GCC_484\Debug\WakeUpISR.o .\ARM_GCC_484\Debug\Accelerometer_X.o .\ARM_GCC_484\Debug\Accelerometer_Y.o .\ARM_GCC_484\Debug\Accelerometer_Z.o .\ARM_GCC_484\Debug\Sensor_ADC.o .\ARM_GCC_484\Debug\Sensor_ADC_PM.o .\ARM_GCC_484\Debug\Sensor_ADC_INT.o .\ARM_GCC_484\Debug\BLE_bless_isr.o .\ARM_GCC_484\Debug\Sensor_ADC_IRQ.o .\ARM_GCC_484\Debug\Sensor_ADC_intClock.o .\ARM_GCC_484\Debug\CyBootAsmGnu.o .\ARM_GCC_484\Debug\CyFlash.o .\ARM_GCC_484\Debug\CyLib.o .\ARM_GCC_484\Debug\cyPm.o .\ARM_GCC_484\Debug\cyutils.o .\ARM_GCC_484\Debug\RED.o .\ARM_GCC_484\Debug\GREEN.o .\ARM_GCC_484\Debug\BLUE.o .\ARM_GCC_484\Debug\Pin_3.o .\ARM_GCC_484\Debug\Pin_2.o .\ARM_GCC_484\Debug\Pin_1.o
+arm-none-eabi-ar.exe: creating .\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o .\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.elf .\ARM_GCC_484\Debug\app_Ble.o .\ARM_GCC_484\Debug\app_accel.o .\ARM_GCC_484\Debug\main.o .\ARM_GCC_484\Debug\cymetadata.o .\ARM_GCC_484\Debug\Cm0Start.o .\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.a "D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\BLE_v1_20\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" "D:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_484\Debug\CyComponentLibrary.a" -mthumb -march=armv6-m -Wl,-Map,.\ARM_GCC_484\Debug/PSoC_4_BLE_ACCELEROMETER.map -T .\Generated_Source\PSoC4\cm0gcc.ld -g -specs=nano.specs "-u _printf_float" "" -Wl,--gc-sections -Wl,--end-group
+cyelftool.exe -C D:\Users\jsing\Desktop\Day047_Accelerometer_Controlled_Car\Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER.cydsn\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.elf --flash_size 131072 --flash_row_size 128
+cyelftool.exe -S D:\Users\jsing\Desktop\Day047_Accelerometer_Controlled_Car\Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER.cydsn\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.elf
+Flash used: 74897 of 131072 bytes (57.1 %).
+SRAM used: 11652 of 16384 bytes (71.1 %). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 11/21/2016 20:37:17 ---------------

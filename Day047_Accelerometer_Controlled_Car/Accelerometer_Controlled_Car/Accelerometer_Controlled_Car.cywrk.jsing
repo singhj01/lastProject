@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\app_accel.c">
+<ExpandedNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC_4_BLE_ACCELEROMETER.cydwr</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files\app_accel.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files\app_Ble.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files\main.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\app_accel.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\app_Ble.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\main.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X\Accelerometer_X.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X\Accelerometer_X.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X\Accelerometer_X_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y\Accelerometer_Y.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y\Accelerometer_Y.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y\Accelerometer_Y_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z\Accelerometer_Z.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z\Accelerometer_Z.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z\Accelerometer_Z_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_custom.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_custom.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_eventHandler.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_eventHandler.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_gatt.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_gatt.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_HAL_INT.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_HAL_PVT.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_HAL_PVT.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_Stack.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_STACK_PVT.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackGap.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackGatt.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackGattClient.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackGattDb.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackGattServer.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackHostMain.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_StackL2cap.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE_bless_isr</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE_bless_isr\BLE_bless_isr.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE_bless_isr\BLE_bless_isr.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLUE</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLUE\BLUE.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLUE\BLUE.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLUE\BLUE_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\cypins.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\GREEN</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\GREEN\GREEN.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\GREEN\GREEN.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\GREEN\GREEN_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_1</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_1\Pin_1.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_1\Pin_1.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_1\Pin_1_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_2</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_2\Pin_2.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_2\Pin_2.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_2\Pin_2_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_3</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_3\Pin_3.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_3\Pin_3.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Pin_3\Pin_3_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\RED</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\RED\RED.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\RED\RED.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\RED\RED_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC\Sensor_ADC.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC\Sensor_ADC.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC\Sensor_ADC_INT.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC\Sensor_ADC_PM.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC_intClock</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC_intClock\Sensor_ADC_intClock.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC_intClock\Sensor_ADC_intClock.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC_IRQ</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC_IRQ\Sensor_ADC_IRQ.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Sensor_ADC_IRQ\Sensor_ADC_IRQ.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\WakeUpISR</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\WakeUpISR\WakeUpISR.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\WakeUpISR\WakeUpISR.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cyfitter.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cyfitter_cfg.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cyfitter_cfg.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cyfittergnu.inc</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cyfitteriar.inc</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cyfitterrv.inc</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\cymetadata.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\project.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC_4_BLE_CAR.cydwr</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Header Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Header Files\BLE_CAR_Client.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Header Files\LED.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Header Files\Motor_Control.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Source Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Source Files\BLE_CAR_Client.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Source Files\main.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\Source Files\Motor_Control.c</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC_4_BLE_ACCELEROMETER.cydwr</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files\app_accel.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files\app_Ble.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Header Files\main.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\app_accel.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\app_Ble.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Source Files\main.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X\Accelerometer_X.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X\Accelerometer_X.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_X\Accelerometer_X_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y\Accelerometer_Y.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y\Accelerometer_Y.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Y\Accelerometer_Y_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z\Accelerometer_Z.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z\Accelerometer_Z.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\Accelerometer_Z\Accelerometer_Z_aliases.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_custom.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_custom.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_eventHandler.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_eventHandler.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_gatt.c</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_gatt.h</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Generated_Source\PSoC4\BLE\BLE_HAL_INT.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\TopDesign\TopDesign.cysch</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\TopDesign\TopDesign.cysch</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TopDesign</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Accelerometer_X.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Accelerometer_Y.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Accelerometer_Z.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\app_accel.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\app_Ble.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_bless_isr.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_custom.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_eventHandler.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_gatt.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HAL_INT.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HAL_PVT.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLUE.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\GREEN.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_1.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_2.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_3.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\RED.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_INT.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_intClock.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_IRQ.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_PM.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\WakeUpISR.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.elf</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.hex</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\PSoC_4_BLE_ACCELEROMETER.map</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC_4_BLE_ACCELEROMETER.rpt</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC_4_BLE_ACCELEROMETER_timing.html</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC_4_BLE_CAR.rpt</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC_4_BLE_CAR_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Accelerometer_X.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Accelerometer_Y.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Accelerometer_Z.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\app_accel.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\app_Ble.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_bless_isr.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_custom.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_eventHandler.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_gatt.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HAL_INT.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HAL_PVT.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\BLUE.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\CyFlash.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\CyLib.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cymetadata.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\GREEN.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_1.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_2.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_3.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\RED.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_INT.lst</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\CortexM0\ARM_GCC_484\Debug\Listing Files\Sensor_ADC_intClock.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC 4 Architecture TRM</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC 4200 BLE Family Datasheet</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\System Reference Guide v4_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\ADC_SAR_SEQ_P4_v2_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\BLE_v1_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Capacitor_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\cy_isr_v1_70</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\cy_pins_v2_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Gnd_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Inductor_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC 4 Architecture TRM</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC 4200 BLE Family Datasheet</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\System Reference Guide v4_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\BLE_v1_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\cy_clock_v2_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\cy_constant_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\cy_pins_v2_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\CyControlReg_v1_80</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\mux_v1_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TCPWM_P4_v2_0</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accelerometer_Controlled_Car</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC 4 Architecture TRM</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\PSoC 4200 BLE Family Datasheet</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\System Reference Guide v4_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\ADC_SAR_SEQ_P4_v2_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\BLE_v1_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Capacitor_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\cy_isr_v1_70</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\cy_pins_v2_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Gnd_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_ACCELEROMETER\Inductor_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC 4 Architecture TRM</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\PSoC 4200 BLE Family Datasheet</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\System Reference Guide v4_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\BLE_v1_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\cy_clock_v2_20</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\cy_constant_v1_0</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\cy_pins_v2_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\CyControlReg_v1_80</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\mux_v1_10</v>
+<v>Accelerometer_Controlled_Car\PSoC_4_BLE_CAR\TCPWM_P4_v2_0</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\PSoC_4_BLE_ACCELEROMETER.cydsn\PSoC_4_BLE_ACCELEROMETER.cydwr" />
+<name v=".\PSoC_4_BLE_ACCELEROMETER.cydsn\main.c" />
+<name v=".\PSoC_4_BLE_ACCELEROMETER.cydsn\app_accel.c" />
+<name v=".\PSoC_4_BLE_ACCELEROMETER.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\PSoC_4_BLE_ACCELEROMETER.cydsn\app_accel.h" />
+<name v=".\PSoC_4_BLE_ACCELEROMETER.cydsn\Generated_Source\PSoC4\Sensor_ADC.h" />
+</OpenDocs>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
